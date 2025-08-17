@@ -7,7 +7,7 @@
 **A powerful Dragon Ball-themed Python code obfuscator**
 
 [![Python](https://img.shields.io/badge/Python-3.6%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License%20Eclipse-Public-green.svg)](LICENSE)
 [![Telegram](https://img.shields.io/badge/Telegram-@CalceIsMe-blue.svg)](https://t.me/CalceIsMe)
 
 *Transform your Python code with the power of the Eternal Dragon!*
@@ -64,7 +64,7 @@ python shenron.py
 ### 1. **Dragon Ball Encoding**
 Shenron uses a custom character mapping system that replaces standard Base64 characters with Dragon Ball-themed emojis:
 
-```python
+```python3
 string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 custom = '🐉🐲⭐✦✧✨💫🌠⚡🔥💥☄️🌪❄️🌀🥋🥊⚔️👊🙌👐🟠🔴🟡🟢🔵🟣⚫⚪👽🤖👺🐢🐒🦍👑💎🔮🍑🍗🍚🍶🏯⛩⛰🛡👑🧙‍♂️🤜🤛😡😤🥵🤯🌌🌍🌑☀️🌠'
 ```
@@ -143,7 +143,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Eclipse Public License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 
