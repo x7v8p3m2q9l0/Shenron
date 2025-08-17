@@ -1,2 +1,2 @@
 # Shenron
-A Simple Powerful Obfuscator
+A Simple Powerful Python3 Obfuscator
