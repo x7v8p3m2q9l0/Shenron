@@ -7,7 +7,7 @@
 **A powerful Dragon Ball-themed Python code obfuscator**
 
 [![Python](https://img.shields.io/badge/Python-3.6%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License%20Eclipse-Public-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Eclipse%20Public-green.svg)](LICENSE)
 [![Telegram](https://img.shields.io/badge/Telegram-@CalceIsMe-blue.svg)](https://t.me/CalceIsMe)
 
 *Transform your Python code with the power of the Eternal Dragon!*
