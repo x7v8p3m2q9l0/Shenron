@@ -34,6 +34,7 @@
 ```bash
 git clone https://github.com/nguyenxuantrinhnotpd/Shenron.git
 cd Shenron
+pip install -r requirements.txt
 python shenron.py
 ```
 
@@ -43,14 +44,15 @@ python shenron.py
    ```bash
    python shenron.py
    ```
-
-2. **Enter your file name** when prompted:
+TIP: Make sure the script is in your folder or drag the file and drop it in your terminal
+2. **Enter your file name** when prompted :
    ```
    >> Enter Your File Name: your_script.py
    ```
 
 3. **Choose obfuscation options**:
    - Hide builtins (Y/n): Recommended for better protection
+   - Use VM (Y/n): For irreversible code
    - Add junk code (Y/n): Recommended for advanced obfuscation
 
 4. **Get your obfuscated file**:
@@ -82,7 +84,8 @@ Built-in checks prevent:
 - File modification detection
 - Hook detection on critical functions
 - Runtime manipulation attempts
-
+### 4. **VM Protection**
+It will make your code irreversible
 ## 🛠️ Advanced Features
 
 ### Class Structure
@@ -93,7 +96,7 @@ Built-in checks prevent:
 ### Protection Mechanisms
 ```python
 # File integrity check
-if len(open(__file__, 'rb').read().splitlines()) != 80:
+if len(open(__file__, 'rb').read().splitlines()) != 59:
     print(">> Don't Edit This File")
     sys.exit()
 
@@ -141,6 +144,8 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 - **GitHub**: [@nguyenxuantrinhdznotpd](https://github.com/nguyenxuantrinhdznotpd)
 - **Tutorial Video**: [Watch on YouTube](https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4)
 
+## Contributors
+- [x7v8p3m2q9l0](https://github.com/x7v8p3m2q9l0)
 ## 📄 License
 
 This project is licensed under the Eclipse Public License 2.0 - see the [LICENSE](LICENSE) file for details.
