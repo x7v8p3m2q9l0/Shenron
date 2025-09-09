@@ -110,15 +110,16 @@ if str(print) != '<built-in function print>':
 
 ```mermaid
 graph TD
-    A[Original Python Code] --> B[F-String Conversion]
-    B --> C[Built-in Hiding]
-    C --> D[String/Int Obfuscation]
-    D --> E[Junk Code Injection]
-    E --> F[AST Compilation]
-    F --> G[Marshal Serialization]
-    G --> H[Multi-Layer Compression]
-    H --> I[Custom Emoji Encoding]
-    I --> J[Protected Output File]
+    A[Original Python Code] --> B[Creates VM]
+    B --> C[F-String Conversion]
+    C --> D[Built-in Hiding]
+    D --> E[String/Int Obfuscation]
+    E --> F[Junk Code Injection]
+    F --> G[AST Compilation]
+    G --> H[Marshal Serialization]
+    H --> I[Multi-Layer Compression]
+    I --> J[Custom Emoji Encoding]
+    J --> K[Protected Output File]
 ```
 
 ## 🎮 Dragon Ball Theme
