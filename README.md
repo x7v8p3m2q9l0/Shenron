@@ -23,7 +23,7 @@
 - **🗑️ Junk Code Injection**: Adds meaningless code to confuse reverse engineers
 - **✨ F-String Conversion**: Automatically converts f-strings to join operations
 - **🎨 Beautiful CLI**: Colorful command-line interface with Dragon Ball theme
-
+- ** VM UPDATE INCOMING !!!!
 ## 🚀 Installation
 
 ### Prerequisites

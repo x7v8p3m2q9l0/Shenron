@@ -99,7 +99,7 @@ if str(capsule_add('marshal').loads) != '<built-in function loads>':
     print('Hook hả con trai')
     capsule_add('sys').exit()
 
-if len(open(__file__, 'rb').read().splitlines()) != 80:
+if len(open(__file__, 'rb').read().splitlines()) != 59: # lmao
     print(">> Don't Edit This File")
     capsule_add('sys').exit()
 
@@ -111,10 +111,8 @@ if __INFO__ != {
     'Contact': 'https://t.me/CalceIsMe',
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
 }:
-    print(">> Don't Edit This File")
+    print(">> Don't Edit __INFO__")
     capsule_add('sys').exit()
-
-
 """
 def var_con_cak():
     return ''.join(random.choices([chr(i) for i in range(44032, 55204) if chr(i).isprintable() and chr(i).isidentifier()], k=11))
@@ -377,6 +375,14 @@ junk_code = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), 
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Starting...'))
 st = time.time()
+if use_vm:
+    print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding VM...'))
+    from vm.vm import main
+    code = minify_source(code)
+    import types
+    func = types.FunctionType(compile(code,"<SVM>","exec"), {})
+    code = ast.parse(main(func))
+print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
 cv().visit(code)
 
 if hide_builtins:
@@ -390,21 +396,14 @@ if junk_code:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding Junk Code...'))
     junk().visit(code)
 
-if use_vm:
-    print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding VM...'))
-    from vm.vm import main
-    code = minify_source(code)
-    import types
-    func = types.FunctionType(compile(code,"<SVM>","exec"), {})
-    code = main(func)
-print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
-code = minify_source(code.decode())
+# code = minify_source(code,skip_format=True)
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compiling...'))
 code = marshal.dumps(compile(ast.unparse(code), '<Shenron>', 'exec'))
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compressing...'))
-code = minify_source(code.decode())
 code = base64.a85encode(bz2.compress(zlib.compress(lzma.compress(code))))
-open("obf-"+file_name,'wb').write(SANH.replace("BYTECODE", str(code)).encode())
+# code = minify_source(code.decode(),skip_format=True)
+
+open("obf-"+file_name,'wb').write(minify_source(SANH.replace("BYTECODE", str(code))).encode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Saved in {"obf-"+file_name}'))
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.time()-st:.3f}s'))

@@ -10,6 +10,7 @@ Requires Python 3.9+ (uses ast.unparse).
 """
 import ast
 from typing import List, Dict, Set
+from black import format_str, Mode
 
 class _StripDocstringsAndMangle(ast.NodeTransformer):
     def __init__(self, mangle: bool = False):
@@ -105,14 +106,19 @@ class _StripDocstringsAndMangle(ast.NodeTransformer):
         ast.fix_missing_locations(new_node)
         return new_node
 
-def minify_source(src: str, *, mangle: bool = False) -> str:
+def minify_source(src: str, *, mangle: bool = False, skip_format=False) -> str:
     """
     Minify Python source.
     - strip docstrings and comments
     - trim blank lines
     - optional mangle local names
     """
-    tree = ast.parse(src)
+    if isinstance(src, str):
+        if not skip_format:
+            src = format_str(src, mode=Mode())
+        tree = ast.parse(src)
+    else:
+        tree=src
     tree = _StripDocstringsAndMangle(mangle=mangle).visit(tree)
     ast.fix_missing_locations(tree)
 
