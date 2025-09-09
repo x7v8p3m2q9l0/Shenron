@@ -1,8 +1,9 @@
-#!/bin/python3
+#!/bin/python
 
 __INFO__ = {
     'Obfuscator': 'Shenron',
-    'Obfuscator Owner': 'Nguyễn Xuân Trịnh',
+    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
+    'VM': 'S_VM',
     'Theme': 'Dragon Ball',
     'Contact': 'https://t.me/CalceIsMe',
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
@@ -11,7 +12,7 @@ __INFO__ = {
 BANNER = """⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
 ⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
 ⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
-⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
 ⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
 ⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
 ⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
@@ -36,7 +37,7 @@ BANNER = """⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀�
 
 import ast, random, marshal, base64, bz2, zlib, lzma, time, sys
 from ast import *
-
+from utils.minifier import minify_source
 sys.setrecursionlimit(99999999)
 
 ver = str(sys.version_info.major)+'.'+str(sys.version_info.minor)
@@ -78,6 +79,14 @@ if str(exec) != '<built-in function exec>':
     print('Hook hả con trai')
     capsule_add('sys').exit()
 
+if str(eval) != '<built-in function eval>':
+    print('Hook hả con trai')
+    capsule_add('sys').exit()
+
+if str(__import__) != '<built-in function __import__>':
+    print('Hook hả con trai')
+    capsule_add('sys').exit()
+
 if str(input) != '<built-in function input>':
     print('Hook hả con trai')
     capsule_add('sys').exit()
@@ -96,7 +105,8 @@ if len(open(__file__, 'rb').read().splitlines()) != 80:
 
 if __INFO__ != {
     'Obfuscator': 'Shenron',
-    'Obfuscator Owner': 'Nguyễn Xuân Trịnh',
+    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
+    'VM': 'S_VM',
     'Theme': 'Dragon Ball',
     'Contact': 'https://t.me/CalceIsMe',
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
@@ -123,7 +133,8 @@ SANH = f"""#!/bin/python{ver}
 
 __INFO__ = {{
     'Obfuscator': 'Shenron',
-    'Obfuscator Owner': 'Nguyễn Xuân Trịnh',
+    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
+    'VM': 'S_VM',
     'Theme': 'Dragon Ball',
     'Contact': 'https://t.me/CalceIsMe',
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
@@ -361,12 +372,11 @@ while True:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
         
 hide_builtins = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
-
+use_vm = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Use VM (Y/n): ")) != 'n' else False
 junk_code = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Add Junk Code (Recommend Yes) (Y/n): ")) != 'n' else False
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Starting...'))
 st = time.time()
-print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
 cv().visit(code)
 
 if hide_builtins:
@@ -380,12 +390,21 @@ if junk_code:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding Junk Code...'))
     junk().visit(code)
 
+if use_vm:
+    print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding VM...'))
+    from vm.vm import main
+    code = minify_source(code)
+    import types
+    func = types.FunctionType(compile(code,"<SVM>","exec"), {})
+    code = main(func)
+print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
+code = minify_source(code.decode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compiling...'))
 code = marshal.dumps(compile(ast.unparse(code), '<Shenron>', 'exec'))
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compressing...'))
+code = minify_source(code.decode())
 code = base64.a85encode(bz2.compress(zlib.compress(lzma.compress(code))))
-
 open("obf-"+file_name,'wb').write(SANH.replace("BYTECODE", str(code)).encode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Saved in {"obf-"+file_name}'))
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.time()-st:.3f}s'))
