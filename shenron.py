@@ -39,6 +39,8 @@ import ast, marshal, base64, bz2, zlib, lzma, time, sys
 from ast import *
 from utils.minifier import minify_source
 from utils.constant_renamer import var_con_cak
+from vm.vm import main, remove_comments
+
 sys.setrecursionlimit(99999999)
 
 ver = str(sys.version_info.major)+'.'+str(sys.version_info.minor)
@@ -52,10 +54,7 @@ except ModuleNotFoundError:
 
 System.Clear()
 
-string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-cust = '🐉🐲⭐✦✧✨💫🌠⚡🔥💥☄️🌪❄️🌀🥋🥊⚔️👊🙌👐🟠🔴🟡🟢🔵🟣⚫⚪👽🤖👺🐢🐒🦍👑💎🔮🍑🍗🍚🍶🏯⛩⛰🛡👑🧙\u200d♂️🤜🤛😡😤🥵🤯🌌🌍🌑☀️🌠'
-
-e = dict(zip(string, cust))
+e={'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', 'z': '\u200d', '0': '♂', '1': '️', '2': '🤜', '3': '🤛', '4': '😡', '5': '😤', '6': '🥵', '7': '🤯', '8': '🌌', '9': '🌍', '+': '🌑', '/': '☀'}
 d = {v: k for k, v in e.items()}
 
 def enc(s: str) -> str:
@@ -366,13 +365,13 @@ while True:
     ))
     try:
         with open(file_name, "r", encoding="utf-8") as f:
-            code = ast.parse(anti + f.read())
+            code = ast.parse(remove_comments(anti + f.read()))
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
     
 vm_debug = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
-hide_builtins = False #True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
+hide_builtins = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
 use_vm = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Use VM (Y/n): ")) != 'n' else False
 junk_code = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Add Junk Code (Recommend Yes) (Y/n): ")) != 'n' else False
 
@@ -380,8 +379,7 @@ print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Starting...')
 st = time.perf_counter()
 if use_vm:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding VM...'))
-    from vm.vm import main
-    from utils.constant_renamer import renamethings
+    # from utils.constant_renamer import renamethings
     code = minify_source(code)
     import types
     func = types.FunctionType(compile(code,"<SVM>","exec"), {})
@@ -389,10 +387,12 @@ if use_vm:
     if vm_debug:
         with open('vm_code.py','w',encoding='utf-8') as f:
             f.write(code)
-    code=renamethings(code)
+    code=ast.parse(code)
+    # TODO: Fix this shit or fully remove it.
+    # code=renamethings(code)
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
 cv().visit(code)
-# TODO: FIX HIDE BUILTINS
+
 if hide_builtins:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Hiding Builtins...'))
     hb().visit(code)

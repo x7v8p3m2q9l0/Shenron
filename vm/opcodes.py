@@ -336,8 +336,7 @@ OP_HANDLERS = {
 
                     # Try calling
                     try:
-                        # If we're calling bytes.count and got str arg → auto encode
-                        args = [a.encode() if isinstance(a, str) else a for a in args]
+                        args = [a.encode("utf-8") if isinstance(a, str) else a for a in args]
                         result = method(*args)
                     except AttributeError:
                         args = [a if isinstance(a, str) else a for a in args]
