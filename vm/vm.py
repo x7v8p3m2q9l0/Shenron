@@ -538,7 +538,310 @@ OP_HANDLERS = {
                         if not k.startswith("_"):
                             globals_[k] = v
                 """,
+                    dis.opmap["STORE_DEREF"]: """
+                    # STORE_DEREF
+                    varname = names[oparg]
+                    val = self.pop()
+                    cells[varname].cell_contents = val
+                """,
 
+                dis.opmap["INPLACE_XOR"]: """
+                    # INPLACE_XOR
+                    b = self.pop()
+                    a = self.pop()
+                    self.push(a ^ b)
+                """,
+
+                dis.opmap["STORE_SUBSCR"]: """
+                    # STORE_SUBSCR
+                    value = self.pop()
+                    index = self.pop()
+                    target = self.pop()
+                    target[index] = value
+                """,
+
+                dis.opmap["MATCH_MAPPING"]: """
+                    # MATCH_MAPPING
+                    self.push(True)  # Placeholder for pattern matching
+                """,
+
+                dis.opmap["BUILD_STRING"]: """
+                    # BUILD_STRING
+                    pieces = [self.pop() for _ in range(oparg)][::-1]
+                    self.push(''.join(map(str, pieces)))
+                """,
+
+                dis.opmap["BINARY_XOR"]: """
+                    # BINARY_XOR
+                    b = self.pop()
+                    a = self.pop()
+                    self.push(a ^ b)
+                """,
+
+                dis.opmap["LOAD_ASSERTION_ERROR"]: """
+                    # LOAD_ASSERTION_ERROR
+                    self.push(AssertionError)
+                """,
+
+                dis.opmap["LIST_EXTEND"]: """
+                    # LIST_EXTEND
+                    iterable = self.pop()
+                    target = self.stack[-1]
+                    target.extend(iterable)
+                """,
+
+                dis.opmap["DELETE_NAME"]: """
+                    # DELETE_NAME
+                    varname = names[oparg]
+                    if varname in globals_:
+                        del globals_[varname]
+                """,
+
+                dis.opmap["ROT_FOUR"]: """
+                    # ROT_FOUR
+                    a = self.pop()
+                    b = self.pop()
+                    c = self.pop()
+                    d = self.pop()
+                    self.push(b)
+                    self.push(a)
+                    self.push(d)
+                    self.push(c)
+                """,
+
+                dis.opmap["GET_AWAITABLE"]: """
+                    # GET_AWAITABLE
+                    awaitable = self.pop()
+                    self.push(awaitable)  # Placeholder: no async handling
+                """,
+
+                dis.opmap["SET_ADD"]: """
+                    # SET_ADD
+                    value = self.pop()
+                    target_set = self.stack[-1]
+                    target_set.add(value)
+                """,
+
+                dis.opmap["UNARY_INVERT"]: """
+                    # UNARY_INVERT
+                    a = self.pop()
+                    self.push(~a)
+                """,
+
+                dis.opmap["BINARY_LSHIFT"]: """
+                    # BINARY_LSHIFT
+                    b = self.pop()
+                    a = self.pop()
+                    self.push(a << b)
+                """,
+
+                dis.opmap["FOR_ITER"]: """
+                    # FOR_ITER
+                    try:
+                        value = next(self.stack[-1])
+                        self.push(value)
+                    except StopIteration:
+                        self.jump(oparg)
+                """,
+                dis.opmap["UNARY_POSITIVE"]: """
+                    # Unary positive: +x
+                    x = self.pop()
+                    self.push(+x)
+                    """,
+
+                        dis.opmap["BINARY_RSHIFT"]: """
+                    # Binary right shift: x >> y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left >> right)
+                    """,
+
+                        dis.opmap["INPLACE_MODULO"]: """
+                    # In-place modulo: x %= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left % right)
+                    """,
+
+                        dis.opmap["MAKE_FUNCTION"]: """
+                    # Make a function object
+                    flags = oparg
+                    code = self.pop()
+                    self.push(types.FunctionType(code, globals()))
+                    """,
+
+                        dis.opmap["STORE_ATTR"]: """
+                    # Store attribute: obj.name = value
+                    value = self.pop()
+                    obj = self.pop()
+                    name = self.names[oparg] if isinstance(self.names, (list, tuple)) else oparg
+                    setattr(obj, name, value)
+                    """,
+
+                        dis.opmap["DELETE_ATTR"]: """
+                    # Delete attribute: del obj.name
+                    obj = self.pop()
+                    name = self.names[oparg] if isinstance(self.names, (list, tuple)) else oparg
+                    delattr(obj, name)
+                    """,
+
+                        dis.opmap["DELETE_GLOBAL"]: """
+                    # Delete a global variable
+                    name = self.names[oparg] if isinstance(self.names, (list, tuple)) else oparg
+                    del self.globals[name]
+                    """,
+
+                        dis.opmap["RERAISE"]: """
+                    # Re-raise exception
+                    exc = self.pop()
+                    self.push(exc)
+                    raise exc
+                    """,
+
+                        dis.opmap["GET_ANEXT"]: """
+                    # Async iterator: await anext(obj)
+                    aiter = self.pop()
+                    self.push(await aiter.__anext__())
+                    """,
+
+                        dis.opmap["MATCH_KEYS"]: """
+                    # Pattern matching keys
+                    subject = self.pop()
+                    keys = self.pop()
+                    matches = all(k in subject for k in keys)
+                    self.push(matches)
+                    """,
+
+                        dis.opmap["SETUP_WITH"]: """
+                    # Context manager setup
+                    manager = self.pop()
+                    enter = manager.__enter__()
+                    self.push(manager)
+                    self.push(enter)
+                    """,
+
+                        dis.opmap["SETUP_ASYNC_WITH"]: """
+                    # Async context manager setup
+                    manager = await self.pop().__aenter__()
+                    self.push(manager)
+                    """,
+
+                        dis.opmap["MATCH_CLASS"]: """
+                    # Match class opcode (simplified)
+                    cls = self.pop()
+                    obj = self.pop()
+                    self.push(isinstance(obj, cls))
+                    """,
+                    dis.opmap["BEFORE_ASYNC_WITH"]: """
+                    # BEFORE_ASYNC_WITH: Prepare async context manager
+                    manager = self.pop()
+                    self.push(manager)
+                    """,
+
+                        dis.opmap["BINARY_MATRIX_MULTIPLY"]: """
+                    # Binary matrix multiply: x @ y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left @ right)
+                    """,
+
+                        dis.opmap["BUILD_SLICE"]: """
+                    # Build a slice object
+                    if oparg == 2:
+                        stop = self.pop()
+                        start = self.pop()
+                        self.push(slice(start, stop))
+                    elif oparg == 3:
+                        step = self.pop()
+                        stop = self.pop()
+                        start = self.pop()
+                        self.push(slice(start, stop, step))
+                    """,
+
+                        dis.opmap["DELETE_SUBSCR"]: """
+                    # Delete subscription: del obj[key]
+                    key = self.pop()
+                    obj = self.pop()
+                    del obj[key]
+                    """,
+
+                        dis.opmap["DICT_MERGE"]: """
+                    # Merge dictionaries
+                    other = self.pop()
+                    target = self.pop()
+                    target.update(other)
+                    self.push(target)
+                    """,
+
+                        dis.opmap["GET_ITER"]: """
+                    # Get iterator
+                    iterable = self.pop()
+                    self.push(iter(iterable))
+                    """,
+
+                        dis.opmap["INPLACE_ADD"]: """
+                    # In-place addition: x += y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left + right)
+                    """,
+
+                        dis.opmap["INPLACE_AND"]: """
+                    # In-place AND: x &= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left & right)
+                    """,
+
+                        dis.opmap["INPLACE_MATRIX_MULTIPLY"]: """
+                    # In-place matrix multiply: x @= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left @ right)
+                    """,
+
+                        dis.opmap["INPLACE_MULTIPLY"]: """
+                    # In-place multiply: x *= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left * right)
+                    """,
+
+                        dis.opmap["INPLACE_RSHIFT"]: """
+                    # In-place right shift: x >>= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left >> right)
+                    """,
+
+                        dis.opmap["INPLACE_SUBTRACT"]: """
+                    # In-place subtraction: x -= y
+                    right = self.pop()
+                    left = self.pop()
+                    self.push(left - right)
+                    """,
+
+                        dis.opmap["IS_OP"]: """
+                    # IS_OP: checks 'is' or 'is not'
+                    right = self.pop()
+                    left = self.pop()
+                    if oparg == 0:
+                        self.push(left is right)
+                    elif oparg == 1:
+                        self.push(left is not right)
+                    """,
+
+                        dis.opmap["LIST_APPEND"]: """
+                    # Append to list at index oparg
+                    value = self.pop()
+                    lst = self.stack[-oparg]
+                    lst.append(value)
+                    """,
+
+                        dis.opmap["LOAD_CLOSURE"]: """
+                    # Load closure cell
+                    self.push(self.cells[oparg])
+                    """,
 }
 
 
