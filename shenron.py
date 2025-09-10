@@ -35,9 +35,10 @@ BANNER = """⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀�
 ⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
 ⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉"""
 
-import ast, random, marshal, base64, bz2, zlib, lzma, time, sys
+import ast, marshal, base64, bz2, zlib, lzma, time, sys
 from ast import *
 from utils.minifier import minify_source
+from utils.constant_renamer import var_con_cak
 sys.setrecursionlimit(99999999)
 
 ver = str(sys.version_info.major)+'.'+str(sys.version_info.minor)
@@ -98,25 +99,15 @@ if str(len) != '<built-in function len>':
 if str(capsule_add('marshal').loads) != '<built-in function loads>':
     print('Hook hả con trai')
     capsule_add('sys').exit()
+"""
 
-if len(open(__file__, 'rb').read().splitlines()) != 59: # lmao
+"""
+thecodething=open(__file__, 'rb').read()
+if thecodething.count(b'print')>3:
     print(">> Don't Edit This File")
     capsule_add('sys').exit()
 
-if __INFO__ != {
-    'Obfuscator': 'Shenron',
-    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
-    'VM': 'S_VM',
-    'Theme': 'Dragon Ball',
-    'Contact': 'https://t.me/CalceIsMe',
-    'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
-}:
-    print(">> Don't Edit __INFO__")
-    capsule_add('sys').exit()
 """
-def var_con_cak():
-    return ''.join(random.choices([chr(i) for i in range(44032, 55204) if chr(i).isprintable() and chr(i).isidentifier()], k=11))
-
 v = var_con_cak()
 args = var_con_cak()
 kwds = var_con_cak()
@@ -126,17 +117,11 @@ c = var_con_cak()
 arg_ = var_con_cak()
 s = var_con_cak()
 
-SANH = f"""#!/bin/python{ver}
+SANH = f"""
+#!/bin/python{ver}
 # -*- coding: utf-8 -*-
 
-__INFO__ = {{
-    'Obfuscator': 'Shenron',
-    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
-    'VM': 'S_VM',
-    'Theme': 'Dragon Ball',
-    'Contact': 'https://t.me/CalceIsMe',
-    'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
-}}
+INFOTAGGE=123
 
 class CapsuleCorp(object):
 
@@ -307,13 +292,23 @@ class cv(ast.NodeTransformer):
     def visit_JoinedStr(self, node):
         node = joinstr(node)
         return node
-
-class hide(ast.NodeTransformer):
-
-    def visit_Name(self, node):
-        if node.id in buitlins:
-            node = Call(func=Name(id='getattr', ctx=Load()), args=[Call(func=Name(id='capsule_add', ctx=Load()), args=[Constant(value='builtins')], keywords=[]), Constant(value=node.id)], keywords=[])
+class hb(ast.NodeTransformer):
+    def visit_Name(self, node: ast.Name):
+        if node.id in set(dir(__builtins__)):
+            return ast.Call(
+                func=ast.Name(id='getattr', ctx=ast.Load()),
+                args=[
+                    ast.Call(
+                        func=ast.Name(id='__import__', ctx=ast.Load()),
+                        args=[ast.Constant(value='builtins')],
+                        keywords=[]
+                    ),
+                    ast.Constant(value=node.id),
+                ],
+                keywords=[]
+            )
         return node
+
     
 class obf(ast.NodeTransformer):
 
@@ -333,21 +328,28 @@ def gen_jcode(code):
 class junk(ast.NodeTransformer):
 
     def visit_Module(self, node):
-        for i, j in enumerate(node.body):
-            if isinstance(j, (ast.FunctionDef, ast.ClassDef)):
-                self.visit(j)
-            node.body[i] = [gen_jcode(j)]
+        new_body = []
+        for stmt in node.body:
+            if isinstance(stmt, (ast.FunctionDef, ast.ClassDef)):
+                stmt = self.visit(stmt)
+            new_body.extend(gen_jcode(stmt))
+        node.body = new_body
         return node
 
     def visit_FunctionDef(self, node):
-        for i, j in enumerate(node.body):
-            node.body[i] = [gen_jcode(j)]
+        new_body = []
+        for stmt in node.body:
+            new_body.extend(gen_jcode(stmt))
+        node.body = new_body
         return node
 
     def visit_ClassDef(self, node):
-        for i, j in enumerate(node.body):
-            node.body[i] = [gen_jcode(j)]
+        new_body = []
+        for stmt in node.body:
+            new_body.extend(gen_jcode(stmt))
+        node.body = new_body
         return node
+
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.orange, Col.red)), BANNER))
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, Col.orange)), ' '*19+'Obfuscator: Shenron'))
@@ -368,43 +370,74 @@ while True:
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
-        
-hide_builtins = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
+    
+vm_debug = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
+hide_builtins = False #True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
 use_vm = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Use VM (Y/n): ")) != 'n' else False
 junk_code = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Add Junk Code (Recommend Yes) (Y/n): ")) != 'n' else False
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Starting...'))
-st = time.time()
+st = time.perf_counter()
 if use_vm:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding VM...'))
     from vm.vm import main
+    from utils.constant_renamer import renamethings
     code = minify_source(code)
     import types
     func = types.FunctionType(compile(code,"<SVM>","exec"), {})
-    code = ast.parse(main(func))
+    code = main(func,random_opcodes=not vm_debug,random_opcodes_count=12,debug=vm_debug)
+    if vm_debug:
+        with open('vm_code.py','w',encoding='utf-8') as f:
+            f.write(code)
+    code=renamethings(code)
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Converting F-String To Join String...'))
 cv().visit(code)
-
+# TODO: FIX HIDE BUILTINS
 if hide_builtins:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Hiding Builtins...'))
-    hide().visit(code)
-
+    hb().visit(code)
+    if vm_debug:
+        with open('hide_builtins.py','w',encoding='utf-8') as f:
+            f.write(ast.unparse(code))
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Obfuscating Content...'))
 obf().visit(code)
 
 if junk_code:
     print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Adding Junk Code...'))
     junk().visit(code)
-
-# code = minify_source(code,skip_format=True)
+    code=ast.unparse(code)
+    if vm_debug:
+        with open('junk_code.py','w',encoding='utf-8') as f:
+            f.write(code)
+else: 
+    code=ast.unparse(code)
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compiling...'))
-code = marshal.dumps(compile(ast.unparse(code), '<Shenron>', 'exec'))
+code = code+"""
+if __INFO__ != {
+    'Obfuscator': 'Shenron',
+    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
+    'VM': 'S_VM',
+    'Theme': 'Dragon Ball',
+    'Contact': 'https://t.me/CalceIsMe',
+    'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+}:
+    print(">> Don't Edit __INFO__")
+    capsule_add('sys').exit()"""
+code = marshal.dumps(compile(code, '<Shenron>', 'exec'))
 
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), '[...] Compressing...'))
 code = base64.a85encode(bz2.compress(zlib.compress(lzma.compress(code))))
 # code = minify_source(code.decode(),skip_format=True)
 
-open("obf-"+file_name,'wb').write(minify_source(SANH.replace("BYTECODE", str(code))).encode())
+open("obf-"+file_name,'wb').write(minify_source(SANH.replace("BYTECODE", str(code))).replace("INFOTAGGE = 123","""
+__INFO__ = {
+    'Obfuscator': 'Shenron',
+    'Obfuscator Owner': ['Nguyễn Xuân Trịnh'],
+    'VM': 'S_VM',
+    'Theme': 'Dragon Ball',
+    'Contact': 'https://t.me/CalceIsMe',
+    'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+}""").encode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Saved in {"obf-"+file_name}'))
 
-print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.time()-st:.3f}s'))
+print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.perf_counter()-st:.3f}s'))
