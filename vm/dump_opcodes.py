@@ -1,5 +1,6 @@
 
 import dis, json, sys
+from vm import OP_HANDLERS
 # unused opcode dumper since it won't automatically add the code handlers.
 def create_desc(name, code):
     desc = f"Opcode {name} (numeric code {code}) in Python {sys.version_info.major}.{sys.version_info.minor}."
@@ -12,7 +13,7 @@ def dump_opcodes(filename=None):
 
     opmap = dis.opmap  
     opcodes = {}
-    for name, code in sorted(opmap.items(), key=lambda x: x[1]):
+    for name, code in (set(sorted(opmap.items(), key=lambda x: x[1])) - {i for i in [100, 83, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 124, 125, 107, 114, 115, 101, 90, 116, 97, 131, 132, 9, 110, 111, 112, 113, 102, 103, 104, 105, 144, 160, 161, 141, 142, 122, 87, 89, 106, 156]}):
         desc, desc_vi = create_desc(name, code)
         
         try:

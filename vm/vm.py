@@ -25,6 +25,14 @@ def code_to_vm_instrs(code):
 
 # TODO: ADD MORE OPCODES
 OP_HANDLERS = {
+        dis.opmap["LOAD_CONST"]: """
+                    value = consts[oparg]
+                    self.push(value)
+        """,
+        dis.opmap["RETURN_VALUE"]: """
+                    return self.pop()
+        """,
+
         dis.opmap["BINARY_POWER"] : """
                     b = self.pop(); a = self.pop(); self.push(a ** b)
         """,
@@ -279,6 +287,257 @@ OP_HANDLERS = {
                     d = {keys[i]: values[i] for i in range(oparg)}
                     self.push(d)
         """,
+        dis.opmap["SET_UPDATE"]: """
+                    # Update a set with multiple items
+                    # oparg = number of items
+                    items = [self.pop() for _ in range(oparg)][::-1]
+                    set_obj = self.pop()
+                    set_obj.update(items)
+                    self.push(set_obj)
+        """,
+
+        dis.opmap["BINARY_AND"]: """
+                    b = self.pop()
+                    a = self.pop()
+                    self.push(a & b)
+        """,    
+
+        dis.opmap["RAISE_VARARGS"]: """
+                    # oparg meanings:
+                    # 0: re-raise last exception
+                    # 1: raise exception (type or instance) from TOS
+                    # 2: raise exception with cause (TOS is cause, TOS1 is exception)
+                    if oparg == 0:
+                        raise
+                    elif oparg == 1:
+                        exc = self.pop()
+                        raise exc
+                    elif oparg == 2:
+                        cause = self.pop()
+                        exc = self.pop()
+                        raise exc from cause
+                    else:
+                        raise VMError(f"RAISE_VARARGS with invalid oparg {oparg}")
+        """,
+        dis.opmap["LIST_TO_TUPLE"]: """
+                    # Convert list (on TOS) into tuple
+                    lst = self.pop()
+                    if not isinstance(lst, list):
+                        raise VMError("LIST_TO_TUPLE expected a list")
+                    self.push(tuple(lst))
+        """,
+
+        dis.opmap["INPLACE_LSHIFT"]: """
+                    # In-place left shift (a <<= b)
+                    b = self.pop()
+                    a = self.pop()
+                    a <<= b
+                    self.push(a)
+        """,
+
+        dis.opmap["DELETE_DEREF"]: """
+                    # Delete a variable from cell/freevars
+                    if isinstance(cells, (list, tuple)):
+                        name = cells[oparg]
+                    elif isinstance(cells, dict):
+                        name = oparg
+                    else:
+                        raise VMError("DELETE_DEREF: unexpected cells format")
+
+                    try:
+                        del self.locals[name]
+                    except KeyError:
+                        raise NameError(f"free variable {name!r} referenced before assignment in enclosing scope")
+        """,
+            dis.opmap["YIELD_VALUE"]: """
+                    # Yield the top of stack (value to send back to caller)
+                    value = self.pop()
+                    # In a real VM this would suspend execution, here we just push back
+                    return value
+            """,
+
+            dis.opmap["COPY_DICT_WITHOUT_KEYS"]: """
+                    # Copy dict (TOS1) without specified keys (TOS)
+                    keys = self.pop()
+                    mapping = self.pop()
+                    new_d = {k: v for k, v in mapping.items() if k not in keys}
+                    self.push(new_d)
+            """,
+
+            dis.opmap["INPLACE_OR"]: """
+                    b = self.pop()
+                    a = self.pop()
+                    a |= b
+                    self.push(a)
+            """,
+
+            dis.opmap["MATCH_SEQUENCE"]: """
+                    # Pushes an iterator for sequence pattern matching
+                    seq = self.pop()
+                    try:
+                        it = iter(seq)
+                    except TypeError:
+                        raise TypeError(f"object of type {type(seq).__name__!r} is not iterable")
+                    self.push(it)
+            """,
+
+            dis.opmap["PRINT_EXPR"]: """
+                    value = self.pop()
+                    if value is not None:
+                        print(value)
+            """,
+
+            dis.opmap["GET_AITER"]: """
+                    # Get asynchronous iterator
+                    obj = self.pop()
+                    aiter = obj.__aiter__()
+                    self.push(aiter)
+            """,
+
+            dis.opmap["WITH_EXCEPT_START"]: """
+                    # Start handling 'with' exception
+                    # TOS: exc_info (type, value, traceback)
+                    # TOS1: context manager
+                    exc = self.pop()
+                    mgr = self.pop()
+                    res = mgr.__exit__(*exc)
+                    self.push(res)
+            """,
+
+            dis.opmap["END_ASYNC_FOR"]: """
+                    # Pops 7 values used in async-for finalization
+                    for _ in range(7):
+                        self.pop()
+            """,
+
+            dis.opmap["LOAD_BUILD_CLASS"]: """
+                    # Push built-in __build_class__ function
+                    self.push(__build_class__)
+            """,
+
+            dis.opmap["LOAD_CLASSDEREF"]: """
+                    # Load from cell/freevars
+                    if isinstance(cells, (list, tuple)):
+                        name = cells[oparg]
+                    elif isinstance(cells, dict):
+                        name = oparg
+                    else:
+                        raise VMError("LOAD_CLASSDEREF: unexpected cells format")
+
+                    if name in self.locals:
+                        self.push(self.locals[name])
+                    else:
+                        self.push(self.globals.get(name, None))
+            """,
+
+            dis.opmap["JUMP_IF_NOT_EXC_MATCH"]: """
+                    # If exception does not match expected type, jump to target
+                    exc_type = self.pop()
+                    err = self.pop()
+                    target = oparg
+                    if not issubclass(err.__class__, exc_type):
+                        self.pc = target
+            """,
+                dis.opmap["UNPACK_SEQUENCE"]: """
+                    # Unpack TOS into oparg items
+                    seq = self.pop()
+                    if len(seq) != oparg:
+                        raise ValueError("UNPACK_SEQUENCE: length mismatch")
+                    for item in reversed(seq):
+                        self.push(item)
+                """,
+
+                dis.opmap["UNPACK_EX"]: """
+                    # Unpack with starred expression
+                    seq = list(self.pop())
+                    before = oparg & 0xFF
+                    after = (oparg >> 8)
+                    if len(seq) < before + after:
+                        raise ValueError("UNPACK_EX: not enough values")
+                    for item in reversed(seq[-after:]):
+                        self.push(item)
+                    self.push(seq[before:len(seq)-after])
+                    for item in reversed(seq[:before]):
+                        self.push(item)
+                """,
+
+                dis.opmap["FORMAT_VALUE"]: """
+                    # Format value (used in f-strings)
+                    fmt_spec = None
+                    if oparg & 0x04:
+                        fmt_spec = self.pop()
+                    val = self.pop()
+                    if oparg & 0x03 == 0:   # no conversion
+                        result = str(val)
+                    elif oparg & 0x03 == 1: # str()
+                        result = str(val)
+                    elif oparg & 0x03 == 2: # repr()
+                        result = repr(val)
+                    elif oparg & 0x03 == 3: # ascii()
+                        result = ascii(val)
+                    else:
+                        raise VMError(f"FORMAT_VALUE: invalid conversion flag {oparg}")
+                    if fmt_spec is not None:
+                        result = format(result, fmt_spec)
+                    self.push(result)
+                """,
+
+                dis.opmap["DICT_UPDATE"]: """
+                    mapping = self.pop()
+                    target = self.stack[-1]
+                    if not isinstance(target, dict):
+                        raise VMError("DICT_UPDATE target not a dict")
+                    target.update(mapping)
+                """,
+
+                dis.opmap["INPLACE_POWER"]: """
+                    b = self.pop()
+                    a = self.pop()
+                    self.push(a ** b)
+                """,
+
+                dis.opmap["GEN_START"]: """
+                    gen = self.stack[-1]
+                    if oparg != 0:
+                        raise VMError("GEN_START arg must be 0")
+                    gen.send(None)
+                """,
+
+                dis.opmap["DELETE_FAST"]: """
+                    varname = varnames[oparg]
+                    try:
+                        del names[varname]
+                    except KeyError:
+                        raise UnboundLocalError(f"local variable {varname!r} not found")
+                """,
+
+                dis.opmap["GET_YIELD_FROM_ITER"]: """
+                    v = self.stack[-1]
+                    if not hasattr(v, "__iter__"):
+                        raise VMError("GET_YIELD_FROM_ITER target not iterable")
+                    self.stack[-1] = iter(v)
+                """,
+
+                dis.opmap["IMPORT_NAME"]: """
+                    name = names[oparg] if isinstance(names, (list, tuple)) else oparg
+                    level = self.pop()
+                    fromlist = self.pop()
+                    module = __import__(name, globals_, names, fromlist, level)
+                    self.push(module)
+                """,
+
+                dis.opmap["IMPORT_FROM"]: """
+                    name = names[oparg] if isinstance(names, (list, tuple)) else oparg
+                    module = self.top()
+                    self.push(getattr(module, name))
+                """,
+
+                dis.opmap["IMPORT_STAR"]: """
+                    module = self.pop()
+                    for k, v in module.__dict__.items():
+                        if not k.startswith("_"):
+                            globals_[k] = v
+                """,
 
 }
 
