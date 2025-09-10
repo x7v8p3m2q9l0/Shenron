@@ -406,4 +406,5 @@ code = base64.a85encode(bz2.compress(zlib.compress(lzma.compress(code))))
 
 open("obf-"+file_name,'wb').write(minify_source(SANH.replace("BYTECODE", str(code))).encode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Saved in {"obf-"+file_name}'))
+
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.time()-st:.3f}s'))
