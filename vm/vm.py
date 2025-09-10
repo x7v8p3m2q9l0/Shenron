@@ -91,6 +91,14 @@ def main(
     secondlmao = var_con_cak()
     # Build full program
     standalone_src = f"""\
+import logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("app.log", encoding="utf-8"),
+    ]
+)
 
 class VMError(Exception):
     pass
@@ -104,14 +112,15 @@ class ZM:
         self.globals = {"{}"}
 
     def push(self, v):
-        if self.debug: print("  push", v)
+        if self.debug:
+            logging.debug(f"  push {'{v}'}")
         self.stack.append(v)
 
     def pop(self):
         if not self.stack:
             raise VMError("pop from empty stack")
         v = self.stack.pop()
-        if self.debug: print("  pop ->", v)
+        if self.debug: logging.debug(f"  pop -> {'{v}'}")
         return v
 
     def top(self):
@@ -128,7 +137,7 @@ class ZM:
         while self.pc < len(bytecode):
             opcode, oparg = bytecode[self.pc]
             if self.debug:
-                print(f"[pc={{self.pc}}] opcode={{opcode}} arg={{oparg}}")
+                logging.debug(f"[pc={{self.pc}}] opcode={{opcode}} arg={{oparg}}")
             self.pc += 1
 
             if False:

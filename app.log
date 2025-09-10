@@ -1,0 +1,1131 @@
+2025-09-10 23:34:50,535 [DEBUG] [pc=0] opcode=101 arg=0
+2025-09-10 23:36:04,511 [DEBUG] [pc=0] opcode=101 arg=0
+2025-09-10 23:36:04,572 [DEBUG] [pc=1] opcode=100 arg=0
+2025-09-10 23:36:04,598 [DEBUG] [pc=2] opcode=101 arg=1
+2025-09-10 23:36:04,625 [DEBUG] [pc=3] opcode=100 arg=1
+2025-09-10 23:36:04,650 [DEBUG] [pc=4] opcode=131 arg=1
+2025-09-10 23:36:04,728 [DEBUG] [pc=5] opcode=20 arg=None
+2025-09-10 23:36:04,806 [DEBUG] [pc=6] opcode=100 arg=2
+2025-09-10 23:36:04,832 [DEBUG] [pc=7] opcode=100 arg=3
+2025-09-10 23:36:04,859 [DEBUG] [pc=8] opcode=141 arg=2
+2025-09-10 23:36:04,990 [DEBUG] [pc=9] opcode=1 arg=None
+2025-09-10 23:36:05,016 [DEBUG] [pc=10] opcode=101 arg=2
+2025-09-10 23:36:05,043 [DEBUG] [pc=11] opcode=101 arg=3
+2025-09-10 23:36:05,070 [DEBUG] [pc=12] opcode=100 arg=4
+2025-09-10 23:36:05,097 [DEBUG] [pc=13] opcode=131 arg=1
+2025-09-10 23:36:05,176 [DEBUG] [pc=14] opcode=106 arg=4
+2025-09-10 23:36:05,228 [DEBUG] [pc=15] opcode=131 arg=1
+2025-09-10 23:36:05,304 [DEBUG] [pc=16] opcode=100 arg=5
+2025-09-10 23:36:05,330 [DEBUG] [pc=17] opcode=107 arg=3
+2025-09-10 23:36:05,414 [DEBUG] [pc=18] opcode=114 arg=29
+2025-09-10 23:36:05,440 [DEBUG] [pc=29] opcode=101 arg=2
+2025-09-10 23:36:05,467 [DEBUG] [pc=30] opcode=101 arg=0
+2025-09-10 23:36:05,493 [DEBUG] [pc=31] opcode=131 arg=1
+2025-09-10 23:36:05,571 [DEBUG] [pc=32] opcode=100 arg=7
+2025-09-10 23:36:05,600 [DEBUG] [pc=33] opcode=107 arg=3
+2025-09-10 23:36:05,682 [DEBUG] [pc=34] opcode=114 arg=45
+2025-09-10 23:36:05,708 [DEBUG] [pc=45] opcode=101 arg=2
+2025-09-10 23:36:05,734 [DEBUG] [pc=46] opcode=101 arg=6
+2025-09-10 23:36:05,760 [DEBUG] [pc=47] opcode=131 arg=1
+2025-09-10 23:36:05,836 [DEBUG] [pc=48] opcode=100 arg=8
+2025-09-10 23:36:05,862 [DEBUG] [pc=49] opcode=107 arg=3
+2025-09-10 23:36:05,941 [DEBUG] [pc=50] opcode=114 arg=61
+2025-09-10 23:36:05,969 [DEBUG] [pc=61] opcode=101 arg=2
+2025-09-10 23:36:05,997 [DEBUG] [pc=62] opcode=101 arg=7
+2025-09-10 23:36:06,024 [DEBUG] [pc=63] opcode=131 arg=1
+2025-09-10 23:36:06,101 [DEBUG] [pc=64] opcode=100 arg=9
+2025-09-10 23:36:06,127 [DEBUG] [pc=65] opcode=107 arg=3
+2025-09-10 23:36:06,205 [DEBUG] [pc=66] opcode=114 arg=77
+2025-09-10 23:36:06,231 [DEBUG] [pc=77] opcode=101 arg=2
+2025-09-10 23:36:06,258 [DEBUG] [pc=78] opcode=101 arg=8
+2025-09-10 23:36:06,284 [DEBUG] [pc=79] opcode=131 arg=1
+2025-09-10 23:36:06,364 [DEBUG] [pc=80] opcode=100 arg=10
+2025-09-10 23:36:06,390 [DEBUG] [pc=81] opcode=107 arg=3
+2025-09-10 23:36:06,465 [DEBUG] [pc=82] opcode=114 arg=93
+2025-09-10 23:36:06,491 [DEBUG] [pc=93] opcode=101 arg=2
+2025-09-10 23:36:06,517 [DEBUG] [pc=94] opcode=101 arg=9
+2025-09-10 23:36:06,543 [DEBUG] [pc=95] opcode=131 arg=1
+2025-09-10 23:36:06,620 [DEBUG] [pc=96] opcode=100 arg=11
+2025-09-10 23:36:06,646 [DEBUG] [pc=97] opcode=107 arg=3
+2025-09-10 23:36:06,726 [DEBUG] [pc=98] opcode=114 arg=109
+2025-09-10 23:36:06,753 [DEBUG] [pc=109] opcode=101 arg=2
+2025-09-10 23:36:06,780 [DEBUG] [pc=110] opcode=101 arg=1
+2025-09-10 23:36:06,808 [DEBUG] [pc=111] opcode=131 arg=1
+2025-09-10 23:36:06,888 [DEBUG] [pc=112] opcode=100 arg=12
+2025-09-10 23:36:06,913 [DEBUG] [pc=113] opcode=107 arg=3
+2025-09-10 23:36:06,989 [DEBUG] [pc=114] opcode=114 arg=125
+2025-09-10 23:36:07,016 [DEBUG] [pc=125] opcode=101 arg=2
+2025-09-10 23:36:07,042 [DEBUG] [pc=126] opcode=101 arg=3
+2025-09-10 23:36:07,068 [DEBUG] [pc=127] opcode=100 arg=13
+2025-09-10 23:36:07,094 [DEBUG] [pc=128] opcode=131 arg=1
+2025-09-10 23:36:07,170 [DEBUG] [pc=129] opcode=106 arg=10
+2025-09-10 23:36:07,223 [DEBUG] [pc=130] opcode=131 arg=1
+2025-09-10 23:36:07,299 [DEBUG] [pc=131] opcode=100 arg=14
+2025-09-10 23:36:07,325 [DEBUG] [pc=132] opcode=107 arg=3
+2025-09-10 23:36:07,404 [DEBUG] [pc=133] opcode=114 arg=144
+2025-09-10 23:36:07,429 [DEBUG] [pc=144] opcode=100 arg=15
+2025-09-10 23:36:07,457 [DEBUG] [pc=145] opcode=100 arg=16
+2025-09-10 23:36:07,483 [DEBUG] [pc=146] opcode=103 arg=1
+2025-09-10 23:36:07,535 [DEBUG] [pc=147] opcode=100 arg=17
+2025-09-10 23:36:07,560 [DEBUG] [pc=148] opcode=100 arg=18
+2025-09-10 23:36:07,585 [DEBUG] [pc=149] opcode=100 arg=19
+2025-09-10 23:36:07,611 [DEBUG] [pc=150] opcode=100 arg=20
+2025-09-10 23:36:07,636 [DEBUG] [pc=151] opcode=100 arg=21
+2025-09-10 23:36:07,662 [DEBUG] [pc=152] opcode=156 arg=6
+2025-09-10 23:36:07,843 [DEBUG]   push
+2025-09-10 23:36:07,843 [DEBUG] [pc=153] opcode=90 arg=11
+2025-09-10 23:36:07,843 [DEBUG]   pop ->
+2025-09-10 23:36:07,844 [DEBUG] [pc=154] opcode=100 arg=22
+2025-09-10 23:36:07,872 [DEBUG] [pc=155] opcode=90 arg=12
+2025-09-10 23:36:07,901 [DEBUG] [pc=156] opcode=100 arg=23
+2025-09-10 23:36:07,928 [DEBUG] [pc=157] opcode=100 arg=24
+2025-09-10 23:36:07,955 [DEBUG] [pc=158] opcode=108 arg=13
+2025-09-10 23:36:08,039 [DEBUG] [pc=159] opcode=90 arg=13
+2025-09-10 23:36:08,064 [DEBUG] [pc=160] opcode=100 arg=23
+2025-09-10 23:36:08,090 [DEBUG] [pc=161] opcode=100 arg=24
+2025-09-10 23:36:08,115 [DEBUG] [pc=162] opcode=108 arg=14
+2025-09-10 23:36:08,192 [DEBUG] [pc=163] opcode=90 arg=14
+2025-09-10 23:36:08,217 [DEBUG] [pc=164] opcode=100 arg=23
+2025-09-10 23:36:08,244 [DEBUG] [pc=165] opcode=100 arg=24
+2025-09-10 23:36:08,270 [DEBUG] [pc=166] opcode=108 arg=15
+2025-09-10 23:36:08,346 [DEBUG] [pc=167] opcode=90 arg=15
+2025-09-10 23:36:08,371 [DEBUG] [pc=168] opcode=100 arg=23
+2025-09-10 23:36:08,397 [DEBUG] [pc=169] opcode=100 arg=24
+2025-09-10 23:36:08,422 [DEBUG] [pc=170] opcode=108 arg=16
+2025-09-10 23:36:08,497 [DEBUG] [pc=171] opcode=90 arg=16
+2025-09-10 23:36:08,522 [DEBUG] [pc=172] opcode=100 arg=23
+2025-09-10 23:36:08,547 [DEBUG] [pc=173] opcode=100 arg=24
+2025-09-10 23:36:08,573 [DEBUG] [pc=174] opcode=108 arg=17
+2025-09-10 23:36:08,646 [DEBUG] [pc=175] opcode=90 arg=17
+2025-09-10 23:36:08,670 [DEBUG] [pc=176] opcode=100 arg=23
+2025-09-10 23:36:08,696 [DEBUG] [pc=177] opcode=100 arg=24
+2025-09-10 23:36:08,722 [DEBUG] [pc=178] opcode=108 arg=18
+2025-09-10 23:36:08,797 [DEBUG] [pc=179] opcode=90 arg=18
+2025-09-10 23:36:08,822 [DEBUG] [pc=180] opcode=100 arg=23
+2025-09-10 23:36:08,847 [DEBUG] [pc=181] opcode=100 arg=24
+2025-09-10 23:36:08,872 [DEBUG] [pc=182] opcode=108 arg=19
+2025-09-10 23:36:08,946 [DEBUG] [pc=183] opcode=90 arg=19
+2025-09-10 23:36:08,972 [DEBUG] [pc=184] opcode=100 arg=23
+2025-09-10 23:36:08,999 [DEBUG] [pc=185] opcode=100 arg=24
+2025-09-10 23:36:09,026 [DEBUG] [pc=186] opcode=108 arg=20
+2025-09-10 23:36:09,106 [DEBUG] [pc=187] opcode=90 arg=20
+2025-09-10 23:36:09,132 [DEBUG] [pc=188] opcode=100 arg=23
+2025-09-10 23:36:09,156 [DEBUG] [pc=189] opcode=100 arg=25
+2025-09-10 23:36:09,182 [DEBUG] [pc=190] opcode=108 arg=13
+2025-09-10 23:36:09,257 [DEBUG] [pc=191] opcode=84 arg=None
+2025-09-10 23:36:09,281 [DEBUG] [pc=192] opcode=100 arg=23
+2025-09-10 23:36:09,307 [DEBUG] [pc=193] opcode=100 arg=26
+2025-09-10 23:36:09,331 [DEBUG] [pc=194] opcode=108 arg=21
+2025-09-10 23:36:09,675 [DEBUG] [pc=195] opcode=109 arg=22
+2025-09-10 23:36:09,700 [DEBUG] [pc=196] opcode=90 arg=22
+2025-09-10 23:36:09,726 [DEBUG] [pc=197] opcode=1 arg=None
+2025-09-10 23:36:09,752 [DEBUG] [pc=198] opcode=100 arg=23
+2025-09-10 23:36:09,777 [DEBUG] [pc=199] opcode=100 arg=27
+2025-09-10 23:36:09,803 [DEBUG] [pc=200] opcode=108 arg=23
+2025-09-10 23:36:09,880 [DEBUG] [pc=201] opcode=109 arg=24
+2025-09-10 23:36:09,905 [DEBUG] [pc=202] opcode=90 arg=24
+2025-09-10 23:36:09,931 [DEBUG] [pc=203] opcode=1 arg=None
+2025-09-10 23:36:09,956 [DEBUG] [pc=204] opcode=100 arg=23
+2025-09-10 23:36:09,982 [DEBUG] [pc=205] opcode=100 arg=28
+2025-09-10 23:36:10,008 [DEBUG] [pc=206] opcode=108 arg=25
+2025-09-10 23:36:10,088 [DEBUG] [pc=207] opcode=109 arg=26
+2025-09-10 23:36:10,113 [DEBUG] [pc=208] opcode=90 arg=26
+2025-09-10 23:36:10,139 [DEBUG] [pc=209] opcode=109 arg=27
+2025-09-10 23:36:10,165 [DEBUG] [pc=210] opcode=90 arg=27
+2025-09-10 23:36:10,192 [DEBUG] [pc=211] opcode=1 arg=None
+2025-09-10 23:36:10,219 [DEBUG] [pc=212] opcode=101 arg=20
+2025-09-10 23:36:10,245 [DEBUG] [pc=213] opcode=160 arg=28
+2025-09-10 23:36:10,295 [DEBUG] [pc=214] opcode=100 arg=29
+2025-09-10 23:36:10,320 [DEBUG] [pc=215] opcode=161 arg=1
+2025-09-10 23:36:10,391 [DEBUG] [pc=216] opcode=1 arg=None
+2025-09-10 23:36:10,416 [DEBUG] [pc=217] opcode=101 arg=2
+2025-09-10 23:36:10,440 [DEBUG] [pc=218] opcode=101 arg=20
+2025-09-10 23:36:10,466 [DEBUG] [pc=219] opcode=106 arg=29
+2025-09-10 23:36:10,514 [DEBUG] [pc=220] opcode=106 arg=30
+2025-09-10 23:36:10,562 [DEBUG] [pc=221] opcode=131 arg=1
+2025-09-10 23:36:10,635 [DEBUG] [pc=222] opcode=100 arg=30
+2025-09-10 23:36:10,660 [DEBUG] [pc=223] opcode=23 arg=None
+2025-09-10 23:36:10,734 [DEBUG] [pc=224] opcode=101 arg=2
+2025-09-10 23:36:10,758 [DEBUG] [pc=225] opcode=101 arg=20
+2025-09-10 23:36:10,781 [DEBUG] [pc=226] opcode=106 arg=29
+2025-09-10 23:36:10,830 [DEBUG] [pc=227] opcode=106 arg=31
+2025-09-10 23:36:10,879 [DEBUG] [pc=228] opcode=131 arg=1
+2025-09-10 23:36:10,954 [DEBUG] [pc=229] opcode=23 arg=None
+2025-09-10 23:36:11,026 [DEBUG] [pc=230] opcode=90 arg=32
+2025-09-10 23:36:11,051 [DEBUG] [pc=231] opcode=122 arg=6
+2025-09-10 23:36:11,051 [DEBUG] [pc=232] opcode=100 arg=23
+2025-09-10 23:36:11,075 [DEBUG] [pc=233] opcode=100 arg=25
+2025-09-10 23:36:11,100 [DEBUG] [pc=234] opcode=108 arg=33
+2025-09-10 23:36:11,204 [DEBUG] [pc=235] opcode=84 arg=None
+2025-09-10 23:36:11,228 [DEBUG] [pc=236] opcode=87 arg=None
+2025-09-10 23:36:11,229 [DEBUG] [pc=237] opcode=110 arg=29
+2025-09-10 23:36:11,229 [DEBUG] [pc=267] opcode=101 arg=36
+2025-09-10 23:36:11,255 [DEBUG] [pc=268] opcode=160 arg=37
+2025-09-10 23:36:11,309 [DEBUG] [pc=269] opcode=161 arg=0
+2025-09-10 23:36:11,390 [DEBUG] [pc=270] opcode=1 arg=None
+2025-09-10 23:36:11,416 [DEBUG] [pc=271] opcode=105 arg=0
+2025-09-10 23:39:34,396 [DEBUG] [pc=0] opcode=101 arg=0
+2025-09-10 23:39:34,396 [DEBUG]   push <built-in function print>
+2025-09-10 23:39:34,396 [DEBUG] [pc=1] opcode=100 arg=0
+2025-09-10 23:39:34,396 [DEBUG]   push  
+2025-09-10 23:39:34,396 [DEBUG] [pc=2] opcode=101 arg=1
+2025-09-10 23:39:34,397 [DEBUG]   push <built-in function len>
+2025-09-10 23:39:34,397 [DEBUG] [pc=3] opcode=100 arg=1
+2025-09-10 23:39:34,397 [DEBUG]   push >> Running...
+2025-09-10 23:39:34,397 [DEBUG] [pc=4] opcode=131 arg=1
+2025-09-10 23:39:34,397 [DEBUG]   pop -> >> Running...
+2025-09-10 23:39:34,397 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:39:34,397 [DEBUG]   push 13
+2025-09-10 23:39:34,398 [DEBUG] [pc=5] opcode=20 arg=None
+2025-09-10 23:39:34,398 [DEBUG]   pop -> 13
+2025-09-10 23:39:34,398 [DEBUG]   pop ->  
+2025-09-10 23:39:34,398 [DEBUG]   push              
+2025-09-10 23:39:34,398 [DEBUG] [pc=6] opcode=100 arg=2
+2025-09-10 23:39:34,398 [DEBUG]   push 
+2025-09-10 23:39:34,398 [DEBUG] [pc=7] opcode=100 arg=3
+2025-09-10 23:39:34,398 [DEBUG]   push ('end',)
+2025-09-10 23:39:34,398 [DEBUG] [pc=8] opcode=141 arg=2
+2025-09-10 23:39:34,399 [DEBUG]   pop -> ('end',)
+2025-09-10 23:39:34,399 [DEBUG]   pop -> 
+2025-09-10 23:39:34,399 [DEBUG]   pop ->              
+2025-09-10 23:39:34,399 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:39:34,399 [DEBUG]   push None
+2025-09-10 23:39:34,399 [DEBUG] [pc=9] opcode=1 arg=None
+2025-09-10 23:39:34,400 [DEBUG]   pop -> None
+2025-09-10 23:39:34,400 [DEBUG] [pc=10] opcode=101 arg=2
+2025-09-10 23:39:34,400 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,400 [DEBUG] [pc=11] opcode=101 arg=3
+2025-09-10 23:39:34,400 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:39:34,400 [DEBUG] [pc=12] opcode=100 arg=4
+2025-09-10 23:39:34,400 [DEBUG]   push sys
+2025-09-10 23:39:34,401 [DEBUG] [pc=13] opcode=131 arg=1
+2025-09-10 23:39:34,401 [DEBUG]   pop -> sys
+2025-09-10 23:39:34,401 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:39:34,401 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:39:34,401 [DEBUG] [pc=14] opcode=106 arg=4
+2025-09-10 23:39:34,401 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:39:34,401 [DEBUG]   push <built-in function exit>
+2025-09-10 23:39:34,402 [DEBUG] [pc=15] opcode=131 arg=1
+2025-09-10 23:39:34,402 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:39:34,402 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,402 [DEBUG]   push <built-in function exit>
+2025-09-10 23:39:34,402 [DEBUG] [pc=16] opcode=100 arg=5
+2025-09-10 23:39:34,402 [DEBUG]   push <built-in function exit>
+2025-09-10 23:39:34,402 [DEBUG] [pc=17] opcode=107 arg=3
+2025-09-10 23:39:34,407 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:39:34,407 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:39:34,407 [DEBUG]   push False
+2025-09-10 23:39:34,407 [DEBUG] [pc=18] opcode=114 arg=29
+2025-09-10 23:39:34,407 [DEBUG]   pop -> False
+2025-09-10 23:39:34,407 [DEBUG] [pc=29] opcode=101 arg=2
+2025-09-10 23:39:34,407 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,408 [DEBUG] [pc=30] opcode=101 arg=0
+2025-09-10 23:39:34,408 [DEBUG]   push <built-in function print>
+2025-09-10 23:39:34,408 [DEBUG] [pc=31] opcode=131 arg=1
+2025-09-10 23:39:34,408 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:39:34,408 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,408 [DEBUG]   push <built-in function print>
+2025-09-10 23:39:34,408 [DEBUG] [pc=32] opcode=100 arg=7
+2025-09-10 23:39:34,408 [DEBUG]   push <built-in function print>
+2025-09-10 23:39:34,409 [DEBUG] [pc=33] opcode=107 arg=3
+2025-09-10 23:39:34,409 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:39:34,409 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:39:34,409 [DEBUG]   push False
+2025-09-10 23:39:34,409 [DEBUG] [pc=34] opcode=114 arg=45
+2025-09-10 23:39:34,409 [DEBUG]   pop -> False
+2025-09-10 23:39:34,409 [DEBUG] [pc=45] opcode=101 arg=2
+2025-09-10 23:39:34,409 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,410 [DEBUG] [pc=46] opcode=101 arg=6
+2025-09-10 23:39:34,410 [DEBUG]   push <built-in function exec>
+2025-09-10 23:39:34,410 [DEBUG] [pc=47] opcode=131 arg=1
+2025-09-10 23:39:34,410 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:39:34,410 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,410 [DEBUG]   push <built-in function exec>
+2025-09-10 23:39:34,410 [DEBUG] [pc=48] opcode=100 arg=8
+2025-09-10 23:39:34,411 [DEBUG]   push <built-in function exec>
+2025-09-10 23:39:34,411 [DEBUG] [pc=49] opcode=107 arg=3
+2025-09-10 23:39:34,411 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:39:34,411 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:39:34,411 [DEBUG]   push False
+2025-09-10 23:39:34,411 [DEBUG] [pc=50] opcode=114 arg=61
+2025-09-10 23:39:34,411 [DEBUG]   pop -> False
+2025-09-10 23:39:34,411 [DEBUG] [pc=61] opcode=101 arg=2
+2025-09-10 23:39:34,411 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,412 [DEBUG] [pc=62] opcode=101 arg=7
+2025-09-10 23:39:34,412 [DEBUG]   push <built-in function eval>
+2025-09-10 23:39:34,412 [DEBUG] [pc=63] opcode=131 arg=1
+2025-09-10 23:39:34,412 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:39:34,412 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,412 [DEBUG]   push <built-in function eval>
+2025-09-10 23:39:34,412 [DEBUG] [pc=64] opcode=100 arg=9
+2025-09-10 23:39:34,412 [DEBUG]   push <built-in function eval>
+2025-09-10 23:39:34,412 [DEBUG] [pc=65] opcode=107 arg=3
+2025-09-10 23:39:34,413 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:39:34,413 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:39:34,413 [DEBUG]   push False
+2025-09-10 23:39:34,413 [DEBUG] [pc=66] opcode=114 arg=77
+2025-09-10 23:39:34,413 [DEBUG]   pop -> False
+2025-09-10 23:39:34,413 [DEBUG] [pc=77] opcode=101 arg=2
+2025-09-10 23:39:34,413 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,413 [DEBUG] [pc=78] opcode=101 arg=8
+2025-09-10 23:39:34,414 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:39:34,414 [DEBUG] [pc=79] opcode=131 arg=1
+2025-09-10 23:39:34,414 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:39:34,414 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,414 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:39:34,414 [DEBUG] [pc=80] opcode=100 arg=10
+2025-09-10 23:39:34,414 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:39:34,414 [DEBUG] [pc=81] opcode=107 arg=3
+2025-09-10 23:39:34,415 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:39:34,415 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:39:34,415 [DEBUG]   push False
+2025-09-10 23:39:34,415 [DEBUG] [pc=82] opcode=114 arg=93
+2025-09-10 23:39:34,415 [DEBUG]   pop -> False
+2025-09-10 23:39:34,415 [DEBUG] [pc=93] opcode=101 arg=2
+2025-09-10 23:39:34,415 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,415 [DEBUG] [pc=94] opcode=101 arg=9
+2025-09-10 23:39:34,416 [DEBUG]   push <built-in function input>
+2025-09-10 23:39:34,416 [DEBUG] [pc=95] opcode=131 arg=1
+2025-09-10 23:39:34,416 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:39:34,416 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,416 [DEBUG]   push <built-in function input>
+2025-09-10 23:39:34,416 [DEBUG] [pc=96] opcode=100 arg=11
+2025-09-10 23:39:34,416 [DEBUG]   push <built-in function input>
+2025-09-10 23:39:34,417 [DEBUG] [pc=97] opcode=107 arg=3
+2025-09-10 23:39:34,417 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:39:34,417 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:39:34,417 [DEBUG]   push False
+2025-09-10 23:39:34,417 [DEBUG] [pc=98] opcode=114 arg=109
+2025-09-10 23:39:34,417 [DEBUG]   pop -> False
+2025-09-10 23:39:34,417 [DEBUG] [pc=109] opcode=101 arg=2
+2025-09-10 23:39:34,417 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,417 [DEBUG] [pc=110] opcode=101 arg=1
+2025-09-10 23:39:34,418 [DEBUG]   push <built-in function len>
+2025-09-10 23:39:34,418 [DEBUG] [pc=111] opcode=131 arg=1
+2025-09-10 23:39:34,418 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:39:34,418 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,418 [DEBUG]   push <built-in function len>
+2025-09-10 23:39:34,418 [DEBUG] [pc=112] opcode=100 arg=12
+2025-09-10 23:39:34,418 [DEBUG]   push <built-in function len>
+2025-09-10 23:39:34,418 [DEBUG] [pc=113] opcode=107 arg=3
+2025-09-10 23:39:34,419 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:39:34,419 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:39:34,419 [DEBUG]   push False
+2025-09-10 23:39:34,419 [DEBUG] [pc=114] opcode=114 arg=125
+2025-09-10 23:39:34,419 [DEBUG]   pop -> False
+2025-09-10 23:39:34,419 [DEBUG] [pc=125] opcode=101 arg=2
+2025-09-10 23:39:34,419 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,419 [DEBUG] [pc=126] opcode=101 arg=3
+2025-09-10 23:39:34,420 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:39:34,420 [DEBUG] [pc=127] opcode=100 arg=13
+2025-09-10 23:39:34,420 [DEBUG]   push marshal
+2025-09-10 23:39:34,420 [DEBUG] [pc=128] opcode=131 arg=1
+2025-09-10 23:39:34,420 [DEBUG]   pop -> marshal
+2025-09-10 23:39:34,420 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:39:34,420 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-10 23:39:34,420 [DEBUG] [pc=129] opcode=106 arg=10
+2025-09-10 23:39:34,421 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-10 23:39:34,421 [DEBUG]   push <built-in function loads>
+2025-09-10 23:39:34,421 [DEBUG] [pc=130] opcode=131 arg=1
+2025-09-10 23:39:34,421 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:39:34,421 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,421 [DEBUG]   push <built-in function loads>
+2025-09-10 23:39:34,421 [DEBUG] [pc=131] opcode=100 arg=14
+2025-09-10 23:39:34,421 [DEBUG]   push <built-in function loads>
+2025-09-10 23:39:34,422 [DEBUG] [pc=132] opcode=107 arg=3
+2025-09-10 23:39:34,422 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:39:34,422 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:39:34,422 [DEBUG]   push False
+2025-09-10 23:39:34,422 [DEBUG] [pc=133] opcode=114 arg=144
+2025-09-10 23:39:34,422 [DEBUG]   pop -> False
+2025-09-10 23:39:34,422 [DEBUG] [pc=144] opcode=100 arg=15
+2025-09-10 23:39:34,422 [DEBUG]   push Shenron
+2025-09-10 23:39:34,422 [DEBUG] [pc=145] opcode=100 arg=16
+2025-09-10 23:39:34,423 [DEBUG]   push Nguyễn Xuân Trịnh
+2025-09-10 23:39:34,423 [DEBUG] [pc=146] opcode=103 arg=1
+2025-09-10 23:39:34,423 [DEBUG]   pop -> Nguyễn Xuân Trịnh
+2025-09-10 23:39:34,423 [DEBUG]   push ['Nguyễn Xuân Trịnh']
+2025-09-10 23:39:34,423 [DEBUG] [pc=147] opcode=100 arg=17
+2025-09-10 23:39:34,423 [DEBUG]   push S_VM
+2025-09-10 23:39:34,423 [DEBUG] [pc=148] opcode=100 arg=18
+2025-09-10 23:39:34,424 [DEBUG]   push Dragon Ball
+2025-09-10 23:39:34,424 [DEBUG] [pc=149] opcode=100 arg=19
+2025-09-10 23:39:34,424 [DEBUG]   push https://t.me/CalceIsMe
+2025-09-10 23:39:34,424 [DEBUG] [pc=150] opcode=100 arg=20
+2025-09-10 23:39:34,424 [DEBUG]   push https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-10 23:39:34,424 [DEBUG] [pc=151] opcode=100 arg=21
+2025-09-10 23:39:34,424 [DEBUG]   push ('Obfuscator', 'Obfuscator Owner', 'VM', 'Theme', 'Contact', 'Obfuscator Code Writing Process')
+2025-09-10 23:39:34,424 [DEBUG] [pc=152] opcode=156 arg=6
+2025-09-10 23:39:34,424 [DEBUG]   pop -> ('Obfuscator', 'Obfuscator Owner', 'VM', 'Theme', 'Contact', 'Obfuscator Code Writing Process')
+2025-09-10 23:39:34,425 [DEBUG]   pop -> https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-10 23:39:34,425 [DEBUG]   pop -> https://t.me/CalceIsMe
+2025-09-10 23:39:34,425 [DEBUG]   pop -> Dragon Ball
+2025-09-10 23:39:34,425 [DEBUG]   pop -> S_VM
+2025-09-10 23:39:34,425 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
+2025-09-10 23:39:34,425 [DEBUG]   pop -> Shenron
+2025-09-10 23:39:34,425 [DEBUG]   push {'Obfuscator': 'Shenron', 'Obfuscator Owner': 'Nguyễn Xuân Trịnh', 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-10 23:39:34,426 [DEBUG] [pc=153] opcode=90 arg=11
+2025-09-10 23:39:34,426 [DEBUG]   pop -> {'Obfuscator': 'Shenron', 'Obfuscator Owner': 'Nguyễn Xuân Trịnh', 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-10 23:39:34,426 [DEBUG] [pc=154] opcode=100 arg=22
+2025-09-10 23:39:34,426 [DEBUG]   push ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-10 23:39:34,426 [DEBUG] [pc=155] opcode=90 arg=12
+2025-09-10 23:39:34,426 [DEBUG]   pop -> ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-10 23:39:34,426 [DEBUG] [pc=156] opcode=100 arg=23
+2025-09-10 23:39:34,427 [DEBUG]   push 0
+2025-09-10 23:39:34,427 [DEBUG] [pc=157] opcode=100 arg=24
+2025-09-10 23:39:34,427 [DEBUG]   push None
+2025-09-10 23:39:34,427 [DEBUG] [pc=158] opcode=108 arg=13
+2025-09-10 23:39:34,427 [DEBUG]   pop -> None
+2025-09-10 23:39:34,427 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,434 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:39:34,434 [DEBUG] [pc=159] opcode=90 arg=13
+2025-09-10 23:39:34,434 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:39:34,435 [DEBUG] [pc=160] opcode=100 arg=23
+2025-09-10 23:39:34,435 [DEBUG]   push 0
+2025-09-10 23:39:34,435 [DEBUG] [pc=161] opcode=100 arg=24
+2025-09-10 23:39:34,435 [DEBUG]   push None
+2025-09-10 23:39:34,435 [DEBUG] [pc=162] opcode=108 arg=14
+2025-09-10 23:39:34,435 [DEBUG]   pop -> None
+2025-09-10 23:39:34,435 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,435 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-10 23:39:34,436 [DEBUG] [pc=163] opcode=90 arg=14
+2025-09-10 23:39:34,436 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-10 23:39:34,436 [DEBUG] [pc=164] opcode=100 arg=23
+2025-09-10 23:39:34,436 [DEBUG]   push 0
+2025-09-10 23:39:34,436 [DEBUG] [pc=165] opcode=100 arg=24
+2025-09-10 23:39:34,436 [DEBUG]   push None
+2025-09-10 23:39:34,436 [DEBUG] [pc=166] opcode=108 arg=15
+2025-09-10 23:39:34,436 [DEBUG]   pop -> None
+2025-09-10 23:39:34,437 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,437 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\base64.py'>
+2025-09-10 23:39:34,437 [DEBUG] [pc=167] opcode=90 arg=15
+2025-09-10 23:39:34,437 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\base64.py'>
+2025-09-10 23:39:34,437 [DEBUG] [pc=168] opcode=100 arg=23
+2025-09-10 23:39:34,437 [DEBUG]   push 0
+2025-09-10 23:39:34,437 [DEBUG] [pc=169] opcode=100 arg=24
+2025-09-10 23:39:34,437 [DEBUG]   push None
+2025-09-10 23:39:34,438 [DEBUG] [pc=170] opcode=108 arg=16
+2025-09-10 23:39:34,438 [DEBUG]   pop -> None
+2025-09-10 23:39:34,438 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,438 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bz2.py'>
+2025-09-10 23:39:34,438 [DEBUG] [pc=171] opcode=90 arg=16
+2025-09-10 23:39:34,438 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bz2.py'>
+2025-09-10 23:39:34,438 [DEBUG] [pc=172] opcode=100 arg=23
+2025-09-10 23:39:34,438 [DEBUG]   push 0
+2025-09-10 23:39:34,439 [DEBUG] [pc=173] opcode=100 arg=24
+2025-09-10 23:39:34,439 [DEBUG]   push None
+2025-09-10 23:39:34,439 [DEBUG] [pc=174] opcode=108 arg=17
+2025-09-10 23:39:34,439 [DEBUG]   pop -> None
+2025-09-10 23:39:34,439 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,439 [DEBUG]   push <module 'zlib' (built-in)>
+2025-09-10 23:39:34,439 [DEBUG] [pc=175] opcode=90 arg=17
+2025-09-10 23:39:34,439 [DEBUG]   pop -> <module 'zlib' (built-in)>
+2025-09-10 23:39:34,440 [DEBUG] [pc=176] opcode=100 arg=23
+2025-09-10 23:39:34,440 [DEBUG]   push 0
+2025-09-10 23:39:34,440 [DEBUG] [pc=177] opcode=100 arg=24
+2025-09-10 23:39:34,440 [DEBUG]   push None
+2025-09-10 23:39:34,440 [DEBUG] [pc=178] opcode=108 arg=18
+2025-09-10 23:39:34,440 [DEBUG]   pop -> None
+2025-09-10 23:39:34,440 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,440 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py'>
+2025-09-10 23:39:34,441 [DEBUG] [pc=179] opcode=90 arg=18
+2025-09-10 23:39:34,441 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py'>
+2025-09-10 23:39:34,441 [DEBUG] [pc=180] opcode=100 arg=23
+2025-09-10 23:39:34,441 [DEBUG]   push 0
+2025-09-10 23:39:34,441 [DEBUG] [pc=181] opcode=100 arg=24
+2025-09-10 23:39:34,441 [DEBUG]   push None
+2025-09-10 23:39:34,441 [DEBUG] [pc=182] opcode=108 arg=19
+2025-09-10 23:39:34,442 [DEBUG]   pop -> None
+2025-09-10 23:39:34,442 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,442 [DEBUG]   push <module 'time' (built-in)>
+2025-09-10 23:39:34,442 [DEBUG] [pc=183] opcode=90 arg=19
+2025-09-10 23:39:34,442 [DEBUG]   pop -> <module 'time' (built-in)>
+2025-09-10 23:39:34,442 [DEBUG] [pc=184] opcode=100 arg=23
+2025-09-10 23:39:34,442 [DEBUG]   push 0
+2025-09-10 23:39:34,442 [DEBUG] [pc=185] opcode=100 arg=24
+2025-09-10 23:39:34,442 [DEBUG]   push None
+2025-09-10 23:39:34,443 [DEBUG] [pc=186] opcode=108 arg=20
+2025-09-10 23:39:34,443 [DEBUG]   pop -> None
+2025-09-10 23:39:34,443 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,443 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:39:34,443 [DEBUG] [pc=187] opcode=90 arg=20
+2025-09-10 23:39:34,443 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:39:34,443 [DEBUG] [pc=188] opcode=100 arg=23
+2025-09-10 23:39:34,443 [DEBUG]   push 0
+2025-09-10 23:39:34,444 [DEBUG] [pc=189] opcode=100 arg=25
+2025-09-10 23:39:34,444 [DEBUG]   push ('*',)
+2025-09-10 23:39:34,444 [DEBUG] [pc=190] opcode=108 arg=13
+2025-09-10 23:39:34,444 [DEBUG]   pop -> ('*',)
+2025-09-10 23:39:34,444 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,444 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:39:34,444 [DEBUG] [pc=191] opcode=84 arg=None
+2025-09-10 23:39:34,444 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:39:34,445 [DEBUG] [pc=192] opcode=100 arg=23
+2025-09-10 23:39:34,445 [DEBUG]   push 0
+2025-09-10 23:39:34,445 [DEBUG] [pc=193] opcode=100 arg=26
+2025-09-10 23:39:34,445 [DEBUG]   push ('minify_source',)
+2025-09-10 23:39:34,445 [DEBUG] [pc=194] opcode=108 arg=21
+2025-09-10 23:39:34,446 [DEBUG]   pop -> ('minify_source',)
+2025-09-10 23:39:34,446 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,752 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-10 23:39:34,752 [DEBUG] [pc=195] opcode=109 arg=22
+2025-09-10 23:39:34,753 [DEBUG]   push <function minify_source at 0x0000020EB9D8EB00>
+2025-09-10 23:39:34,753 [DEBUG] [pc=196] opcode=90 arg=22
+2025-09-10 23:39:34,753 [DEBUG]   pop -> <function minify_source at 0x0000020EB9D8EB00>
+2025-09-10 23:39:34,753 [DEBUG] [pc=197] opcode=1 arg=None
+2025-09-10 23:39:34,753 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-10 23:39:34,753 [DEBUG] [pc=198] opcode=100 arg=23
+2025-09-10 23:39:34,754 [DEBUG]   push 0
+2025-09-10 23:39:34,754 [DEBUG] [pc=199] opcode=100 arg=27
+2025-09-10 23:39:34,754 [DEBUG]   push ('var_con_cak',)
+2025-09-10 23:39:34,754 [DEBUG] [pc=200] opcode=108 arg=23
+2025-09-10 23:39:34,754 [DEBUG]   pop -> ('var_con_cak',)
+2025-09-10 23:39:34,754 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,756 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-10 23:39:34,756 [DEBUG] [pc=201] opcode=109 arg=24
+2025-09-10 23:39:34,756 [DEBUG]   push <function var_con_cak at 0x0000020EBBE18EE0>
+2025-09-10 23:39:34,756 [DEBUG] [pc=202] opcode=90 arg=24
+2025-09-10 23:39:34,756 [DEBUG]   pop -> <function var_con_cak at 0x0000020EBBE18EE0>
+2025-09-10 23:39:34,756 [DEBUG] [pc=203] opcode=1 arg=None
+2025-09-10 23:39:34,756 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-10 23:39:34,757 [DEBUG] [pc=204] opcode=100 arg=23
+2025-09-10 23:39:34,757 [DEBUG]   push 0
+2025-09-10 23:39:34,757 [DEBUG] [pc=205] opcode=100 arg=28
+2025-09-10 23:39:34,757 [DEBUG]   push ('main', 'remove_comments')
+2025-09-10 23:39:34,757 [DEBUG] [pc=206] opcode=108 arg=25
+2025-09-10 23:39:34,757 [DEBUG]   pop -> ('main', 'remove_comments')
+2025-09-10 23:39:34,757 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,765 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-10 23:39:34,765 [DEBUG] [pc=207] opcode=109 arg=26
+2025-09-10 23:39:34,765 [DEBUG]   push <function main at 0x0000020EBBE1A170>
+2025-09-10 23:39:34,765 [DEBUG] [pc=208] opcode=90 arg=26
+2025-09-10 23:39:34,765 [DEBUG]   pop -> <function main at 0x0000020EBBE1A170>
+2025-09-10 23:39:34,765 [DEBUG] [pc=209] opcode=109 arg=27
+2025-09-10 23:39:34,765 [DEBUG]   push <function remove_comments at 0x0000020EBBE195A0>
+2025-09-10 23:39:34,766 [DEBUG] [pc=210] opcode=90 arg=27
+2025-09-10 23:39:34,766 [DEBUG]   pop -> <function remove_comments at 0x0000020EBBE195A0>
+2025-09-10 23:39:34,766 [DEBUG] [pc=211] opcode=1 arg=None
+2025-09-10 23:39:34,766 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-10 23:39:34,766 [DEBUG] [pc=212] opcode=101 arg=20
+2025-09-10 23:39:34,766 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:39:34,766 [DEBUG] [pc=213] opcode=160 arg=28
+2025-09-10 23:39:34,767 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:39:34,767 [DEBUG]   push (<module 'sys' (built-in)>, 'setrecursionlimit')
+2025-09-10 23:39:34,767 [DEBUG] [pc=214] opcode=100 arg=29
+2025-09-10 23:39:34,767 [DEBUG]   push 99999999
+2025-09-10 23:39:34,767 [DEBUG] [pc=215] opcode=161 arg=1
+2025-09-10 23:39:34,767 [DEBUG]   pop -> 99999999
+2025-09-10 23:39:34,767 [DEBUG]   pop -> (<module 'sys' (built-in)>, 'setrecursionlimit')
+2025-09-10 23:39:34,768 [DEBUG]   push None
+2025-09-10 23:39:34,768 [DEBUG] [pc=216] opcode=1 arg=None
+2025-09-10 23:39:34,768 [DEBUG]   pop -> None
+2025-09-10 23:39:34,768 [DEBUG] [pc=217] opcode=101 arg=2
+2025-09-10 23:39:34,768 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,768 [DEBUG] [pc=218] opcode=101 arg=20
+2025-09-10 23:39:34,769 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:39:34,769 [DEBUG] [pc=219] opcode=106 arg=29
+2025-09-10 23:39:34,769 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:39:34,769 [DEBUG]   push sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:39:34,769 [DEBUG] [pc=220] opcode=106 arg=30
+2025-09-10 23:39:34,769 [DEBUG]   pop -> sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:39:34,769 [DEBUG]   push 3
+2025-09-10 23:39:34,769 [DEBUG] [pc=221] opcode=131 arg=1
+2025-09-10 23:39:34,770 [DEBUG]   pop -> 3
+2025-09-10 23:39:34,770 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,770 [DEBUG]   push 3
+2025-09-10 23:39:34,770 [DEBUG] [pc=222] opcode=100 arg=30
+2025-09-10 23:39:34,770 [DEBUG]   push .
+2025-09-10 23:39:34,770 [DEBUG] [pc=223] opcode=23 arg=None
+2025-09-10 23:39:34,770 [DEBUG]   pop -> .
+2025-09-10 23:39:34,770 [DEBUG]   pop -> 3
+2025-09-10 23:39:34,771 [DEBUG]   push 3.
+2025-09-10 23:39:34,771 [DEBUG] [pc=224] opcode=101 arg=2
+2025-09-10 23:39:34,771 [DEBUG]   push <class 'str'>
+2025-09-10 23:39:34,771 [DEBUG] [pc=225] opcode=101 arg=20
+2025-09-10 23:39:34,771 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:39:34,771 [DEBUG] [pc=226] opcode=106 arg=29
+2025-09-10 23:39:34,771 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:39:34,771 [DEBUG]   push sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:39:34,772 [DEBUG] [pc=227] opcode=106 arg=31
+2025-09-10 23:39:34,772 [DEBUG]   pop -> sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:39:34,772 [DEBUG]   push 10
+2025-09-10 23:39:34,772 [DEBUG] [pc=228] opcode=131 arg=1
+2025-09-10 23:39:34,772 [DEBUG]   pop -> 10
+2025-09-10 23:39:34,772 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:39:34,772 [DEBUG]   push 10
+2025-09-10 23:39:34,772 [DEBUG] [pc=229] opcode=23 arg=None
+2025-09-10 23:39:34,773 [DEBUG]   pop -> 10
+2025-09-10 23:39:34,773 [DEBUG]   pop -> 3.
+2025-09-10 23:39:34,773 [DEBUG]   push 3.10
+2025-09-10 23:39:34,773 [DEBUG] [pc=230] opcode=90 arg=32
+2025-09-10 23:39:34,773 [DEBUG]   pop -> 3.10
+2025-09-10 23:39:34,773 [DEBUG] [pc=231] opcode=122 arg=6
+2025-09-10 23:39:34,773 [DEBUG] [pc=232] opcode=100 arg=23
+2025-09-10 23:39:34,773 [DEBUG]   push 0
+2025-09-10 23:39:34,774 [DEBUG] [pc=233] opcode=100 arg=25
+2025-09-10 23:39:34,774 [DEBUG]   push ('*',)
+2025-09-10 23:39:34,774 [DEBUG] [pc=234] opcode=108 arg=33
+2025-09-10 23:39:34,774 [DEBUG]   pop -> ('*',)
+2025-09-10 23:39:34,774 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,818 [DEBUG]   push <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-10 23:39:34,818 [DEBUG] [pc=235] opcode=84 arg=None
+2025-09-10 23:39:34,818 [DEBUG]   pop -> <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-10 23:39:34,818 [DEBUG] [pc=236] opcode=87 arg=None
+2025-09-10 23:39:34,818 [DEBUG] [pc=237] opcode=110 arg=29
+2025-09-10 23:39:34,819 [DEBUG] [pc=267] opcode=101 arg=36
+2025-09-10 23:39:34,819 [DEBUG]   push <class 'pystyle.System'>
+2025-09-10 23:39:34,819 [DEBUG] [pc=268] opcode=160 arg=37
+2025-09-10 23:39:34,819 [DEBUG]   pop -> <class 'pystyle.System'>
+2025-09-10 23:39:34,819 [DEBUG]   push (<class 'pystyle.System'>, 'Clear')
+2025-09-10 23:39:34,819 [DEBUG] [pc=269] opcode=161 arg=0
+2025-09-10 23:39:34,819 [DEBUG]   pop -> (<class 'pystyle.System'>, 'Clear')
+2025-09-10 23:39:34,843 [DEBUG]   push 0
+2025-09-10 23:39:34,843 [DEBUG] [pc=270] opcode=1 arg=None
+2025-09-10 23:39:34,843 [DEBUG]   pop -> 0
+2025-09-10 23:39:34,844 [DEBUG] [pc=271] opcode=105 arg=0
+2025-09-10 23:41:53,965 [DEBUG] [pc=0] opcode=101 arg=0
+2025-09-10 23:41:53,966 [DEBUG]   push <built-in function print>
+2025-09-10 23:41:53,966 [DEBUG] [pc=1] opcode=100 arg=0
+2025-09-10 23:41:53,966 [DEBUG]   push  
+2025-09-10 23:41:53,966 [DEBUG] [pc=2] opcode=101 arg=1
+2025-09-10 23:41:53,966 [DEBUG]   push <built-in function len>
+2025-09-10 23:41:53,966 [DEBUG] [pc=3] opcode=100 arg=1
+2025-09-10 23:41:53,966 [DEBUG]   push >> Running...
+2025-09-10 23:41:53,966 [DEBUG] [pc=4] opcode=131 arg=1
+2025-09-10 23:41:53,967 [DEBUG]   pop -> >> Running...
+2025-09-10 23:41:53,967 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:41:53,967 [DEBUG]   push 13
+2025-09-10 23:41:53,967 [DEBUG] [pc=5] opcode=20 arg=None
+2025-09-10 23:41:53,967 [DEBUG]   pop -> 13
+2025-09-10 23:41:53,967 [DEBUG]   pop ->  
+2025-09-10 23:41:53,967 [DEBUG]   push              
+2025-09-10 23:41:53,967 [DEBUG] [pc=6] opcode=100 arg=2
+2025-09-10 23:41:53,967 [DEBUG]   push 
+2025-09-10 23:41:53,967 [DEBUG] [pc=7] opcode=100 arg=3
+2025-09-10 23:41:53,968 [DEBUG]   push ('end',)
+2025-09-10 23:41:53,968 [DEBUG] [pc=8] opcode=141 arg=2
+2025-09-10 23:41:53,968 [DEBUG]   pop -> ('end',)
+2025-09-10 23:41:53,968 [DEBUG]   pop -> 
+2025-09-10 23:41:53,968 [DEBUG]   pop ->              
+2025-09-10 23:41:53,968 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:41:53,968 [DEBUG]   push None
+2025-09-10 23:41:53,968 [DEBUG] [pc=9] opcode=1 arg=None
+2025-09-10 23:41:53,969 [DEBUG]   pop -> None
+2025-09-10 23:41:53,969 [DEBUG] [pc=10] opcode=101 arg=2
+2025-09-10 23:41:53,969 [DEBUG]   push <class 'str'>
+2025-09-10 23:41:53,969 [DEBUG] [pc=11] opcode=101 arg=3
+2025-09-10 23:42:25,960 [DEBUG] [pc=0] opcode=101 arg=0
+2025-09-10 23:42:25,960 [DEBUG]   push <built-in function print>
+2025-09-10 23:42:25,960 [DEBUG] [pc=1] opcode=100 arg=0
+2025-09-10 23:42:25,960 [DEBUG]   push  
+2025-09-10 23:42:25,960 [DEBUG] [pc=2] opcode=101 arg=1
+2025-09-10 23:42:25,960 [DEBUG]   push <built-in function len>
+2025-09-10 23:42:25,960 [DEBUG] [pc=3] opcode=100 arg=1
+2025-09-10 23:42:25,961 [DEBUG]   push >> Running...
+2025-09-10 23:42:25,961 [DEBUG] [pc=4] opcode=131 arg=1
+2025-09-10 23:42:25,961 [DEBUG]   pop -> >> Running...
+2025-09-10 23:42:25,961 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:42:25,961 [DEBUG]   push 13
+2025-09-10 23:42:25,961 [DEBUG] [pc=5] opcode=20 arg=None
+2025-09-10 23:42:25,961 [DEBUG]   pop -> 13
+2025-09-10 23:42:25,961 [DEBUG]   pop ->  
+2025-09-10 23:42:25,961 [DEBUG]   push              
+2025-09-10 23:42:25,961 [DEBUG] [pc=6] opcode=100 arg=2
+2025-09-10 23:42:25,961 [DEBUG]   push 
+2025-09-10 23:42:25,961 [DEBUG] [pc=7] opcode=100 arg=3
+2025-09-10 23:42:25,962 [DEBUG]   push ('end',)
+2025-09-10 23:42:25,962 [DEBUG] [pc=8] opcode=141 arg=2
+2025-09-10 23:42:25,962 [DEBUG]   pop -> ('end',)
+2025-09-10 23:42:25,962 [DEBUG]   pop -> 
+2025-09-10 23:42:25,962 [DEBUG]   pop ->              
+2025-09-10 23:42:25,962 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:42:25,962 [DEBUG]   push None
+2025-09-10 23:42:25,963 [DEBUG] [pc=9] opcode=1 arg=None
+2025-09-10 23:42:25,963 [DEBUG]   pop -> None
+2025-09-10 23:42:25,963 [DEBUG] [pc=10] opcode=101 arg=2
+2025-09-10 23:42:25,963 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,963 [DEBUG] [pc=11] opcode=101 arg=3
+2025-09-10 23:42:25,963 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:42:25,963 [DEBUG] [pc=12] opcode=100 arg=4
+2025-09-10 23:42:25,963 [DEBUG]   push sys
+2025-09-10 23:42:25,963 [DEBUG] [pc=13] opcode=131 arg=1
+2025-09-10 23:42:25,963 [DEBUG]   pop -> sys
+2025-09-10 23:42:25,964 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:42:25,964 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:42:25,964 [DEBUG] [pc=14] opcode=106 arg=4
+2025-09-10 23:42:25,964 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:42:25,964 [DEBUG]   push <built-in function exit>
+2025-09-10 23:42:25,964 [DEBUG] [pc=15] opcode=131 arg=1
+2025-09-10 23:42:25,964 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:42:25,964 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,964 [DEBUG]   push <built-in function exit>
+2025-09-10 23:42:25,964 [DEBUG] [pc=16] opcode=100 arg=5
+2025-09-10 23:42:25,965 [DEBUG]   push <built-in function exit>
+2025-09-10 23:42:25,965 [DEBUG] [pc=17] opcode=107 arg=3
+2025-09-10 23:42:25,968 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:42:25,968 [DEBUG]   pop -> <built-in function exit>
+2025-09-10 23:42:25,969 [DEBUG]   push False
+2025-09-10 23:42:25,969 [DEBUG] [pc=18] opcode=114 arg=29
+2025-09-10 23:42:25,969 [DEBUG]   pop -> False
+2025-09-10 23:42:25,969 [DEBUG] [pc=29] opcode=101 arg=2
+2025-09-10 23:42:25,969 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,969 [DEBUG] [pc=30] opcode=101 arg=0
+2025-09-10 23:42:25,969 [DEBUG]   push <built-in function print>
+2025-09-10 23:42:25,969 [DEBUG] [pc=31] opcode=131 arg=1
+2025-09-10 23:42:25,969 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:42:25,969 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,970 [DEBUG]   push <built-in function print>
+2025-09-10 23:42:25,970 [DEBUG] [pc=32] opcode=100 arg=7
+2025-09-10 23:42:25,970 [DEBUG]   push <built-in function print>
+2025-09-10 23:42:25,970 [DEBUG] [pc=33] opcode=107 arg=3
+2025-09-10 23:42:25,970 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:42:25,970 [DEBUG]   pop -> <built-in function print>
+2025-09-10 23:42:25,970 [DEBUG]   push False
+2025-09-10 23:42:25,970 [DEBUG] [pc=34] opcode=114 arg=45
+2025-09-10 23:42:25,970 [DEBUG]   pop -> False
+2025-09-10 23:42:25,970 [DEBUG] [pc=45] opcode=101 arg=2
+2025-09-10 23:42:25,970 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,971 [DEBUG] [pc=46] opcode=101 arg=6
+2025-09-10 23:42:25,971 [DEBUG]   push <built-in function exec>
+2025-09-10 23:42:25,971 [DEBUG] [pc=47] opcode=131 arg=1
+2025-09-10 23:42:25,971 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:42:25,971 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,971 [DEBUG]   push <built-in function exec>
+2025-09-10 23:42:25,971 [DEBUG] [pc=48] opcode=100 arg=8
+2025-09-10 23:42:25,971 [DEBUG]   push <built-in function exec>
+2025-09-10 23:42:25,971 [DEBUG] [pc=49] opcode=107 arg=3
+2025-09-10 23:42:25,971 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:42:25,971 [DEBUG]   pop -> <built-in function exec>
+2025-09-10 23:42:25,972 [DEBUG]   push False
+2025-09-10 23:42:25,972 [DEBUG] [pc=50] opcode=114 arg=61
+2025-09-10 23:42:25,972 [DEBUG]   pop -> False
+2025-09-10 23:42:25,972 [DEBUG] [pc=61] opcode=101 arg=2
+2025-09-10 23:42:25,972 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,972 [DEBUG] [pc=62] opcode=101 arg=7
+2025-09-10 23:42:25,972 [DEBUG]   push <built-in function eval>
+2025-09-10 23:42:25,972 [DEBUG] [pc=63] opcode=131 arg=1
+2025-09-10 23:42:25,972 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:42:25,972 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,972 [DEBUG]   push <built-in function eval>
+2025-09-10 23:42:25,972 [DEBUG] [pc=64] opcode=100 arg=9
+2025-09-10 23:42:25,973 [DEBUG]   push <built-in function eval>
+2025-09-10 23:42:25,973 [DEBUG] [pc=65] opcode=107 arg=3
+2025-09-10 23:42:25,973 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:42:25,973 [DEBUG]   pop -> <built-in function eval>
+2025-09-10 23:42:25,973 [DEBUG]   push False
+2025-09-10 23:42:25,973 [DEBUG] [pc=66] opcode=114 arg=77
+2025-09-10 23:42:25,973 [DEBUG]   pop -> False
+2025-09-10 23:42:25,973 [DEBUG] [pc=77] opcode=101 arg=2
+2025-09-10 23:42:25,973 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,973 [DEBUG] [pc=78] opcode=101 arg=8
+2025-09-10 23:42:25,973 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:42:25,973 [DEBUG] [pc=79] opcode=131 arg=1
+2025-09-10 23:42:25,974 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:42:25,974 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,974 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:42:25,974 [DEBUG] [pc=80] opcode=100 arg=10
+2025-09-10 23:42:25,974 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:42:25,974 [DEBUG] [pc=81] opcode=107 arg=3
+2025-09-10 23:42:25,974 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:42:25,974 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:42:25,974 [DEBUG]   push False
+2025-09-10 23:42:25,974 [DEBUG] [pc=82] opcode=114 arg=93
+2025-09-10 23:42:25,974 [DEBUG]   pop -> False
+2025-09-10 23:42:25,975 [DEBUG] [pc=93] opcode=101 arg=2
+2025-09-10 23:42:25,975 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,975 [DEBUG] [pc=94] opcode=101 arg=9
+2025-09-10 23:42:25,975 [DEBUG]   push <built-in function input>
+2025-09-10 23:42:25,975 [DEBUG] [pc=95] opcode=131 arg=1
+2025-09-10 23:42:25,975 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:42:25,975 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,975 [DEBUG]   push <built-in function input>
+2025-09-10 23:42:25,975 [DEBUG] [pc=96] opcode=100 arg=11
+2025-09-10 23:42:25,975 [DEBUG]   push <built-in function input>
+2025-09-10 23:42:25,976 [DEBUG] [pc=97] opcode=107 arg=3
+2025-09-10 23:42:25,976 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:42:25,976 [DEBUG]   pop -> <built-in function input>
+2025-09-10 23:42:25,976 [DEBUG]   push False
+2025-09-10 23:42:25,976 [DEBUG] [pc=98] opcode=114 arg=109
+2025-09-10 23:42:25,976 [DEBUG]   pop -> False
+2025-09-10 23:42:25,976 [DEBUG] [pc=109] opcode=101 arg=2
+2025-09-10 23:42:25,976 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,976 [DEBUG] [pc=110] opcode=101 arg=1
+2025-09-10 23:42:25,976 [DEBUG]   push <built-in function len>
+2025-09-10 23:42:25,976 [DEBUG] [pc=111] opcode=131 arg=1
+2025-09-10 23:42:25,977 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:42:25,977 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,977 [DEBUG]   push <built-in function len>
+2025-09-10 23:42:25,977 [DEBUG] [pc=112] opcode=100 arg=12
+2025-09-10 23:42:25,977 [DEBUG]   push <built-in function len>
+2025-09-10 23:42:25,977 [DEBUG] [pc=113] opcode=107 arg=3
+2025-09-10 23:42:25,977 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:42:25,977 [DEBUG]   pop -> <built-in function len>
+2025-09-10 23:42:25,977 [DEBUG]   push False
+2025-09-10 23:42:25,977 [DEBUG] [pc=114] opcode=114 arg=125
+2025-09-10 23:42:25,978 [DEBUG]   pop -> False
+2025-09-10 23:42:25,978 [DEBUG] [pc=125] opcode=101 arg=2
+2025-09-10 23:42:25,978 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:25,978 [DEBUG] [pc=126] opcode=101 arg=3
+2025-09-10 23:42:25,978 [DEBUG]   push <built-in function __import__>
+2025-09-10 23:42:25,978 [DEBUG] [pc=127] opcode=100 arg=13
+2025-09-10 23:42:25,978 [DEBUG]   push marshal
+2025-09-10 23:42:25,978 [DEBUG] [pc=128] opcode=131 arg=1
+2025-09-10 23:42:25,978 [DEBUG]   pop -> marshal
+2025-09-10 23:42:25,978 [DEBUG]   pop -> <built-in function __import__>
+2025-09-10 23:42:25,978 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-10 23:42:25,979 [DEBUG] [pc=129] opcode=106 arg=10
+2025-09-10 23:42:25,979 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-10 23:42:25,979 [DEBUG]   push <built-in function loads>
+2025-09-10 23:42:25,979 [DEBUG] [pc=130] opcode=131 arg=1
+2025-09-10 23:42:25,979 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:42:25,979 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:25,979 [DEBUG]   push <built-in function loads>
+2025-09-10 23:42:25,979 [DEBUG] [pc=131] opcode=100 arg=14
+2025-09-10 23:42:25,979 [DEBUG]   push <built-in function loads>
+2025-09-10 23:42:25,979 [DEBUG] [pc=132] opcode=107 arg=3
+2025-09-10 23:42:25,979 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:42:25,980 [DEBUG]   pop -> <built-in function loads>
+2025-09-10 23:42:25,980 [DEBUG]   push False
+2025-09-10 23:42:25,980 [DEBUG] [pc=133] opcode=114 arg=144
+2025-09-10 23:42:25,980 [DEBUG]   pop -> False
+2025-09-10 23:42:25,980 [DEBUG] [pc=144] opcode=100 arg=15
+2025-09-10 23:42:25,980 [DEBUG]   push Shenron
+2025-09-10 23:42:25,980 [DEBUG] [pc=145] opcode=100 arg=16
+2025-09-10 23:42:25,980 [DEBUG]   push Nguyễn Xuân Trịnh
+2025-09-10 23:42:25,980 [DEBUG] [pc=146] opcode=103 arg=1
+2025-09-10 23:42:25,980 [DEBUG]   pop -> Nguyễn Xuân Trịnh
+2025-09-10 23:42:25,980 [DEBUG]   push ['Nguyễn Xuân Trịnh']
+2025-09-10 23:42:25,981 [DEBUG] [pc=147] opcode=100 arg=17
+2025-09-10 23:42:25,981 [DEBUG]   push S_VM
+2025-09-10 23:42:25,981 [DEBUG] [pc=148] opcode=100 arg=18
+2025-09-10 23:42:25,981 [DEBUG]   push Dragon Ball
+2025-09-10 23:42:25,981 [DEBUG] [pc=149] opcode=100 arg=19
+2025-09-10 23:42:25,981 [DEBUG]   push https://t.me/CalceIsMe
+2025-09-10 23:42:25,981 [DEBUG] [pc=150] opcode=100 arg=20
+2025-09-10 23:42:25,981 [DEBUG]   push https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-10 23:42:25,981 [DEBUG] [pc=151] opcode=100 arg=21
+2025-09-10 23:42:25,981 [DEBUG]   push ('Obfuscator', 'Obfuscator Owner', 'VM', 'Theme', 'Contact', 'Obfuscator Code Writing Process')
+2025-09-10 23:42:25,981 [DEBUG] [pc=152] opcode=156 arg=6
+2025-09-10 23:42:25,982 [DEBUG]   pop -> ('Obfuscator', 'Obfuscator Owner', 'VM', 'Theme', 'Contact', 'Obfuscator Code Writing Process')
+2025-09-10 23:42:25,982 [DEBUG]   pop -> https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-10 23:42:25,982 [DEBUG]   pop -> https://t.me/CalceIsMe
+2025-09-10 23:42:25,982 [DEBUG]   pop -> Dragon Ball
+2025-09-10 23:42:25,982 [DEBUG]   pop -> S_VM
+2025-09-10 23:42:25,982 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
+2025-09-10 23:42:25,982 [DEBUG]   pop -> Shenron
+2025-09-10 23:42:25,982 [DEBUG]   push {'Obfuscator': 'Shenron', 'Obfuscator Owner': 'Nguyễn Xuân Trịnh', 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-10 23:42:25,982 [DEBUG] [pc=153] opcode=90 arg=11
+2025-09-10 23:42:25,982 [DEBUG]   pop -> {'Obfuscator': 'Shenron', 'Obfuscator Owner': 'Nguyễn Xuân Trịnh', 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-10 23:42:25,982 [DEBUG] [pc=154] opcode=100 arg=22
+2025-09-10 23:42:25,983 [DEBUG]   push ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-10 23:42:25,983 [DEBUG] [pc=155] opcode=90 arg=12
+2025-09-10 23:42:25,983 [DEBUG]   pop -> ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-10 23:42:25,983 [DEBUG] [pc=156] opcode=100 arg=23
+2025-09-10 23:42:25,983 [DEBUG]   push 0
+2025-09-10 23:42:25,983 [DEBUG] [pc=157] opcode=100 arg=24
+2025-09-10 23:42:25,983 [DEBUG]   push None
+2025-09-10 23:42:25,983 [DEBUG] [pc=158] opcode=108 arg=13
+2025-09-10 23:42:25,983 [DEBUG]   pop -> None
+2025-09-10 23:42:25,984 [DEBUG]   pop -> 0
+2025-09-10 23:42:25,991 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:42:25,991 [DEBUG] [pc=159] opcode=90 arg=13
+2025-09-10 23:42:25,991 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:42:25,991 [DEBUG] [pc=160] opcode=100 arg=23
+2025-09-10 23:42:25,991 [DEBUG]   push 0
+2025-09-10 23:42:25,991 [DEBUG] [pc=161] opcode=100 arg=24
+2025-09-10 23:42:25,991 [DEBUG]   push None
+2025-09-10 23:42:25,991 [DEBUG] [pc=162] opcode=108 arg=14
+2025-09-10 23:42:25,991 [DEBUG]   pop -> None
+2025-09-10 23:42:25,991 [DEBUG]   pop -> 0
+2025-09-10 23:42:25,991 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-10 23:42:25,992 [DEBUG] [pc=163] opcode=90 arg=14
+2025-09-10 23:42:25,992 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-10 23:42:25,992 [DEBUG] [pc=164] opcode=100 arg=23
+2025-09-10 23:42:25,992 [DEBUG]   push 0
+2025-09-10 23:42:25,992 [DEBUG] [pc=165] opcode=100 arg=24
+2025-09-10 23:42:25,992 [DEBUG]   push None
+2025-09-10 23:42:25,992 [DEBUG] [pc=166] opcode=108 arg=15
+2025-09-10 23:42:25,992 [DEBUG]   pop -> None
+2025-09-10 23:42:25,992 [DEBUG]   pop -> 0
+2025-09-10 23:42:25,996 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\base64.py'>
+2025-09-10 23:42:25,996 [DEBUG] [pc=167] opcode=90 arg=15
+2025-09-10 23:42:25,996 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\base64.py'>
+2025-09-10 23:42:25,996 [DEBUG] [pc=168] opcode=100 arg=23
+2025-09-10 23:42:25,996 [DEBUG]   push 0
+2025-09-10 23:42:25,996 [DEBUG] [pc=169] opcode=100 arg=24
+2025-09-10 23:42:25,996 [DEBUG]   push None
+2025-09-10 23:42:25,996 [DEBUG] [pc=170] opcode=108 arg=16
+2025-09-10 23:42:25,996 [DEBUG]   pop -> None
+2025-09-10 23:42:25,996 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,002 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bz2.py'>
+2025-09-10 23:42:26,002 [DEBUG] [pc=171] opcode=90 arg=16
+2025-09-10 23:42:26,002 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bz2.py'>
+2025-09-10 23:42:26,003 [DEBUG] [pc=172] opcode=100 arg=23
+2025-09-10 23:42:26,003 [DEBUG]   push 0
+2025-09-10 23:42:26,003 [DEBUG] [pc=173] opcode=100 arg=24
+2025-09-10 23:42:26,003 [DEBUG]   push None
+2025-09-10 23:42:26,003 [DEBUG] [pc=174] opcode=108 arg=17
+2025-09-10 23:42:26,003 [DEBUG]   pop -> None
+2025-09-10 23:42:26,003 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,004 [DEBUG]   push <module 'zlib' (built-in)>
+2025-09-10 23:42:26,004 [DEBUG] [pc=175] opcode=90 arg=17
+2025-09-10 23:42:26,004 [DEBUG]   pop -> <module 'zlib' (built-in)>
+2025-09-10 23:42:26,004 [DEBUG] [pc=176] opcode=100 arg=23
+2025-09-10 23:42:26,004 [DEBUG]   push 0
+2025-09-10 23:42:26,004 [DEBUG] [pc=177] opcode=100 arg=24
+2025-09-10 23:42:26,004 [DEBUG]   push None
+2025-09-10 23:42:26,004 [DEBUG] [pc=178] opcode=108 arg=18
+2025-09-10 23:42:26,004 [DEBUG]   pop -> None
+2025-09-10 23:42:26,005 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,008 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py'>
+2025-09-10 23:42:26,008 [DEBUG] [pc=179] opcode=90 arg=18
+2025-09-10 23:42:26,008 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py'>
+2025-09-10 23:42:26,008 [DEBUG] [pc=180] opcode=100 arg=23
+2025-09-10 23:42:26,008 [DEBUG]   push 0
+2025-09-10 23:42:26,008 [DEBUG] [pc=181] opcode=100 arg=24
+2025-09-10 23:42:26,008 [DEBUG]   push None
+2025-09-10 23:42:26,008 [DEBUG] [pc=182] opcode=108 arg=19
+2025-09-10 23:42:26,009 [DEBUG]   pop -> None
+2025-09-10 23:42:26,009 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,009 [DEBUG]   push <module 'time' (built-in)>
+2025-09-10 23:42:26,009 [DEBUG] [pc=183] opcode=90 arg=19
+2025-09-10 23:42:26,009 [DEBUG]   pop -> <module 'time' (built-in)>
+2025-09-10 23:42:26,009 [DEBUG] [pc=184] opcode=100 arg=23
+2025-09-10 23:42:26,009 [DEBUG]   push 0
+2025-09-10 23:42:26,009 [DEBUG] [pc=185] opcode=100 arg=24
+2025-09-10 23:42:26,009 [DEBUG]   push None
+2025-09-10 23:42:26,009 [DEBUG] [pc=186] opcode=108 arg=20
+2025-09-10 23:42:26,009 [DEBUG]   pop -> None
+2025-09-10 23:42:26,010 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,010 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:42:26,010 [DEBUG] [pc=187] opcode=90 arg=20
+2025-09-10 23:42:26,010 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:42:26,010 [DEBUG] [pc=188] opcode=100 arg=23
+2025-09-10 23:42:26,010 [DEBUG]   push 0
+2025-09-10 23:42:26,010 [DEBUG] [pc=189] opcode=100 arg=25
+2025-09-10 23:42:26,010 [DEBUG]   push ('*',)
+2025-09-10 23:42:26,010 [DEBUG] [pc=190] opcode=108 arg=13
+2025-09-10 23:42:26,010 [DEBUG]   pop -> ('*',)
+2025-09-10 23:42:26,010 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,010 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:42:26,011 [DEBUG] [pc=191] opcode=84 arg=None
+2025-09-10 23:42:26,011 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py'>
+2025-09-10 23:42:26,011 [DEBUG] [pc=192] opcode=100 arg=23
+2025-09-10 23:42:26,011 [DEBUG]   push 0
+2025-09-10 23:42:26,011 [DEBUG] [pc=193] opcode=100 arg=26
+2025-09-10 23:42:26,011 [DEBUG]   push ('minify_source',)
+2025-09-10 23:42:26,011 [DEBUG] [pc=194] opcode=108 arg=21
+2025-09-10 23:42:26,011 [DEBUG]   pop -> ('minify_source',)
+2025-09-10 23:42:26,011 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,279 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-10 23:42:26,279 [DEBUG] [pc=195] opcode=109 arg=22
+2025-09-10 23:42:26,279 [DEBUG]   push <function minify_source at 0x00000283763323B0>
+2025-09-10 23:42:26,279 [DEBUG] [pc=196] opcode=90 arg=22
+2025-09-10 23:42:26,280 [DEBUG]   pop -> <function minify_source at 0x00000283763323B0>
+2025-09-10 23:42:26,280 [DEBUG] [pc=197] opcode=1 arg=None
+2025-09-10 23:42:26,280 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-10 23:42:26,280 [DEBUG] [pc=198] opcode=100 arg=23
+2025-09-10 23:42:26,280 [DEBUG]   push 0
+2025-09-10 23:42:26,280 [DEBUG] [pc=199] opcode=100 arg=27
+2025-09-10 23:42:26,280 [DEBUG]   push ('var_con_cak',)
+2025-09-10 23:42:26,280 [DEBUG] [pc=200] opcode=108 arg=23
+2025-09-10 23:42:26,280 [DEBUG]   pop -> ('var_con_cak',)
+2025-09-10 23:42:26,281 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,282 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-10 23:42:26,282 [DEBUG] [pc=201] opcode=109 arg=24
+2025-09-10 23:42:26,282 [DEBUG]   push <function var_con_cak at 0x0000028378924A60>
+2025-09-10 23:42:26,282 [DEBUG] [pc=202] opcode=90 arg=24
+2025-09-10 23:42:26,282 [DEBUG]   pop -> <function var_con_cak at 0x0000028378924A60>
+2025-09-10 23:42:26,283 [DEBUG] [pc=203] opcode=1 arg=None
+2025-09-10 23:42:26,283 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-10 23:42:26,283 [DEBUG] [pc=204] opcode=100 arg=23
+2025-09-10 23:42:26,283 [DEBUG]   push 0
+2025-09-10 23:42:26,283 [DEBUG] [pc=205] opcode=100 arg=28
+2025-09-10 23:42:26,283 [DEBUG]   push ('main', 'remove_comments')
+2025-09-10 23:42:26,283 [DEBUG] [pc=206] opcode=108 arg=25
+2025-09-10 23:42:26,283 [DEBUG]   pop -> ('main', 'remove_comments')
+2025-09-10 23:42:26,283 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,290 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-10 23:42:26,290 [DEBUG] [pc=207] opcode=109 arg=26
+2025-09-10 23:42:26,291 [DEBUG]   push <function main at 0x0000028378925CF0>
+2025-09-10 23:42:26,291 [DEBUG] [pc=208] opcode=90 arg=26
+2025-09-10 23:42:26,291 [DEBUG]   pop -> <function main at 0x0000028378925CF0>
+2025-09-10 23:42:26,291 [DEBUG] [pc=209] opcode=109 arg=27
+2025-09-10 23:42:26,291 [DEBUG]   push <function remove_comments at 0x0000028378925120>
+2025-09-10 23:42:26,291 [DEBUG] [pc=210] opcode=90 arg=27
+2025-09-10 23:42:26,291 [DEBUG]   pop -> <function remove_comments at 0x0000028378925120>
+2025-09-10 23:42:26,291 [DEBUG] [pc=211] opcode=1 arg=None
+2025-09-10 23:42:26,291 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-10 23:42:26,291 [DEBUG] [pc=212] opcode=101 arg=20
+2025-09-10 23:42:26,291 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:42:26,292 [DEBUG] [pc=213] opcode=160 arg=28
+2025-09-10 23:42:26,292 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:42:26,292 [DEBUG]   push (<module 'sys' (built-in)>, 'setrecursionlimit')
+2025-09-10 23:42:26,292 [DEBUG] [pc=214] opcode=100 arg=29
+2025-09-10 23:42:26,292 [DEBUG]   push 99999999
+2025-09-10 23:42:26,292 [DEBUG] [pc=215] opcode=161 arg=1
+2025-09-10 23:42:26,292 [DEBUG]   pop -> 99999999
+2025-09-10 23:42:26,292 [DEBUG]   pop -> (<module 'sys' (built-in)>, 'setrecursionlimit')
+2025-09-10 23:42:26,292 [DEBUG]   push None
+2025-09-10 23:42:26,292 [DEBUG] [pc=216] opcode=1 arg=None
+2025-09-10 23:42:26,292 [DEBUG]   pop -> None
+2025-09-10 23:42:26,293 [DEBUG] [pc=217] opcode=101 arg=2
+2025-09-10 23:42:26,293 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:26,293 [DEBUG] [pc=218] opcode=101 arg=20
+2025-09-10 23:42:26,293 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:42:26,293 [DEBUG] [pc=219] opcode=106 arg=29
+2025-09-10 23:42:26,293 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:42:26,293 [DEBUG]   push sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:42:26,293 [DEBUG] [pc=220] opcode=106 arg=30
+2025-09-10 23:42:26,293 [DEBUG]   pop -> sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:42:26,293 [DEBUG]   push 3
+2025-09-10 23:42:26,293 [DEBUG] [pc=221] opcode=131 arg=1
+2025-09-10 23:42:26,294 [DEBUG]   pop -> 3
+2025-09-10 23:42:26,294 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:26,294 [DEBUG]   push 3
+2025-09-10 23:42:26,294 [DEBUG] [pc=222] opcode=100 arg=30
+2025-09-10 23:42:26,294 [DEBUG]   push .
+2025-09-10 23:42:26,294 [DEBUG] [pc=223] opcode=23 arg=None
+2025-09-10 23:42:26,294 [DEBUG]   pop -> .
+2025-09-10 23:42:26,294 [DEBUG]   pop -> 3
+2025-09-10 23:42:26,294 [DEBUG]   push 3.
+2025-09-10 23:42:26,294 [DEBUG] [pc=224] opcode=101 arg=2
+2025-09-10 23:42:26,294 [DEBUG]   push <class 'str'>
+2025-09-10 23:42:26,294 [DEBUG] [pc=225] opcode=101 arg=20
+2025-09-10 23:42:26,295 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-10 23:42:26,295 [DEBUG] [pc=226] opcode=106 arg=29
+2025-09-10 23:42:26,295 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-10 23:42:26,295 [DEBUG]   push sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:42:26,295 [DEBUG] [pc=227] opcode=106 arg=31
+2025-09-10 23:42:26,295 [DEBUG]   pop -> sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+2025-09-10 23:42:26,295 [DEBUG]   push 10
+2025-09-10 23:42:26,295 [DEBUG] [pc=228] opcode=131 arg=1
+2025-09-10 23:42:26,295 [DEBUG]   pop -> 10
+2025-09-10 23:42:26,295 [DEBUG]   pop -> <class 'str'>
+2025-09-10 23:42:26,295 [DEBUG]   push 10
+2025-09-10 23:42:26,295 [DEBUG] [pc=229] opcode=23 arg=None
+2025-09-10 23:42:26,296 [DEBUG]   pop -> 10
+2025-09-10 23:42:26,296 [DEBUG]   pop -> 3.
+2025-09-10 23:42:26,296 [DEBUG]   push 3.10
+2025-09-10 23:42:26,296 [DEBUG] [pc=230] opcode=90 arg=32
+2025-09-10 23:42:26,296 [DEBUG]   pop -> 3.10
+2025-09-10 23:42:26,296 [DEBUG] [pc=231] opcode=122 arg=6
+2025-09-10 23:42:26,296 [DEBUG] [pc=232] opcode=100 arg=23
+2025-09-10 23:42:26,296 [DEBUG]   push 0
+2025-09-10 23:42:26,296 [DEBUG] [pc=233] opcode=100 arg=25
+2025-09-10 23:42:26,296 [DEBUG]   push ('*',)
+2025-09-10 23:42:26,296 [DEBUG] [pc=234] opcode=108 arg=33
+2025-09-10 23:42:26,296 [DEBUG]   pop -> ('*',)
+2025-09-10 23:42:26,297 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,327 [DEBUG]   push <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-10 23:42:26,327 [DEBUG] [pc=235] opcode=84 arg=None
+2025-09-10 23:42:26,328 [DEBUG]   pop -> <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-10 23:42:26,328 [DEBUG] [pc=236] opcode=87 arg=None
+2025-09-10 23:42:26,328 [DEBUG] [pc=237] opcode=110 arg=29
+2025-09-10 23:42:26,328 [DEBUG] [pc=267] opcode=101 arg=36
+2025-09-10 23:42:26,328 [DEBUG]   push <class 'pystyle.System'>
+2025-09-10 23:42:26,328 [DEBUG] [pc=268] opcode=160 arg=37
+2025-09-10 23:42:26,328 [DEBUG]   pop -> <class 'pystyle.System'>
+2025-09-10 23:42:26,328 [DEBUG]   push (<class 'pystyle.System'>, 'Clear')
+2025-09-10 23:42:26,328 [DEBUG] [pc=269] opcode=161 arg=0
+2025-09-10 23:42:26,328 [DEBUG]   pop -> (<class 'pystyle.System'>, 'Clear')
+2025-09-10 23:42:26,351 [DEBUG]   push 0
+2025-09-10 23:42:26,352 [DEBUG] [pc=270] opcode=1 arg=None
+2025-09-10 23:42:26,352 [DEBUG]   pop -> 0
+2025-09-10 23:42:26,352 [DEBUG] [pc=271] opcode=105 arg=0

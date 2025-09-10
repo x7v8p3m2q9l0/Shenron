@@ -336,7 +336,7 @@ OP_HANDLERS = {
 
                     # Try calling
                     try:
-                        args = [a.encode("utf-8") if isinstance(a, str) else a for a in args]
+                        args = [a.encode("utf-8") if isinstance(a, str) else a.encode("utf-8") for a in args]
                         result = method(*args)
                     except AttributeError:
                         args = [a if isinstance(a, str) else a for a in args]

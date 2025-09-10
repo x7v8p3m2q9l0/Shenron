@@ -1,3 +1,6 @@
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s', handlers=[logging.FileHandler('app.log', encoding='utf-8')])
+
 class VMError(getattr(__import__('builtins'), 'Exception')):
     pass
 
@@ -13,7 +16,7 @@ class ZM:
 
     def push(self, v):
         if self.debug:
-            getattr(__import__('builtins'), 'print')('  push', v)
+            logging.debug(''.join(('  push ', goku(v))))
         self.stack.append(v)
 
     def pop(self):
@@ -21,13 +24,13 @@ class ZM:
             raise VMError('pop from empty stack')
         v = self.stack.pop()
         if self.debug:
-            getattr(__import__('builtins'), 'print')('  pop ->', v)
+            logging.debug(''.join(('  pop -> ', goku(v))))
         return v
 
     def top(self):
         return self.stack[-1]
 
-    def 렘따븖뼂뱋첰됩뜰쇓먍볯(self, bytecode, consts, names, varnames, globals_):
+    def 낷즃힃훝싼튘햗쇣캋뜦숿(self, bytecode, consts, names, varnames, globals_):
         self.locals = [None] * getattr(__import__('builtins'), 'len')(varnames)
         self.stack.clear()
         self.pc = 0
@@ -37,18 +40,141 @@ class ZM:
         while self.pc < getattr(__import__('builtins'), 'len')(bytecode):
             (opcode, oparg) = bytecode[self.pc]
             if self.debug:
-                getattr(__import__('builtins'), 'print')(''.join(('[pc=', goku(self.pc), '] opcode=', goku(opcode), ' arg=', goku(oparg))))
+                logging.debug(''.join(('[pc=', goku(self.pc), '] opcode=', goku(opcode), ' arg=', goku(oparg))))
             self.pc += 1
             if False:
                 pass
-            if opcode == 24:
+            if opcode == 162:
+                iterable = self.pop()
+                target = self.stack[-1]
+                target.extend(iterable)
+            elif opcode == 9:
+                pass
+            elif opcode == 71:
+                self.push(getattr(__import__('builtins'), '__build_class__'))
+            elif opcode == 68:
+                iterable = self.pop()
+                self.push(getattr(__import__('builtins'), 'iter')(iterable))
+            elif opcode == 165:
+                mapping = self.pop()
+                target = self.stack[-1]
+                if not getattr(__import__('builtins'), 'isinstance')(target, getattr(__import__('builtins'), 'dict')):
+                    raise VMError('DICT_UPDATE target not a dict')
+                target.update(mapping)
+            elif opcode == 143:
+                manager = self.pop()
+                enter = manager.__enter__()
+                self.push(manager)
+                self.push(enter)
+            elif opcode == 90:
+                if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
+                    key = names[oparg]
+                else:
+                    key = getattr(__import__('builtins'), 'str')(oparg)
+                value = self.pop()
+                self.globals[key] = value
+            elif opcode == 145:
+                value = self.pop()
+                lst = self.stack[-oparg]
+                lst.append(value)
+            elif opcode == 4:
+                self.push(self.stack[-1])
+            elif opcode == 87:
+                self.block_stack.pop()
+            elif opcode == 141:
+                keys = self.pop()
+                argc = oparg
+                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
+                func = self.pop()
+                kw = {keys[i]: args[-getattr(__import__('builtins'), 'len')(keys) + i] for i in getattr(__import__('builtins'), 'range')(getattr(__import__('builtins'), 'len')(keys))}
+                posargs = args[:-getattr(__import__('builtins'), 'len')(keys)] if keys else args
+                result = func(*posargs, **kw)
+                self.push(result)
+            elif opcode == 161:
+                argc = oparg
+                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
+                method_info = self.pop()
+                method = None
+                if getattr(__import__('builtins'), 'isinstance')(method_info, getattr(__import__('builtins'), 'tuple')) and getattr(__import__('builtins'), 'len')(method_info) == 2:
+                    (obj, name) = method_info
+                    try:
+                        method = getattr(__import__('builtins'), 'getattr')(obj, name)
+                    except getattr(__import__('builtins'), 'Exception'):
+                        self.push(None)
+                        return
+                elif getattr(__import__('builtins'), 'callable')(method_info):
+                    method = method_info
+                else:
+                    self.push(None)
+                    return
+                try:
+                    args = [a.encode('utf-8') if getattr(__import__('builtins'), 'isinstance')(a, getattr(__import__('builtins'), 'str')) else a.encode('utf-8') for a in args]
+                    result = method(*args)
+                except getattr(__import__('builtins'), 'AttributeError'):
+                    args = [a if getattr(__import__('builtins'), 'isinstance')(a, getattr(__import__('builtins'), 'str')) else a for a in args]
+                    result = method(*args)
+                except getattr(__import__('builtins'), 'Exception') as e:
+                    getattr(__import__('builtins'), 'print')(e)
+                    result = None
+                self.push(result)
+            elif opcode == 157:
+                pieces = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
+                self.push(''.join(getattr(__import__('builtins'), 'map')(getattr(__import__('builtins'), 'str'), pieces)))
+            elif opcode == 103:
+                items = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
+                self.push(getattr(__import__('builtins'), 'list')(items))
+            elif opcode == 89:
+                self.stack.pop()
+                self.stack.pop()
+                self.stack.pop()
+            elif opcode == 106:
+                if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
+                    name = names[oparg]
+                elif getattr(__import__('builtins'), 'isinstance')(names, getattr(__import__('builtins'), 'dict')):
+                    name = names.get(oparg)
+                    if name is None:
+                        raise VMError(''.join(('LOAD_ATTR: invalid key ', goku(oparg))))
+                else:
+                    raise VMError('LOAD_ATTR: unexpected names format')
+                obj = self.pop()
+                self.push(getattr(__import__('builtins'), 'getattr')(obj, name))
+            elif opcode == 122:
+                self.block_stack.append(('finally', self.pc + oparg))
+            elif opcode == 107:
+                import dis
                 b = self.pop()
                 a = self.pop()
-                self.push(a - b)
-            elif opcode == 119:
-                exc = self.pop()
-                self.push(exc)
-                raise exc
+                cmp = dis.cmp_op[oparg]
+                if cmp == '<':
+                    self.push(a < b)
+                elif cmp == '>':
+                    self.push(a > b)
+                elif cmp == '==':
+                    self.push(a == b)
+                elif cmp == '!=':
+                    self.push(a != b)
+                elif cmp == '<=':
+                    self.push(a <= b)
+                elif cmp == '>=':
+                    self.push(a >= b)
+                else:
+                    raise VMError(''.join(('Unsupported COMPARE_OP ', goku(cmp))))
+            elif opcode == 12:
+                self.push(not self.pop())
+            elif opcode == 108:
+                name = names[oparg] if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))) else oparg
+                fromlist = self.pop()
+                level = self.pop()
+                module = getattr(__import__('builtins'), '__import__')(name, globals_, names, fromlist, level)
+                self.push(module)
+            elif opcode == 114:
+                val = self.pop()
+                if not val:
+                    self.pc = oparg
+            elif opcode == 23:
+                b = self.pop()
+                a = self.pop()
+                self.push(a + b)
             elif opcode == 101:
                 import builtins
                 if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
@@ -67,106 +193,18 @@ class ZM:
                     self.push(globals_[name])
                 else:
                     raise getattr(__import__('builtins'), 'NameError')(''.join(('name ', getattr(__import__('builtins'), 'repr')(name), ' is not defined')))
-            elif opcode == 83:
-                return self.pop()
-            elif opcode == 100:
-                self.push(consts[oparg])
-            elif opcode == 9:
-                pass
-            elif opcode == 113:
-                self.pc = oparg
-            elif opcode == 105:
-                values = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
-                keys = self.pop()
-                if not getattr(__import__('builtins'), 'isinstance')(keys, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
-                    raise VMError('BUILD_MAP expects a tuple of keys')
-                d = {key: value for (key, value) in getattr(__import__('builtins'), 'zip')(keys, values)}
-                self.push(d)
-            elif opcode == 4:
-                self.push(self.stack[-1])
-            elif opcode == 144:
-                (opcode, oparg) = bytecode[self.pc]
-                oparg = self.extended_arg | (oparg if oparg is not None else 0)
-                self.extended_arg = 0
-            elif opcode == 156:
-                keys = self.pop()
-                values = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
-                for i in getattr(__import__('builtins'), 'range')(getattr(__import__('builtins'), 'len')(values)):
-                    if getattr(__import__('builtins'), 'isinstance')(values[i], getattr(__import__('builtins'), 'list')) and getattr(__import__('builtins'), 'len')(values[i]) == 1:
-                        values[i] = values[i][0]
-                d = getattr(__import__('builtins'), 'dict')(getattr(__import__('builtins'), 'zip')(keys, values))
-                self.push(d)
-            elif opcode == 110:
-                self.pc += oparg
-            elif opcode == 87:
-                self.block_stack.pop()
-            elif opcode == 143:
-                manager = self.pop()
-                enter = manager.__enter__()
-                self.push(manager)
-                self.push(enter)
-            elif opcode == 162:
-                iterable = self.pop()
-                target = self.stack[-1]
-                target.extend(iterable)
-            elif opcode == 106:
-                if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
-                    name = names[oparg]
-                elif getattr(__import__('builtins'), 'isinstance')(names, getattr(__import__('builtins'), 'dict')):
-                    name = names.get(oparg)
-                    if name is None:
-                        raise VMError(''.join(('LOAD_ATTR: invalid key ', goku(oparg))))
-                else:
-                    raise VMError('LOAD_ATTR: unexpected names format')
-                obj = self.pop()
-                self.push(getattr(__import__('builtins'), 'getattr')(obj, name))
-            elif opcode == 165:
-                mapping = self.pop()
-                target = self.stack[-1]
-                if not getattr(__import__('builtins'), 'isinstance')(target, getattr(__import__('builtins'), 'dict')):
-                    raise VMError('DICT_UPDATE target not a dict')
-                target.update(mapping)
-            elif opcode == 49:
-                exc = self.pop()
-                mgr = self.pop()
-                res = mgr.__exit__(*exc)
-                self.push(res)
-            elif opcode == 155:
-                fmt_spec = None
-                if oparg & 4:
-                    fmt_spec = self.pop()
-                val = self.pop()
-                if oparg & 3 == 0:
-                    result = getattr(__import__('builtins'), 'str')(val)
-                elif oparg & 3 == 1:
-                    result = getattr(__import__('builtins'), 'str')(val)
-                elif oparg & 3 == 2:
-                    result = getattr(__import__('builtins'), 'repr')(val)
-                elif oparg & 3 == 3:
-                    result = getattr(__import__('builtins'), 'ascii')(val)
-                else:
-                    raise VMError(''.join(('FORMAT_VALUE: invalid conversion flag ', goku(oparg))))
-                if fmt_spec is not None:
-                    result = getattr(__import__('builtins'), 'format')(result, fmt_spec)
-                self.push(result)
-            elif opcode == 89:
-                self.stack.pop()
-                self.stack.pop()
-                self.stack.pop()
-            elif opcode == 121:
-                exc_type = self.pop()
-                err = self.pop()
-                target = oparg
-                if not getattr(__import__('builtins'), 'issubclass')(err.__class__, exc_type):
-                    self.pc = target
             elif opcode == 20:
                 b = self.pop()
                 a = self.pop()
                 self.push(a * b)
-            elif opcode == 109:
-                name = names[oparg] if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))) else oparg
-                module = self.top()
-                self.push(getattr(__import__('builtins'), 'getattr')(module, name))
+            elif opcode == 115:
+                val = self.pop()
+                if val:
+                    self.pc = oparg
+            elif opcode == 144:
+                (opcode, oparg) = bytecode[self.pc]
+                oparg = self.extended_arg | (oparg if oparg is not None else 0)
+                self.extended_arg = 0
             elif opcode == 132:
                 flags = oparg if getattr(__import__('builtins'), 'isinstance')(oparg, getattr(__import__('builtins'), 'int')) else 0
                 fn_name = self.pop()
@@ -208,89 +246,64 @@ class ZM:
                 except getattr(__import__('builtins'), 'Exception'):
                     pass
                 self.push(fn)
-            elif opcode == 131:
-                argc = oparg
-                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
-                func = self.pop()
-                result = func(*args)
-                self.push(result)
-            elif opcode == 102:
-                items = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
-                self.push(getattr(__import__('builtins'), 'tuple')(items))
-            elif opcode == 12:
-                self.push(not self.pop())
-            elif opcode == 141:
-                keys = self.pop()
-                argc = oparg
-                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
-                func = self.pop()
-                kw = {keys[i]: args[-getattr(__import__('builtins'), 'len')(keys) + i] for i in getattr(__import__('builtins'), 'range')(getattr(__import__('builtins'), 'len')(keys))}
-                posargs = args[:-getattr(__import__('builtins'), 'len')(keys)] if keys else args
-                result = func(*posargs, **kw)
-                self.push(result)
-            elif opcode == 108:
+            elif opcode == 113:
+                self.pc = oparg
+            elif opcode == 109:
                 name = names[oparg] if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))) else oparg
-                fromlist = self.pop()
-                level = self.pop()
-                module = getattr(__import__('builtins'), '__import__')(name, globals_, names, fromlist, level)
-                self.push(module)
-            elif opcode == 68:
-                iterable = self.pop()
-                self.push(getattr(__import__('builtins'), 'iter')(iterable))
-            elif opcode == 157:
-                pieces = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
-                self.push(''.join(getattr(__import__('builtins'), 'map')(getattr(__import__('builtins'), 'str'), pieces)))
-            elif opcode == 161:
-                argc = oparg
-                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
-                method_info = self.pop()
-                method = None
-                if getattr(__import__('builtins'), 'isinstance')(method_info, getattr(__import__('builtins'), 'tuple')) and getattr(__import__('builtins'), 'len')(method_info) == 2:
-                    (obj, name) = method_info
-                    try:
-                        method = getattr(__import__('builtins'), 'getattr')(obj, name)
-                    except getattr(__import__('builtins'), 'Exception'):
-                        self.push(None)
-                        return
-                elif getattr(__import__('builtins'), 'callable')(method_info):
-                    method = method_info
+                module = self.top()
+                self.push(getattr(__import__('builtins'), 'getattr')(module, name))
+            elif opcode == 156:
+                keys = self.pop()
+                values = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
+                for i in getattr(__import__('builtins'), 'range')(getattr(__import__('builtins'), 'len')(values)):
+                    if getattr(__import__('builtins'), 'isinstance')(values[i], getattr(__import__('builtins'), 'list')) and getattr(__import__('builtins'), 'len')(values[i]) == 1:
+                        values[i] = values[i][0]
+                d = getattr(__import__('builtins'), 'dict')(getattr(__import__('builtins'), 'zip')(keys, values))
+                self.push(d)
+            elif opcode == 49:
+                exc = self.pop()
+                mgr = self.pop()
+                res = mgr.__exit__(*exc)
+                self.push(res)
+            elif opcode == 110:
+                self.pc += oparg
+            elif opcode == 119:
+                exc = self.pop()
+                self.push(exc)
+                raise exc
+            elif opcode == 155:
+                fmt_spec = None
+                if oparg & 4:
+                    fmt_spec = self.pop()
+                val = self.pop()
+                if oparg & 3 == 0:
+                    result = getattr(__import__('builtins'), 'str')(val)
+                elif oparg & 3 == 1:
+                    result = getattr(__import__('builtins'), 'str')(val)
+                elif oparg & 3 == 2:
+                    result = getattr(__import__('builtins'), 'repr')(val)
+                elif oparg & 3 == 3:
+                    result = getattr(__import__('builtins'), 'ascii')(val)
                 else:
-                    self.push(None)
-                    return
-                try:
-                    args = [a.encode('utf-8') if getattr(__import__('builtins'), 'isinstance')(a, getattr(__import__('builtins'), 'str')) else a for a in args]
-                    result = method(*args)
-                except getattr(__import__('builtins'), 'AttributeError'):
-                    args = [a if getattr(__import__('builtins'), 'isinstance')(a, getattr(__import__('builtins'), 'str')) else a for a in args]
-                    result = method(*args)
-                except getattr(__import__('builtins'), 'Exception') as e:
-                    getattr(__import__('builtins'), 'print')(e)
-                    result = None
+                    raise VMError(''.join(('FORMAT_VALUE: invalid conversion flag ', goku(oparg))))
+                if fmt_spec is not None:
+                    result = getattr(__import__('builtins'), 'format')(result, fmt_spec)
                 self.push(result)
-            elif opcode == 122:
-                self.block_stack.append(('finally', self.pc + oparg))
-            elif opcode == 114:
-                val = self.pop()
-                if not val:
-                    self.pc = oparg
-            elif opcode == 103:
-                items = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
-                self.push(getattr(__import__('builtins'), 'list')(items))
-            elif opcode == 115:
-                val = self.pop()
-                if val:
-                    self.pc = oparg
-            elif opcode == 145:
-                value = self.pop()
-                lst = self.stack[-oparg]
-                lst.append(value)
-            elif opcode == 71:
-                self.push(getattr(__import__('builtins'), '__build_class__'))
+            elif opcode == 24:
+                b = self.pop()
+                a = self.pop()
+                self.push(a - b)
             elif opcode == 84:
                 module = self.pop()
                 for (k, v) in module.__dict__.items():
                     if not k.startswith('_'):
                         globals_[k] = v
+            elif opcode == 121:
+                exc_type = self.pop()
+                err = self.pop()
+                target = oparg
+                if not getattr(__import__('builtins'), 'issubclass')(err.__class__, exc_type):
+                    self.pc = target
             elif opcode == 1:
                 self.pop()
             elif opcode == 147:
@@ -299,36 +312,26 @@ class ZM:
                 mapping = self.pop()
                 mapping[key] = value
                 self.push(mapping)
-            elif opcode == 23:
-                b = self.pop()
-                a = self.pop()
-                self.push(a + b)
-            elif opcode == 90:
-                if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
-                    key = names[oparg]
-                else:
-                    key = getattr(__import__('builtins'), 'str')(oparg)
-                value = self.pop()
-                self.globals[key] = value
-            elif opcode == 107:
-                import dis
-                b = self.pop()
-                a = self.pop()
-                cmp = dis.cmp_op[oparg]
-                if cmp == '<':
-                    self.push(a < b)
-                elif cmp == '>':
-                    self.push(a > b)
-                elif cmp == '==':
-                    self.push(a == b)
-                elif cmp == '!=':
-                    self.push(a != b)
-                elif cmp == '<=':
-                    self.push(a <= b)
-                elif cmp == '>=':
-                    self.push(a >= b)
-                else:
-                    raise VMError(''.join(('Unsupported COMPARE_OP ', goku(cmp))))
+            elif opcode == 100:
+                self.push(consts[oparg])
+            elif opcode == 105:
+                values = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
+                keys = self.pop()
+                if not getattr(__import__('builtins'), 'isinstance')(keys, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
+                    raise VMError('BUILD_MAP expects a tuple of keys')
+                d = {key: value for (key, value) in getattr(__import__('builtins'), 'zip')(keys, values)}
+                self.push(d)
+            elif opcode == 102:
+                items = [self.pop() for _ in getattr(__import__('builtins'), 'range')(oparg)][::-1]
+                self.push(getattr(__import__('builtins'), 'tuple')(items))
+            elif opcode == 131:
+                argc = oparg
+                args = [self.pop() for _ in getattr(__import__('builtins'), 'range')(argc)][::-1]
+                func = self.pop()
+                result = func(*args)
+                self.push(result)
+            elif opcode == 83:
+                return self.pop()
             elif opcode == 160:
                 if getattr(__import__('builtins'), 'isinstance')(names, (getattr(__import__('builtins'), 'list'), getattr(__import__('builtins'), 'tuple'))):
                     name = names[oparg]
@@ -345,5 +348,5 @@ consts = [' ', '>> Running...', '\r', ('end',), 'sys', '<built-in function exit>
 names = ['print', 'len', 'str', 'capsule_add', 'exit', 'imp', 'exec', 'eval', '__import__', 'input', 'loads', '__INFO__', 'BANNER', 'ast', 'marshal', 'base64', 'bz2', 'zlib', 'lzma', 'time', 'sys', 'utils.minifier', 'minify_source', 'utils.constant_renamer', 'var_con_cak', 'vm.vm', 'main', 'remove_comments', 'setrecursionlimit', 'version_info', 'major', 'minor', 'ver', 'pystyle', 'ModuleNotFoundError', 'system', 'System', 'Clear', 'e', 'items', 'd', 'enc', 'buitlins', 'anti', 'v', 'args', 'kwds', 'k', 'c', 'arg_', 's', 'join', 'SANH', '_args', 'obfstr', 'obfint', 'joinstr', 'NodeTransformer', 'cv', 'hb', 'obf', 'gen_jcode', 'junk', 'Colorate', 'Diagonal', 'Colors', 'DynamicMIX', 'Col', 'orange', 'red', 'StaticMIX', 'light_blue', 'light_gray', 'light_red', 'cyyy', 'file_name', 'open', 'f', 'parse', 'read', 'code', 'FileNotFoundError', 'Horizontal', 'red_to_white', 'vm_debug', 'hide_builtins', 'use_vm', 'junk_code', 'perf_counter', 'st', 'types', 'FunctionType', 'compile', 'func', 'write', 'visit', 'unparse', 'dumps', 'a85encode', 'compress', 'replace', 'encode']
 varnames = []
 bytecode = [(101, 0), (100, 0), (101, 1), (100, 1), (131, 1), (20, None), (100, 2), (100, 3), (141, 2), (1, None), (101, 2), (101, 3), (100, 4), (131, 1), (106, 4), (131, 1), (100, 5), (107, 3), (114, 29), (101, 0), (100, 6), (131, 1), (1, None), (101, 5), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 0), (131, 1), (100, 7), (107, 3), (114, 45), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 6), (131, 1), (100, 8), (107, 3), (114, 61), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 7), (131, 1), (100, 9), (107, 3), (114, 77), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 8), (131, 1), (100, 10), (107, 3), (114, 93), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 9), (131, 1), (100, 11), (107, 3), (114, 109), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 1), (131, 1), (100, 12), (107, 3), (114, 125), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (101, 2), (101, 3), (100, 13), (131, 1), (106, 10), (131, 1), (100, 14), (107, 3), (114, 144), (101, 0), (100, 6), (131, 1), (1, None), (101, 3), (100, 4), (131, 1), (160, 4), (161, 0), (1, None), (100, 15), (100, 16), (103, 1), (100, 17), (100, 18), (100, 19), (100, 20), (100, 21), (156, 6), (90, 11), (100, 22), (90, 12), (100, 23), (100, 24), (108, 13), (90, 13), (100, 23), (100, 24), (108, 14), (90, 14), (100, 23), (100, 24), (108, 15), (90, 15), (100, 23), (100, 24), (108, 16), (90, 16), (100, 23), (100, 24), (108, 17), (90, 17), (100, 23), (100, 24), (108, 18), (90, 18), (100, 23), (100, 24), (108, 19), (90, 19), (100, 23), (100, 24), (108, 20), (90, 20), (100, 23), (100, 25), (108, 13), (84, None), (100, 23), (100, 26), (108, 21), (109, 22), (90, 22), (1, None), (100, 23), (100, 27), (108, 23), (109, 24), (90, 24), (1, None), (100, 23), (100, 28), (108, 25), (109, 26), (90, 26), (109, 27), (90, 27), (1, None), (101, 20), (160, 28), (100, 29), (161, 1), (1, None), (101, 2), (101, 20), (106, 29), (106, 30), (131, 1), (100, 30), (23, None), (101, 2), (101, 20), (106, 29), (106, 31), (131, 1), (23, None), (90, 32), (122, 6), (100, 23), (100, 25), (108, 33), (84, None), (87, None), (110, 29), (4, None), (101, 34), (144, 1), (121, 266), (1, None), (1, None), (1, None), (101, 0), (100, 31), (131, 1), (1, None), (101, 8), (100, 32), (131, 1), (160, 35), (100, 33), (101, 32), (155, 0), (100, 34), (157, 3), (161, 1), (1, None), (100, 23), (100, 25), (108, 33), (84, None), (89, None), (110, 1), (119, 0), (101, 36), (160, 37), (161, 0), (1, None), (105, 0), (100, 35), (100, 36), (147, 1), (100, 37), (100, 38), (147, 1), (100, 39), (100, 40), (147, 1), (100, 41), (100, 42), (147, 1), (100, 43), (100, 44), (147, 1), (100, 45), (100, 46), (147, 1), (100, 47), (100, 48), (147, 1), (100, 49), (100, 50), (147, 1), (100, 51), (100, 52), (147, 1), (100, 53), (100, 54), (147, 1), (100, 55), (100, 56), (147, 1), (100, 57), (100, 58), (147, 1), (100, 59), (100, 60), (147, 1), (100, 61), (100, 62), (147, 1), (100, 63), (100, 64), (147, 1), (100, 65), (100, 60), (147, 1), (100, 66), (100, 67), (147, 1), (105, 0), (100, 68), (100, 69), (147, 1), (100, 70), (100, 71), (147, 1), (100, 72), (100, 73), (147, 1), (100, 74), (100, 60), (147, 1), (100, 75), (100, 76), (147, 1), (100, 77), (100, 78), (147, 1), (100, 79), (100, 80), (147, 1), (100, 81), (100, 82), (147, 1), (100, 83), (100, 84), (147, 1), (100, 85), (100, 86), (147, 1), (100, 87), (100, 88), (147, 1), (100, 89), (100, 90), (147, 1), (100, 91), (100, 92), (147, 1), (100, 93), (100, 94), (147, 1), (100, 95), (100, 96), (147, 1), (100, 97), (100, 98), (147, 1), (100, 99), (100, 100), (147, 1), (165, 1), (105, 0), (100, 101), (100, 102), (147, 1), (100, 103), (100, 104), (147, 1), (100, 105), (100, 106), (147, 1), (100, 107), (100, 108), (147, 1), (100, 109), (100, 110), (147, 1), (100, 111), (100, 112), (147, 1), (100, 113), (100, 114), (147, 1), (100, 115), (100, 116), (147, 1), (100, 117), (100, 118), (147, 1), (100, 119), (100, 120), (147, 1), (100, 121), (100, 122), (147, 1), (100, 123), (100, 124), (147, 1), (100, 125), (100, 126), (147, 1), (100, 127), (100, 128), (147, 1), (100, 129), (100, 130), (147, 1), (100, 131), (100, 110), (147, 1), (100, 132), (100, 133), (147, 1), (165, 1), (100, 134), (100, 135), (100, 60), (100, 136), (100, 137), (100, 138), (100, 139), (100, 140), (100, 141), (100, 142), (100, 143), (100, 144), (100, 145), (100, 146), (156, 13), (165, 1), (90, 38), (100, 147), (100, 148), (132, 0), (101, 38), (160, 39), (161, 0), (68, None), (131, 1), (90, 40), (100, 121), (101, 2), (100, 149), (101, 2), (102, 4), (100, 150), (100, 151), (132, 4), (90, 41), (103, 0), (100, 152), (162, 1), (90, 42), (100, 153), (90, 43), (9, None), (101, 24), (131, 0), (90, 44), (101, 24), (131, 0), (90, 45), (101, 24), (131, 0), (90, 46), (101, 24), (131, 0), (90, 40), (101, 24), (131, 0), (90, 47), (101, 24), (131, 0), (90, 48), (101, 24), (131, 0), (90, 49), (101, 24), (131, 0), (90, 50), (100, 154), (160, 51), (103, 0), (100, 155), (145, 1), (101, 32), (155, 0), (145, 1), (100, 156), (145, 1), (101, 32), (155, 0), (145, 1), (100, 157), (145, 1), (101, 32), (155, 0), (145, 1), (100, 158), (145, 1), (101, 45), (155, 0), (145, 1), (100, 159), (145, 1), (101, 46), (155, 0), (145, 1), (100, 160), (145, 1), (101, 40), (155, 0), (145, 1), (100, 161), (145, 1), (101, 44), (155, 0), (145, 1), (100, 162), (145, 1), (101, 47), (155, 0), (145, 1), (100, 163), (145, 1), (101, 47), (155, 0), (145, 1), (100, 164), (145, 1), (101, 44), (155, 0), (145, 1), (100, 165), (145, 1), (101, 50), (155, 0), (145, 1), (100, 166), (145, 1), (101, 40), (155, 0), (145, 1), (100, 167), (145, 1), (101, 48), (155, 0), (145, 1), (100, 164), (145, 1), (101, 48), (155, 0), (145, 1), (100, 168), (145, 1), (101, 48), (155, 0), (145, 1), (100, 169), (145, 1), (101, 50), (155, 0), (145, 1), (100, 170), (145, 1), (101, 41), (100, 171), (131, 1), (155, 0), (145, 1), (100, 172), (145, 1), (101, 41), (100, 173), (131, 1), (155, 0), (145, 1), (100, 174), (145, 1), (101, 41), (100, 175), (131, 1), (155, 0), (145, 1), (100, 176), (145, 1), (101, 45), (155, 0), (145, 1), (100, 177), (145, 1), (101, 41), (100, 178), (131, 1), (155, 0), (145, 1), (100, 179), (145, 1), (101, 41), (100, 180), (131, 1), (155, 0), (145, 1), (100, 181), (145, 1), (101, 41), (100, 182), (131, 1), (155, 0), (145, 1), (100, 183), (145, 1), (101, 41), (100, 184), (131, 1), (155, 0), (145, 1), (100, 185), (145, 1), (101, 49), (155, 0), (145, 1), (100, 186), (145, 1), (101, 45), (155, 0), (145, 1), (100, 187), (145, 1), (101, 41), (100, 188), (131, 1), (155, 0), (145, 1), (100, 189), (145, 1), (101, 41), (100, 188), (131, 1), (155, 0), (145, 1), (100, 190), (145, 1), (101, 41), (100, 188), (131, 1), (155, 0), (145, 1), (100, 191), (145, 1), (101, 41), (100, 192), (131, 1), (155, 0), (145, 1), (100, 193), (145, 1), (101, 49), (155, 0), (145, 1), (100, 194), (145, 1), (101, 41), (100, 13), (131, 1), (155, 0), (145, 1), (100, 195), (145, 1), (101, 49), (155, 0), (145, 1), (100, 196), (145, 1), (101, 41), (100, 197), (131, 1), (155, 0), (145, 1), (100, 198), (145, 1), (101, 49), (155, 0), (145, 1), (100, 199), (145, 1), (101, 45), (155, 0), (145, 1), (100, 159), (145, 1), (101, 46), (155, 0), (145, 1), (100, 200), (145, 1), (101, 45), (155, 0), (145, 1), (100, 201), (145, 1), (161, 1), (90, 52), (100, 202), (100, 203), (132, 0), (90, 53), (100, 204), (100, 205), (132, 0), (90, 54), (100, 206), (100, 207), (132, 0), (90, 55), (100, 208), (100, 209), (132, 0), (90, 56), (71, None), (100, 210), (100, 211), (132, 0), (100, 211), (101, 13), (106, 57), (131, 3), (90, 58), (71, None), (100, 212), (100, 213), (132, 0), (100, 213), (101, 13), (106, 57), (131, 3), (90, 59), (71, None), (100, 214), (100, 215), (132, 0), (100, 215), (101, 13), (106, 57), (131, 3), (90, 60), (100, 216), (100, 217), (132, 0), (90, 61), (71, None), (100, 218), (100, 219), (132, 0), (100, 219), (101, 13), (106, 57), (131, 3), (90, 62), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 68), (101, 67), (106, 69), (102, 2), (161, 1), (101, 12), (161, 2), (131, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 67), (106, 68), (102, 2), (161, 1), (100, 220), (161, 2), (131, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 67), (106, 68), (102, 2), (161, 1), (100, 221), (161, 2), (131, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 68), (101, 67), (106, 69), (102, 2), (161, 1), (100, 222), (161, 2), (131, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 67), (106, 68), (102, 2), (161, 1), (100, 223), (161, 2), (131, 1), (1, None), (101, 0), (131, 0), (1, None), (101, 65), (160, 70), (101, 67), (106, 71), (101, 67), (106, 72), (101, 67), (106, 73), (102, 3), (161, 1), (90, 74), (9, None), (101, 9), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 225), (161, 2), (131, 1), (90, 75), (122, 37), (101, 76), (101, 75), (100, 119), (100, 226), (100, 227), (141, 3), (143, 19), (90, 77), (101, 13), (160, 78), (101, 27), (101, 43), (101, 77), (160, 79), (161, 0), (23, None), (131, 1), (161, 1), (90, 80), (87, None), (100, 24), (4, None), (4, None), (131, 3), (1, None), (110, 9), (49, None), (144, 3), (115, 909), (119, 1), (1, None), (1, None), (1, None), (89, None), (1, None), (87, None), (110, 21), (4, None), (101, 81), (144, 3), (121, 934), (1, None), (1, None), (1, None), (101, 0), (101, 63), (160, 82), (101, 65), (106, 83), (100, 228), (161, 2), (131, 1), (1, None), (89, None), (110, 1), (119, 0), (144, 3), (113, 864), (101, 9), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 229), (161, 2), (131, 1), (100, 111), (107, 3), (144, 3), (114, 956), (100, 224), (110, 1), (100, 230), (90, 84), (101, 9), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 231), (161, 2), (131, 1), (100, 111), (107, 3), (144, 3), (114, 977), (100, 224), (110, 1), (100, 230), (90, 85), (101, 9), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 232), (161, 2), (131, 1), (100, 111), (107, 3), (144, 3), (114, 998), (100, 224), (110, 1), (100, 230), (90, 86), (101, 9), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 233), (161, 2), (131, 1), (100, 111), (107, 3), (144, 3), (114, 1019), (100, 224), (110, 1), (100, 230), (90, 87), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 234), (161, 2), (131, 1), (1, None), (101, 19), (160, 88), (161, 0), (90, 89), (101, 86), (144, 4), (114, 1120), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 235), (161, 2), (131, 1), (1, None), (101, 22), (101, 80), (131, 1), (90, 80), (100, 23), (100, 24), (108, 90), (90, 90), (101, 90), (160, 91), (101, 92), (101, 80), (100, 236), (100, 237), (131, 3), (105, 0), (161, 2), (90, 93), (101, 26), (101, 93), (101, 84), (12, None), (100, 238), (101, 84), (100, 239), (141, 4), (90, 80), (101, 84), (144, 4), (114, 1115), (101, 76), (100, 240), (100, 129), (100, 226), (100, 227), (141, 3), (143, 13), (90, 77), (101, 77), (160, 94), (101, 80), (161, 1), (1, None), (87, None), (100, 24), (4, None), (4, None), (131, 3), (1, None), (110, 9), (49, None), (144, 4), (115, 1110), (119, 1), (1, None), (1, None), (1, None), (89, None), (1, None), (101, 13), (160, 78), (101, 80), (161, 1), (90, 80), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 241), (161, 2), (131, 1), (1, None), (101, 58), (131, 0), (160, 95), (101, 80), (161, 1), (1, None), (101, 85), (144, 4), (114, 1198), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 242), (161, 2), (131, 1), (1, None), (101, 59), (131, 0), (160, 95), (101, 80), (161, 1), (1, None), (101, 84), (144, 4), (114, 1198), (101, 76), (100, 243), (100, 129), (100, 226), (100, 227), (141, 3), (143, 16), (90, 77), (101, 77), (160, 94), (101, 13), (160, 96), (101, 80), (161, 1), (161, 1), (1, None), (87, None), (100, 24), (4, None), (4, None), (131, 3), (1, None), (110, 9), (49, None), (144, 4), (115, 1193), (119, 1), (1, None), (1, None), (1, None), (89, None), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 244), (161, 2), (131, 1), (1, None), (101, 60), (131, 0), (160, 95), (101, 80), (161, 1), (1, None), (101, 87), (144, 4), (114, 1279), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 245), (161, 2), (131, 1), (1, None), (101, 62), (131, 0), (160, 95), (101, 80), (161, 1), (1, None), (101, 13), (160, 96), (101, 80), (161, 1), (90, 80), (101, 84), (144, 4), (114, 1278), (101, 76), (100, 246), (100, 129), (100, 226), (100, 227), (141, 3), (143, 13), (90, 77), (101, 77), (160, 94), (101, 80), (161, 1), (1, None), (87, None), (100, 24), (4, None), (4, None), (131, 3), (1, None), (110, 9), (49, None), (144, 4), (115, 1273), (119, 1), (1, None), (1, None), (1, None), (89, None), (1, None), (110, 5), (101, 13), (160, 96), (101, 80), (161, 1), (90, 80), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 247), (161, 2), (131, 1), (1, None), (101, 80), (100, 248), (23, None), (90, 80), (101, 14), (160, 97), (101, 92), (101, 80), (100, 249), (100, 237), (131, 3), (161, 1), (90, 80), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (100, 250), (161, 2), (131, 1), (1, None), (101, 15), (160, 98), (101, 16), (160, 99), (101, 17), (160, 99), (101, 18), (160, 99), (101, 80), (161, 1), (161, 1), (161, 1), (161, 1), (90, 80), (101, 76), (100, 251), (101, 75), (23, None), (100, 252), (131, 2), (160, 94), (101, 22), (101, 52), (160, 100), (100, 253), (101, 2), (101, 80), (131, 1), (161, 2), (131, 1), (160, 100), (100, 254), (100, 255), (161, 2), (160, 101), (161, 0), (161, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (144, 1), (100, 256), (100, 251), (101, 75), (23, None), (155, 0), (157, 2), (161, 2), (131, 1), (1, None), (101, 0), (101, 63), (160, 64), (101, 65), (160, 66), (101, 67), (106, 69), (101, 74), (102, 2), (161, 1), (144, 1), (100, 257), (101, 19), (160, 88), (161, 0), (101, 89), (24, None), (144, 1), (100, 258), (155, 4), (100, 121), (157, 3), (161, 2), (131, 1), (1, None), (100, 24), (83, None)]
-엞읈츠뗀뎕쮨쏸렒숈젟썟 = ZM(debug=True)
-엞읈츠뗀뎕쮨쏸렒숈젟썟.렘따븖뼂뱋첰됩뜰쇓먍볯(bytecode, consts, names, varnames, getattr(__import__('builtins'), 'globals')())
+흣녉탒쪔뵑꽎데뾵혶웣읛 = ZM(debug=True)
+흣녉탒쪔뵑꽎데뾵혶웣읛.낷즃힃훝싼튘햗쇣캋뜦숿(bytecode, consts, names, varnames, getattr(__import__('builtins'), 'globals')())
