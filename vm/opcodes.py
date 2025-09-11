@@ -538,10 +538,8 @@ OP_HANDLERS = {
     dis.opmap[
         "GET_AITER"
     ]: """
-                    # Get asynchronous iterator
                     obj = self.pop()
-                    aiter = obj.__aiter__()
-                    self.push(aiter)
+                    self.push(obj.__aiter__())
             """,
     dis.opmap[
         "WITH_EXCEPT_START"

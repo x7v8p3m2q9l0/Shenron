@@ -360,8 +360,8 @@ while True:
         ">> Enter Your File Name: "
     ))
     try:
-        f=open(file_name, "r", encoding="utf-8")
-        code = ast.parse(remove_comments(anti + f.read()))
+        with open(file_name, "r", encoding="utf-8") as f:
+            code = ast.parse(remove_comments(anti + f.read()))
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
