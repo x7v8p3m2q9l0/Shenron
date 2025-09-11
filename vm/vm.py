@@ -114,13 +114,6 @@ def main(
     # Build full program (careful with indentation inside the triple-quoted string)
     standalone_src = f"""\
 import logging, marshal
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("app.log", encoding="utf-8"),
-    ]
-)
 
 class VMError(Exception):
     pass
@@ -138,6 +131,14 @@ class ZM:
         self.locals = {{}}
         self.globals = None
         self.extended_arg = 0
+        if self.debug:
+            logging.basicConfig(
+                level=logging.DEBUG,
+                format="%(asctime)s [%(levelname)s] %(message)s",
+                handlers=[
+                    logging.FileHandler("app.log", encoding="utf-8"),
+                ]
+            )
     def push(self, v):
         if self.debug:
             logging.debug(f"  push {{v!r}}")
