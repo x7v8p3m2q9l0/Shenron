@@ -6,7 +6,7 @@ from .opcodes import OP_HANDLERS
 import io
 import tokenize
 import marshal
-import logging
+
 
 # ---- helpers --------------------------------------------------------------
 def remove_comments(source: str) -> str:
@@ -89,10 +89,7 @@ def main(
         used_opcodes = used_opcodes | extra
 
     old_used = used_opcodes
-    # make deterministic ordering for handler emission
     needed = list(random.sample(sorted(used_opcodes), len(used_opcodes)))
-
-    # build handlers code
     handlers_code = ""
     first = True
     for op in needed:
@@ -108,10 +105,8 @@ def main(
         except Exception as e:
             raise RuntimeError(f"Error processing opcode {dis.opname[op]}: {e}")
 
-    vmname = var_con_cak()
-    secondlmao = var_con_cak()
+    varss = [var_con_cak() for _ in range(6)]
 
-    # Build full program (careful with indentation inside the triple-quoted string)
     standalone_src = f"""\
 import logging, marshal
 
@@ -162,7 +157,7 @@ class ZM:
             raise VMError("POP_BLOCK on empty block stack")
         return self.block_stack.pop()
 
-    def {secondlmao}(self, bytecode, consts, names, varnames, globals_):
+    def {varss[1]}(self, bytecode, consts, names, varnames, globals_):
         # initialize per-run state
         # varnames: a sequence of local variable names
         varnames = list(varnames)
@@ -225,13 +220,13 @@ class ZM:
                     raise
                 else:
                     continue
-consts = [{', '.join(serialize_const(c) for c in consts)}]
-names = {repr(list(names))}
-varnames = {repr(list(varnames))}
-bytecode = {repr(instrs)}
-{vmname} = ZM(debug={debug})
+{varss[5]} = [{', '.join(serialize_const(c) for c in consts)}]
+{varss[4]} = {repr(list(names))}
+{varss[3]} = {repr(list(varnames))}
+{varss[2]} = {repr(instrs)}
+{varss[0]} = ZM(debug={debug})
 # run the VM
-{vmname}.{secondlmao}(bytecode, consts, names, varnames, globals())
+{varss[0]}.{varss[1]}({varss[2]}, {varss[5]}, {varss[4]}, {varss[3]}, globals())
 """
     generated_code = textwrap.dedent(standalone_src)
     return generated_code
@@ -242,6 +237,7 @@ if __name__ == "__main__":
     script_code, script_file = 'print("Hello, World!")', "<vm.py>"
     compiled_code = compile(script_code, script_file, "exec")
     import types
+
     func = types.FunctionType(compiled_code, {})
     vm_program = main(func)
     print(vm_program)

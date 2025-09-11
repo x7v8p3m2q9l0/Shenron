@@ -1,6 +1,18 @@
-import ast,random
+import ast, random
+
+
 def var_con_cak():
-    return ''.join(random.choices([chr(i) for i in range(44032, 55204) if chr(i).isprintable() and chr(i).isidentifier()], k=11))
+    return "".join(
+        random.choices(
+            [
+                chr(i)
+                for i in range(44032, 55204)
+                if chr(i).isprintable() and chr(i).isidentifier()
+            ],
+            k=11,
+        )
+    )
+
 
 class ObfuscatorV2(ast.NodeTransformer):
     def __init__(self):
@@ -13,7 +25,7 @@ class ObfuscatorV2(ast.NodeTransformer):
         if original_name not in self.name_map:
             new_name = var_con_cak()
             self.name_map[original_name] = new_name
-        
+
         node.name = self.name_map[original_name]
         self.generic_visit(node)
         return node
@@ -22,20 +34,20 @@ class ObfuscatorV2(ast.NodeTransformer):
     #     """Finds assignments of constant values and renames the variable."""
     #     # Handles simple assignments: NAME = value
     #     if len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
-            
+
     #         # **IMPROVEMENT**: Check for more types of constants, not just simple ones.
     #         constant_types = (ast.Constant, ast.List, ast.Tuple, ast.Dict)
-            
+
     #         if isinstance(node.value, constant_types):
     #             var_name_node = node.targets[0]
     #             original_name = var_name_node.id
-                
+
     #             # **THE FIX**: Removed the restrictive `.isupper()` check.
     #             # Now it renames any variable being assigned a constant value.
     #             if original_name not in self.name_map:
     #                 new_name = var_con_cak()
     #                 self.name_map[original_name] = new_name
-                
+
     #             var_name_node.id = self.name_map[original_name]
 
     #     self.generic_visit(node)
@@ -61,13 +73,14 @@ class ObfuscatorV2(ast.NodeTransformer):
         return node
 
 
-BUILTIN_METHODS = set(dir(type('dummy', (), {})))
+BUILTIN_METHODS = set(dir(type("dummy", (), {})))
+
 
 class FunctionRenamer(ast.NodeTransformer):
     def __init__(self):
-        self.class_map = {}          # old class name -> new name
-        self.method_map = {}         # old method name -> new name
-        self.class_methods = {}      # class name -> set of its methods
+        self.class_map = {}  # old class name -> new name
+        self.method_map = {}  # old method name -> new name
+        self.class_methods = {}  # class name -> set of its methods
 
     def visit_ClassDef(self, node: ast.ClassDef):
         original_class_name = node.name
@@ -120,6 +133,8 @@ def renamethings(source_code: str) -> ast.Module:
     new_tree = transformer1.visit(tree)
     ast.fix_missing_locations(new_tree)
     return new_tree
+
+
 if __name__ == "__main__":
     source = """
 api_key = "SECRET_STRING_123" 

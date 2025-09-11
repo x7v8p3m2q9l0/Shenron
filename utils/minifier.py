@@ -8,9 +8,11 @@ Features:
 
 Requires Python 3.9+ (uses ast.unparse).
 """
+
 import ast
 from typing import List, Dict, Set
 from black import format_str, Mode
+
 
 class _StripDocstringsAndMangle(ast.NodeTransformer):
     def __init__(self, mangle: bool = False):
@@ -72,6 +74,7 @@ class _StripDocstringsAndMangle(ast.NodeTransformer):
         class Finder(ast.NodeVisitor):
             def __init__(self):
                 self.names: Set[str] = set()
+
             def visit_Name(self, n: ast.Name):
                 if isinstance(n.ctx, ast.Store):
                     self.names.add(n.id)
@@ -89,22 +92,28 @@ class _StripDocstringsAndMangle(ast.NodeTransformer):
         if not local_names:
             return node
 
-        mapping: Dict[str, str] = {name: self._new_name() for name in sorted(local_names)}
+        mapping: Dict[str, str] = {
+            name: self._new_name() for name in sorted(local_names)
+        }
 
         class Renamer(ast.NodeTransformer):
             def visit_Name(self, n: ast.Name):
                 if n.id in mapping:
                     return ast.copy_location(ast.Name(id=mapping[n.id], ctx=n.ctx), n)
                 return n
+
             def visit_arg(self, a: ast.arg):
                 if a.arg in mapping:
-                    return ast.copy_location(ast.arg(arg=mapping[a.arg], annotation=a.annotation), a)
+                    return ast.copy_location(
+                        ast.arg(arg=mapping[a.arg], annotation=a.annotation), a
+                    )
                 return a
 
         r = Renamer()
         new_node = r.visit(node)
         ast.fix_missing_locations(new_node)
         return new_node
+
 
 def minify_source(src: str, *, mangle: bool = False, skip_format=False) -> str:
     """
@@ -118,7 +127,7 @@ def minify_source(src: str, *, mangle: bool = False, skip_format=False) -> str:
             src = format_str(src, mode=Mode())
         tree = ast.parse(src)
     else:
-        tree=src
+        tree = src
     tree = _StripDocstringsAndMangle(mangle=mangle).visit(tree)
     ast.fix_missing_locations(tree)
 
