@@ -24,7 +24,7 @@ OP_HANDLERS = {
         """,
     dis.opmap[
         "BINARY_MODULO"
-    ]: """
+    ]: r"""
                     b = self.pop(); a = self.pop(); self.push(a % b)
         """,
     dis.opmap[
