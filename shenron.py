@@ -54,19 +54,17 @@ except ModuleNotFoundError:
 
 System.Clear()
 
-e={'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', 'z': '\u200d', '0': '♂', '1': '️', '2': '🤜', '3': '🤛', '4': '😡', '5': '😤', '6': '🥵', '7': '🤯', '8': '🌌', '9': '🌍', '+': '🌑', '/': '☀'}
-d = {v: k for k, v in e.items()}
+listofshit={'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', 'z': '\u200d', '0': '♂', '1': '️', '2': '🤜', '3': '🤛', '4': '😡', '5': '😤', '6': '🥵', '7': '🤯', '8': '🌌', '9': '🌍', '+': '🌑', '/': '☀'}
+d = {v: k for k, v in listofshit.items()}
 
 def enc(s: str) -> str:
-    noisy = s.encode().hex()                
-    mapped = ''.join(e.get(c, c) for c in noisy)
+    noisy = s.encode().hex()
+    mapped = ''.join(listofshit.get(c, c) for c in noisy)
     return f'shenron("{mapped}")'
 
 
 buitlins = ['__import__', 'abs', 'all', 'any', 'ascii', 'bin', 'breakpoint', 'callable', 'chr', 'compile', 'delattr', 'dir', 'divmod', 'eval', 'exec', 'format', 'getattr', 'globals', 'hasattr', 'hash', 'hex', 'id', 'input', 'isinstance', 'issubclass', 'iter', 'aiter', 'len', 'locals', 'max', 'min', 'next', 'anext', 'oct', 'ord', 'pow', 'print', 'repr', 'round', 'setattr', 'sorted', 'sum', 'vars', 'None', 'Ellipsis', 'NotImplemented', 'False', 'True', 'bool', 'memoryview', 'bytearray', 'bytes', 'classmethod', 'complex', 'dict', 'enumerate', 'filter', 'float', 'frozenset', 'property', 'int', 'list', 'map', 'object', 'range', 'reversed', 'set', 'slice', 'staticmethod', 'str', 'super', 'tuple', 'type', 'zip']
 anti = """
-print(' ' * len('>> Running...'), end='\\r')
-
 if str(capsule_add('sys').exit) != '<built-in function exit>':
     print('Hook hả con trai')
     imp('sys').exit()
@@ -128,8 +126,6 @@ class CapsuleCorp(object):
         if str(__import__("sys").version_info.major)+"."+str(__import__("sys").version_info.minor) != "{ver}":
             print(f'>> Your Python Version Is {{str(__import__("sys").version_info.major)+"."+str(__import__("sys").version_info.minor)}}.\\n>> Please Install Python {ver} To Run This File!')
             __import__('sys').exit()
-        else:
-            print('>> Running...', end='\\r')
 
     def __call__(self, *{args}, **{kwds}):
         global yamcha, bulma, capsule, radar, shenron, frieza, goku, vegeta, gohan, trunks, capsule, kamehameha, capsule_add
@@ -364,13 +360,13 @@ while True:
         ">> Enter Your File Name: "
     ))
     try:
-        with open(file_name, "r", encoding="utf-8") as f:
-            code = ast.parse(remove_comments(anti + f.read()))
+        f=open(file_name, "r", encoding="utf-8")
+        code = ast.parse(remove_comments(anti + f.read()))
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
     
-vm_debug = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
+vm_debug = False #True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
 hide_builtins = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Hide Builtins (Y/n): ")) != 'n' else False
 use_vm = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Use VM (Y/n): ")) != 'n' else False
 junk_code = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Add Junk Code (Recommend Yes) (Y/n): ")) != 'n' else False
@@ -383,7 +379,7 @@ if use_vm:
     code = minify_source(code)
     import types
     func = types.FunctionType(compile(code,"<SVM>","exec"), {})
-    code = main(func,random_opcodes=not vm_debug,random_opcodes_count=12,debug=vm_debug)
+    code = remove_comments(main(func,random_opcodes=not vm_debug,random_opcodes_count=12,debug=vm_debug))
     if vm_debug:
         with open('vm_code.py','w',encoding='utf-8') as f:
             f.write(code)
@@ -439,5 +435,5 @@ __INFO__ = {
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
 }""").encode())
 print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Saved in {"obf-"+file_name}'))
-
-print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {time.perf_counter()-st:.3f}s'))
+timse=time.perf_counter()-st
+print(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), f'>> Done in {round(timse,3)}s'))

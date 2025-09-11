@@ -146,14 +146,17 @@ OP_HANDLERS = {
     dis.opmap[
         "STORE_NAME"
     ]: """
-                    # STORE_NAME stores into globals, not into the names array
                     if isinstance(names, (list, tuple)):
                         key = names[oparg]
                     else:
                         key = str(oparg)
 
+                    if not self.stack:  # safeguard
+                        raise VMError(f"STORE_NAME: empty stack, cannot assign to {key!r}")
+
                     value = self.pop()
                     self.globals[key] = value
+
         """,
     dis.opmap[
         "LOAD_GLOBAL"
@@ -182,6 +185,8 @@ OP_HANDLERS = {
                     argc = oparg
                     args = [self.pop() for _ in range(argc)][::-1]
                     func = self.pop()
+                    if hasattr(func, "__globals__"):
+                        func.__globals__.update(self.globals)
                     result = func(*args)
                     self.push(result)
         """,
@@ -283,12 +288,11 @@ OP_HANDLERS = {
     dis.opmap[
         "BUILD_MAP"
     ]: """
-                    # oparg = number of key-value pairs
-                    values = [self.pop() for _ in range(oparg)][::-1]  # pop values in reverse order
-                    keys = self.pop()  # keys tuple pushed last
-                    if not isinstance(keys, (list, tuple)):
-                        raise VMError("BUILD_MAP expects a tuple of keys")
-                    d = {key: value for key, value in zip(keys, values)}
+                    d = {}
+                    for _ in range(oparg):
+                        value = self.pop()
+                        key = self.pop()
+                        d[key] = value
                     self.push(d)
         """,
     dis.opmap[
@@ -320,12 +324,12 @@ OP_HANDLERS = {
                     args = [self.pop() for _ in range(argc)][::-1]
                     method_info = self.pop()
 
-                    method = None
+                    # Resolve method
                     if isinstance(method_info, tuple) and len(method_info) == 2:
                         obj, name = method_info
                         try:
                             method = getattr(obj, name)
-                        except Exception:
+                        except AttributeError:
                             self.push(None)
                             return
                     elif callable(method_info):
@@ -334,29 +338,31 @@ OP_HANDLERS = {
                         self.push(None)
                         return
 
-                    # Try calling
+                    # Call safely without over-encoding
                     try:
-                        args = [a.encode("utf-8") if isinstance(a, str) else a.encode("utf-8") for a in args]
-                        result = method(*args)
-                    except AttributeError:
-                        args = [a if isinstance(a, str) else a for a in args]
                         result = method(*args)
                     except Exception as e:
-                        print(e)
-                        result=None
+                        print(f"[CALL_METHOD error] {e}")
+                        result = None
+
                     self.push(result)
+
     """,
     dis.opmap[
         "CALL_FUNCTION_KW"
     ]: """
-                    keys = self.pop()  # tuple of keyword names
                     argc = oparg
+                    keys = self.pop()  # tuple of keyword argument names
                     args = [self.pop() for _ in range(argc)][::-1]
                     func = self.pop()
-                    # last len(keys) args are keyword values
-                    kw = {keys[i]: args[-len(keys)+i] for i in range(len(keys))}
-                    posargs = args[:-len(keys)] if keys else args
-                    result = func(*posargs, **kw)
+
+                    # Ensure keyword keys are clean strings, not repr
+                    clean_keys = [str(k).strip("'\\"") for k in keys]
+
+                    posargs = args[:len(args) - len(clean_keys)]
+                    kwargs = dict(zip(clean_keys, args[len(posargs):]))
+
+                    result = func(*posargs, **kwargs)
                     self.push(result)
         """,
     dis.opmap[
@@ -634,15 +640,15 @@ OP_HANDLERS = {
                         result = format(result, fmt_spec)
                     self.push(result)
                 """,
-    dis.opmap[
-        "DICT_UPDATE"
-    ]: """
+    dis.opmap["DICT_UPDATE"]: """
                     mapping = self.pop()
-                    target = self.stack[-1]
+                    target = self.pop()
                     if not isinstance(target, dict):
                         raise VMError("DICT_UPDATE target not a dict")
                     target.update(mapping)
+                    self.push(target)
                 """,
+
     dis.opmap[
         "INPLACE_POWER"
     ]: """
@@ -833,27 +839,27 @@ OP_HANDLERS = {
     dis.opmap[
         "ROT_TWO"
     ]: """
-                self.stack[-2], self.stack[-1] = self.stack[-1], self.stack[-2]
+                    self.stack[-2], self.stack[-1] = self.stack[-1], self.stack[-2]
                 """,
     dis.opmap[
         "SETUP_ANNOTATIONS"
     ]: """
-                self.push({})
+                    self.push({})
                 """,
     dis.opmap[
         "UNARY_NEGATIVE"
     ]: """
-                self.push(-self.pop())
+                    self.push(-self.pop())
                 """,
     dis.opmap[
         "UNARY_NOT"
     ]: """
-                self.push(not self.pop())
+                    self.push(not self.pop())
                 """,
     dis.opmap[
         "YIELD_FROM"
     ]: """
-                self.push(self.pop())  # simplified; real behavior yields from a generator
+                    self.push(self.pop())  # simplified; real behavior yields from a generator
                 """,
     dis.opmap[
         "GET_AWAITABLE"
@@ -966,15 +972,33 @@ OP_HANDLERS = {
                     matches = all(k in subject for k in keys)
                     self.push(matches)
                     """,
-    dis.opmap[
-        "SETUP_WITH"
-    ]: """
-                    # Context manager setup
-                    manager = self.pop()
-                    enter = manager.__enter__()
-                    self.push(manager)
-                    self.push(enter)
-                    """,
+# SETUP_WITH
+# Stack before: ..., context_manager
+# After: push exit_func, push enter_result, and push block record
+    dis.opmap["SETUP_WITH"]: """
+                    # pop the context manager object
+                    ctx = self.pop()
+                    # resolve functions
+                    try:
+                        exit_func = ctx.__exit__
+                        enter_result = ctx.__enter__()
+                    except Exception as e:
+                        raise VMError(f"SETUP_WITH: context manager __enter__/__exit__ failed: {e!r}")
+
+                    # push the exit function first (so it remains on the stack while the with-body runs)
+                    self.push(exit_func)
+                    # then push the value returned by __enter__ (this is what STORE_NAME will bind)
+                    self.push(enter_result)
+
+                    # remember a block so POP_BLOCK and exception cleanup know about it
+                    # store handler target (pc + oparg) so you can introspect if needed
+                    self.block_stack.append({
+                        "type": "with",
+                        "handler": self.pc + oparg,
+                        "stack_level": len(self.stack),  # helpful for diagnostics
+                    })
+    """,
+
     # dis.opmap[
     #     "SETUP_ASYNC_WITH"
     # ]: """
