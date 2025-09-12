@@ -1,6 +1,6 @@
 
 import dis, json, sys
-from vm import OP_HANDLERS
+from opcodes import OP_HANDLERS
 # unused opcode dumper since it won't automatically add the code handlers.
 def create_desc(name, code):
     desc = f"Opcode {name} (numeric code {code}) in Python {sys.version_info.major}.{sys.version_info.minor}."
@@ -13,7 +13,11 @@ def dump_opcodes(filename=None):
 
     opmap = dis.opmap  
     opcodes = {}
-    for name, code in sorted((name, code) for name, code in opmap.items() if code not in OP_HANDLERS.keys()):
+    added_codes = set(OP_HANDLERS.keys())
+
+    for name, code in sorted(opmap.items()):
+        if code in added_codes:
+            continue
         desc, desc_vi = create_desc(name, code)
         
         try:

@@ -1,0 +1,228 @@
+2025-09-12 08:34:50,093 [DEBUG] [pc=self.pc] opcode=151 arg=0 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=0 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,094 [DEBUG]   push 'Shenron'
+2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=1 block_stack=[] stack_top=['Shenron']
+2025-09-12 08:34:50,094 [DEBUG]   push 'Nguyễn Xuân Trịnh'
+2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=103 arg=1 block_stack=[] stack_top=['Shenron', 'Nguyễn Xuân Trịnh']
+2025-09-12 08:34:50,094 [DEBUG]   pop -> 'Nguyễn Xuân Trịnh'
+2025-09-12 08:34:50,094 [DEBUG]   push ['Nguyễn Xuân Trịnh']
+2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=2 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh']]
+2025-09-12 08:34:50,095 [DEBUG]   push 'S_VM'
+2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=3 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM']
+2025-09-12 08:34:50,095 [DEBUG]   push 'Dragon Ball'
+2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=4 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball']
+2025-09-12 08:34:50,095 [DEBUG]   push 'https://t.me/CalceIsMe'
+2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=5 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe']
+2025-09-12 08:34:50,095 [DEBUG]   push 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-12 08:34:50,096 [DEBUG] [pc=self.pc] opcode=100 arg=6 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4']
+2025-09-12 08:34:50,096 [DEBUG]   push ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-12 08:34:50,096 [DEBUG] [pc=self.pc] opcode=156 arg=6 block_stack=[] stack_top=[['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4', ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")]
+2025-09-12 08:34:50,096 [DEBUG]   pop -> ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-12 08:34:50,096 [DEBUG]   pop -> 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-12 08:34:50,096 [DEBUG]   pop -> 'https://t.me/CalceIsMe'
+2025-09-12 08:34:50,096 [DEBUG]   pop -> 'Dragon Ball'
+2025-09-12 08:34:50,096 [DEBUG]   pop -> 'S_VM'
+2025-09-12 08:34:50,096 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
+2025-09-12 08:34:50,096 [DEBUG]   pop -> 'Shenron'
+2025-09-12 08:34:50,097 [DEBUG]   push {"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=90 arg=0 block_stack=[] stack_top=[{"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}]
+2025-09-12 08:34:50,097 [DEBUG]   pop -> {"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=100 arg=7 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,097 [DEBUG]   push '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=90 arg=1 block_stack=[] stack_top=['⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉']
+2025-09-12 08:34:50,097 [DEBUG]   pop -> '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,098 [DEBUG]   push 0
+2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,098 [DEBUG]   push None
+2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=108 arg=2 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,098 [DEBUG]   pop -> None
+2025-09-12 08:34:50,098 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,103 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 08:34:50,103 [DEBUG] [pc=self.pc] opcode=90 arg=2 block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-12 08:34:50,103 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,104 [DEBUG]   push 0
+2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,104 [DEBUG]   push None
+2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=108 arg=3 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,104 [DEBUG]   pop -> None
+2025-09-12 08:34:50,104 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,104 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=90 arg=3 block_stack=[] stack_top=[<module 'marshal' (built-in)>]
+2025-09-12 08:34:50,104 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,105 [DEBUG]   push 0
+2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,105 [DEBUG]   push None
+2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=108 arg=4 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,105 [DEBUG]   pop -> None
+2025-09-12 08:34:50,105 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,109 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-12 08:34:50,109 [DEBUG] [pc=self.pc] opcode=90 arg=4 block_stack=[] stack_top=[<module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>]
+2025-09-12 08:34:50,110 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,110 [DEBUG]   push 0
+2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,110 [DEBUG]   push None
+2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=108 arg=5 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,110 [DEBUG]   pop -> None
+2025-09-12 08:34:50,110 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,115 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=90 arg=5 block_stack=[] stack_top=[<module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>]
+2025-09-12 08:34:50,115 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,115 [DEBUG]   push 0
+2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,115 [DEBUG]   push None
+2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=108 arg=6 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,116 [DEBUG]   pop -> None
+2025-09-12 08:34:50,116 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,116 [DEBUG]   push <module 'zlib' (built-in)>
+2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=90 arg=6 block_stack=[] stack_top=[<module 'zlib' (built-in)>]
+2025-09-12 08:34:50,116 [DEBUG]   pop -> <module 'zlib' (built-in)>
+2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,116 [DEBUG]   push 0
+2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,116 [DEBUG]   push None
+2025-09-12 08:34:50,117 [DEBUG] [pc=self.pc] opcode=108 arg=7 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,117 [DEBUG]   pop -> None
+2025-09-12 08:34:50,117 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,120 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-12 08:34:50,120 [DEBUG] [pc=self.pc] opcode=90 arg=7 block_stack=[] stack_top=[<module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>]
+2025-09-12 08:34:50,120 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-12 08:34:50,120 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,121 [DEBUG]   push 0
+2025-09-12 08:34:50,121 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,121 [DEBUG]   push None
+2025-09-12 08:34:50,121 [DEBUG] [pc=self.pc] opcode=108 arg=8 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,121 [DEBUG]   pop -> None
+2025-09-12 08:34:50,121 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,122 [DEBUG]   push <module 'time' (built-in)>
+2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=90 arg=8 block_stack=[] stack_top=[<module 'time' (built-in)>]
+2025-09-12 08:34:50,122 [DEBUG]   pop -> <module 'time' (built-in)>
+2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,122 [DEBUG]   push 0
+2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,122 [DEBUG]   push None
+2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=108 arg=9 block_stack=[] stack_top=[0, None]
+2025-09-12 08:34:50,122 [DEBUG]   pop -> None
+2025-09-12 08:34:50,122 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,122 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=90 arg=9 block_stack=[] stack_top=[<module 'sys' (built-in)>]
+2025-09-12 08:34:50,123 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,123 [DEBUG]   push 0
+2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=100 arg=10 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,123 [DEBUG]   push ("'*'",)
+2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=108 arg=2 block_stack=[] stack_top=[0, ("'*'",)]
+2025-09-12 08:34:50,123 [DEBUG]   pop -> ("'*'",)
+2025-09-12 08:34:50,123 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,123 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=84 arg=None block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-12 08:34:50,124 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,124 [DEBUG]   push 0
+2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=100 arg=11 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,124 [DEBUG]   push ("'minify_source'",)
+2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=108 arg=10 block_stack=[] stack_top=[0, ("'minify_source'",)]
+2025-09-12 08:34:50,124 [DEBUG]   pop -> ("'minify_source'",)
+2025-09-12 08:34:50,124 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,418 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-12 08:34:50,418 [DEBUG] [pc=self.pc] opcode=109 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-12 08:34:50,418 [DEBUG]   push <function minify_source at 0x000001D7DABF98A0>
+2025-09-12 08:34:50,418 [DEBUG] [pc=self.pc] opcode=90 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>, <function minify_source at 0x000001D7DABF98A0>]
+2025-09-12 08:34:50,419 [DEBUG]   pop -> <function minify_source at 0x000001D7DABF98A0>
+2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-12 08:34:50,419 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,419 [DEBUG]   push 0
+2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=100 arg=12 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,419 [DEBUG]   push ("'var_con_cak'",)
+2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=108 arg=12 block_stack=[] stack_top=[0, ("'var_con_cak'",)]
+2025-09-12 08:34:50,419 [DEBUG]   pop -> ("'var_con_cak'",)
+2025-09-12 08:34:50,419 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,420 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=109 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-12 08:34:50,422 [DEBUG]   push <function var_con_cak at 0x000001D7DD50C540>
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=90 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>, <function var_con_cak at 0x000001D7DD50C540>]
+2025-09-12 08:34:50,422 [DEBUG]   pop -> <function var_con_cak at 0x000001D7DD50C540>
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-12 08:34:50,422 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 08:34:50,422 [DEBUG]   push 0
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=100 arg=13 block_stack=[] stack_top=[0]
+2025-09-12 08:34:50,422 [DEBUG]   push ("'main'", "'remove_comments'")
+2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=108 arg=14 block_stack=[] stack_top=[0, ("'main'", "'remove_comments'")]
+2025-09-12 08:34:50,422 [DEBUG]   pop -> ("'main'", "'remove_comments'")
+2025-09-12 08:34:50,422 [DEBUG]   pop -> 0
+2025-09-12 08:34:50,428 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=109 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 08:34:50,428 [DEBUG]   push <function main at 0x000001D7DD50D620>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=90 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function main at 0x000001D7DD50D620>]
+2025-09-12 08:34:50,428 [DEBUG]   pop -> <function main at 0x000001D7DD50D620>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=109 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 08:34:50,428 [DEBUG]   push <function remove_comments at 0x000001D7DD44D3A0>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=90 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function remove_comments at 0x000001D7DD44D3A0>]
+2025-09-12 08:34:50,428 [DEBUG]   pop -> <function remove_comments at 0x000001D7DD44D3A0>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 08:34:50,428 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[]
+2025-09-12 08:34:50,429 [DEBUG]   push None
+2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None]
+2025-09-12 08:34:50,429 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=106 arg=17 block_stack=[] stack_top=[None, <module 'sys' (built-in)>]
+2025-09-12 08:34:50,429 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 08:34:50,429 [DEBUG]   push <built-in function setrecursionlimit>
+2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=100 arg=14 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>]
+2025-09-12 08:34:50,430 [DEBUG]   push 99999999
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>, 99999999]
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>, 99999999]
+2025-09-12 08:34:50,430 [DEBUG]   pop -> 99999999
+2025-09-12 08:34:50,430 [DEBUG]   pop -> <built-in function setrecursionlimit>
+2025-09-12 08:34:50,430 [DEBUG]   push None
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[None, None]
+2025-09-12 08:34:50,430 [DEBUG]   pop -> None
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[None]
+2025-09-12 08:34:50,430 [DEBUG]   push None
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=101 arg=18 block_stack=[] stack_top=[None, None]
+2025-09-12 08:34:50,430 [DEBUG]   push <class 'str'>
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None, None, <class 'str'>]
+2025-09-12 08:34:50,430 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=106 arg=19 block_stack=[] stack_top=[None, None, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-12 08:34:50,432 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 08:34:50,432 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=106 arg=20 block_stack=[] stack_top=[None, None, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-12 08:34:50,432 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 08:34:50,432 [DEBUG]   push 3
+2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, None, <class 'str'>, 3]
+2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, None, <class 'str'>, 3]
+2025-09-12 08:34:50,432 [DEBUG]   pop -> 3
+2025-09-12 08:34:50,432 [DEBUG]   pop -> <class 'str'>
+2025-09-12 08:34:50,432 [DEBUG]   push '3'
+2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=100 arg=15 block_stack=[] stack_top=[None, None, '3']
+2025-09-12 08:34:50,433 [DEBUG]   push '.'
+2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=122 arg=0 block_stack=[] stack_top=[None, None, '3', '.']
+2025-09-12 08:34:50,433 [DEBUG]   pop -> '.'
+2025-09-12 08:34:50,433 [DEBUG]   pop -> '3'
+2025-09-12 08:34:50,433 [DEBUG]   push '3.'
+2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[None, None, '3.']
+2025-09-12 08:34:50,433 [DEBUG]   push None
+2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=101 arg=18 block_stack=[] stack_top=[None, None, '3.', None]
+2025-09-12 08:34:50,433 [DEBUG]   push <class 'str'>
+2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>]
+2025-09-12 08:34:50,433 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=106 arg=19 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-12 08:34:50,434 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 08:34:50,434 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=106 arg=21 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-12 08:34:50,434 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 08:34:50,434 [DEBUG]   push 11
+2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, 11]
+2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, 11]
+2025-09-12 08:34:50,434 [DEBUG]   pop -> 11
+2025-09-12 08:34:50,435 [DEBUG]   pop -> <class 'str'>
+2025-09-12 08:34:50,435 [DEBUG]   push '11'
+2025-09-12 08:34:50,435 [DEBUG] [pc=self.pc] opcode=122 arg=0 block_stack=[] stack_top=[None, None, '3.', None, '11']
+2025-09-12 08:34:50,435 [DEBUG]   pop -> '11'
+2025-09-12 08:34:50,435 [DEBUG]   pop -> None

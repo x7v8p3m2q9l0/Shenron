@@ -724,12 +724,14 @@ while True:
     )
     try:
         with open(file_name, "r", encoding="utf-8") as f:
-            code = ast.parse(remove_comments(anti + f.read()))
+            # code = ast.parse(remove_comments(anti + f.read()))
+            code = ast.parse(remove_comments(f.read()))
+
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
-
-vm_debug = False  # True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
+# HI. It will generate it in around 40 secs
+vm_debug = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
 hide_builtins = (
     True
     if input(

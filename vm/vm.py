@@ -2,7 +2,10 @@ import dis
 import textwrap
 import random
 import types
-from .opcodes import OP_HANDLERS
+try:
+    from opcodes import OP_HANDLERS
+except ImportError:
+    from .opcodes import OP_HANDLERS
 import io
 import tokenize
 import marshal
@@ -184,25 +187,17 @@ class ZM:
                 else:
                     raise VMError(f"Unimplemented opcode {{opcode}}")
             except Exception as exc:
-                # handle with-exit blocks specially
                 handled = False
-                # iterate blocks from top -> bottom to find nearest 'with' handler
-                while self.block_stack:
-                    blk = self.block_stack.pop()
+                for blk in reversed(self.block_stack):
                     if blk.get("type") == "with":
-                        exit_func = None
-                        for cand in reversed(self.stack):
-                            if callable(cand):
-                                exit_func = cand
-                                break
+                        exit_func = blk.get("exit_func")  # store on block when SETUP_WITH
                         if exit_func is None:
-                            # nothing to call — continue searching
                             continue
 
-                        # Call exit_func(exc_type, exc_value, traceback)
                         exc_type = type(exc)
                         exc_val = exc
                         tb = getattr(exc, "__traceback__", None)
+
                         try:
                             suppress = exit_func(exc_type, exc_val, tb)
                         except Exception as e2:
@@ -210,16 +205,11 @@ class ZM:
 
                         if suppress:
                             handled = True
-                            break
-                        else:
-                            continue
-                    else:
-                        continue
+                        break  # stop at first 'with' block whether handled or not
 
                 if not handled:
                     raise
-                else:
-                    continue
+
 {varss[5]} = [{', '.join(serialize_const(c) for c in consts)}]
 {varss[4]} = {repr(list(names))}
 {varss[3]} = {repr(list(varnames))}
@@ -241,3 +231,4 @@ if __name__ == "__main__":
     func = types.FunctionType(compiled_code, {})
     vm_program = main(func)
     print(vm_program)
+    exec(vm_program)
