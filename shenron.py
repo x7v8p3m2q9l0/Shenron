@@ -207,35 +207,23 @@ buitlins = [
 ]
 anti = """
 if str(capsule_add('sys').exit) != '<built-in function exit>':
-    print('Hook hả con trai')
-    imp('sys').exit()
-
-if str(print) != '<built-in function print>':
-    print('Hook hả con trai')
+    logging.debug(str(capsule_add('sys').exit))
     capsule_add('sys').exit()
 
 if str(exec) != '<built-in function exec>':
-    print('Hook hả con trai')
+    logging.debug(str(exec))
     capsule_add('sys').exit()
 
 if str(eval) != '<built-in function eval>':
-    print('Hook hả con trai')
+    logging.debug(str(eval))
     capsule_add('sys').exit()
 
 if str(__import__) != '<built-in function __import__>':
-    print('Hook hả con trai')
-    capsule_add('sys').exit()
-
-if str(input) != '<built-in function input>':
-    print('Hook hả con trai')
-    capsule_add('sys').exit()
-
-if str(len) != '<built-in function len>':
-    print('Hook hả con trai')
+    logging.debug(str(__import__))
     capsule_add('sys').exit()
 
 if str(capsule_add('marshal').loads) != '<built-in function loads>':
-    print('Hook hả con trai')
+    logging.debug(str(capsule_add('marshal').loads))
     capsule_add('sys').exit()
 """
 
@@ -724,14 +712,23 @@ while True:
     )
     try:
         with open(file_name, "r", encoding="utf-8") as f:
-            # code = ast.parse(remove_comments(anti + f.read()))
+            # z=anti + f.read()
             code = ast.parse(remove_comments(f.read()))
-
         break
     except FileNotFoundError:
         print(Colorate.Horizontal(Colors.red_to_white, "File Not Found.\n"))
 # HI. It will generate it in around 40 secs
-vm_debug = True if input(Colorate.Diagonal(Colors.DynamicMIX((Col.red, cyyy)), ">> Do You Want To Enable VM Debug Mode (Y/n): ")) != 'n' else False
+vm_debug = (
+    True
+    if input(
+        Colorate.Diagonal(
+            Colors.DynamicMIX((Col.red, cyyy)),
+            ">> Do You Want To Enable VM Debug Mode (Y/n): ",
+        )
+    )
+    != "n"
+    else False
+)
 hide_builtins = (
     True
     if input(
@@ -834,6 +831,7 @@ if __INFO__ != {
     'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
 }:
     print(">> Don't Edit __INFO__")
+    open('diffinfo.txt','r')
     capsule_add('sys').exit()"""
 )
 code = marshal.dumps(compile(code, "<Shenron>", "exec"))

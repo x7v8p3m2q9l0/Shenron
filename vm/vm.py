@@ -58,15 +58,39 @@ def serialize_const(c):
         # fallback to a repr expression (may be unsafe for exotic objects)
         return repr(c)
 
+# LEGACY INTRUCS CONVERTER
+# def code_to_vm_instrs(code):
+#     instrs = []
+#     used_opcodes = set()
+#     for instr in dis.get_instructions(code):
+#         instrs.append((instr.opcode, instr.arg))
+#         used_opcodes.add(instr.opcode)
+#     return instrs, code.co_consts, code.co_names, code.co_varnames, used_opcodes
 
-def code_to_vm_instrs(code):
+def code_to_vm_instrs(code_obj):
+    """
+    Returns:
+    instrs: instructions
+    consts, names, varnames: mirrors of code.co_consts/co_names/co_varnames
+    used_opcodes: set of opcode integers used
+    """
+    # allow passing a function
+    if isinstance(code_obj, types.FunctionType):
+        code_obj = code_obj.__code__
+
+
     instrs = []
     used_opcodes = set()
-    for instr in dis.get_instructions(code):
-        instrs.append((instr.opcode, instr.arg))
-        used_opcodes.add(instr.opcode)
-    return instrs, code.co_consts, code.co_names, code.co_varnames, used_opcodes
 
+
+    for instr in dis.get_instructions(code_obj):
+        opcode = int(instr.opcode)
+        oparg = 0 if instr.arg is None else int(instr.arg)
+        instrs.append((opcode, oparg, instr.opname, instr.offset))
+        used_opcodes.add(opcode)
+
+
+    return instrs, code_obj.co_consts, code_obj.co_names, code_obj.co_varnames, used_opcodes
 
 # ---- main generator -------------------------------------------------------
 def main(
@@ -95,11 +119,12 @@ def main(
     needed = list(random.sample(sorted(used_opcodes), len(used_opcodes)))
     handlers_code = ""
     first = True
+    varss = [var_con_cak() for _ in range(7)]
     for op in needed:
         if op not in OP_HANDLERS:
             raise NotImplementedError(f"OPCODES: {old_used-all_opcodes}")
         try:
-            snippet = remove_comments(OP_HANDLERS[op])
+            snippet = remove_comments(OP_HANDLERS[op]).replace("NULL",varss[6])
             if first:
                 handlers_code += f"                if opcode == {op}:{snippet}\n"
                 first = False
@@ -108,14 +133,11 @@ def main(
         except Exception as e:
             raise RuntimeError(f"Error processing opcode {dis.opname[op]}: {e}")
 
-    varss = [var_con_cak() for _ in range(6)]
+    
 
     standalone_src = f"""\
-import logging, marshal
-
-class VMError(Exception):
-    pass
-
+import logging, marshal, sys
+{varss[6]}=object()
 class ZM:
     def __init__(self, debug=False):
         # data stack
@@ -142,22 +164,22 @@ class ZM:
             logging.debug(f"  push {{v!r}}")
         self.stack.append(v)
 
-    def pop(self):
+    def pop(self, lmao=-1):
         if not self.stack:
-            raise VMError("pop from empty stack")
-        v = self.stack.pop()
+            raise Exception("pop from empty stack")
+        v = self.stack.pop(lmao)
         if self.debug:
             logging.debug(f"  pop -> {{v!r}}")
         return v
 
     def top(self):
         if not self.stack:
-            raise VMError("top from empty stack")
+            raise Exception("top from empty stack")
         return self.stack[-1]
 
     def pop_block(self):
         if not self.block_stack:
-            raise VMError("POP_BLOCK on empty block stack")
+            raise Exception("POP_BLOCK on empty block stack")
         return self.block_stack.pop()
 
     def {varss[1]}(self, bytecode, consts, names, varnames, globals_):
@@ -175,9 +197,9 @@ class ZM:
         names = list(names)
 
         while self.pc < len(bytecode):
-            opcode, oparg = bytecode[self.pc]
+            opcode, oparg, opname, offset = bytecode[self.pc]
             if self.debug:
-                logging.debug(f"[pc=self.pc] opcode={{opcode}} arg={{oparg}} block_stack={{self.block_stack}} stack_top={{self.stack[-6:]}}")
+                logging.debug(f"[pc={{self.pc}}] opcode={{opcode}} arg={{oparg}} block_stack={{self.block_stack}} stack_top={{self.stack[-6:]}}")
             self.pc += 1
 
             try:
@@ -185,12 +207,12 @@ class ZM:
                     pass
 {handlers_code}
                 else:
-                    raise VMError(f"Unimplemented opcode {{opcode}}")
+                    raise Exception(f"Unimplemented opcode {{opcode}}")
             except Exception as exc:
                 handled = False
                 for blk in reversed(self.block_stack):
                     if blk.get("type") == "with":
-                        exit_func = blk.get("exit_func")  # store on block when SETUP_WITH
+                        exit_func = blk.get("exit_func")
                         if exit_func is None:
                             continue
 
@@ -224,11 +246,13 @@ class ZM:
 
 # quick CLI test if run as script
 if __name__ == "__main__":
-    script_code, script_file = 'print("Hello, World!")', "<vm.py>"
-    compiled_code = compile(script_code, script_file, "exec")
+    # script_code, script_file = 'print("Hello, World!", 696969**2)', "<vm.py>"
+    with open("shenron.py", "r",encoding='utf-8') as f:
+        script_code=f.read()
+    compiled_code = compile(script_code, "<vm.py>", "exec")
     import types
 
     func = types.FunctionType(compiled_code, {})
     vm_program = main(func)
-    print(vm_program)
-    exec(vm_program)
+    with open("shenron_vm.py",'w',encoding='utf-8') as f:
+        f.write(vm_program)

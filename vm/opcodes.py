@@ -1,33 +1,6 @@
 # 3.11
 import dis
-import operator
 
-BINARY_OPERATORS = {
-    0: operator.add,
-    1: operator.sub,
-    2: operator.mul,
-    3: operator.matmul,
-    4: operator.truediv,
-    5: operator.mod,
-    6: operator.floordiv,
-    7: operator.pow,
-    8: operator.lshift,
-    9: operator.rshift,
-    10: operator.and_,
-    11: operator.or_,
-    12: operator.xor,
-    13: operator.eq,
-    14: operator.ne,
-    15: operator.lt,
-    16: operator.le,
-    17: operator.gt,
-    18: operator.ge,
-    19: lambda a, b: a in b,
-    20: lambda a, b: a not in b,
-    21: operator.is_,
-    22: operator.is_not,
-    23: lambda a, b: isinstance(a, b),  # exception match placeholder
-}
 OP_HANDLERS={
     dis.opmap["IS_OP" ]: """
                     # IS_OP: checks 'is' or 'is not'
@@ -48,13 +21,14 @@ OP_HANDLERS={
                     # Load closure cell
                     self.push(self.cells[oparg])
                     """,
-    dis.opmap["DICT_MERGE" ]: """
-                    # Merge dictionaries
+    dis.opmap["DICT_MERGE"]: """
                     other = self.pop()
-                    target = self.pop()
-                    target.update(other)
-                    self.push(target)
-                    """,
+                    d = self.top()
+                    if not isinstance(d, dict):
+                        raise TypeError(f"DICT_MERGE expects dict, got {type(d)}")
+                    # behaves like update, but with stricter duplicate key error checks in CPython
+                    d.update(other)
+    """,
     dis.opmap["GET_ITER" ]: """
                     # Get iterator
                     iterable = self.pop()
@@ -156,13 +130,15 @@ OP_HANDLERS={
     dis.opmap["LOAD_DEREF" ]: """
                     self.push(self.closure[oparg])  # simplified
                 """,
-    dis.opmap["MAP_ADD" ]: """
+    dis.opmap["MAP_ADD"]: """
                     value = self.pop()
                     key = self.pop()
-                    mapping = self.pop()
+                    mapping = self.stack[-oparg]  # mapping is still on stack
+                    if not isinstance(mapping, dict):
+                        raise TypeError(f"MAP_ADD expects dict, got {type(mapping)}")
+
                     mapping[key] = value
-                    self.push(mapping)
-                """,
+    """,
     dis.opmap["SETUP_ANNOTATIONS" ]: """
                     self.push({})
                 """,
@@ -208,7 +184,7 @@ OP_HANDLERS={
     dis.opmap["GET_YIELD_FROM_ITER" ]: """
                     v = self.stack[-1]
                     if not hasattr(v, "__iter__"):
-                        raise VMError("GET_YIELD_FROM_ITER target not iterable")
+                        raise Exception("GET_YIELD_FROM_ITER target not iterable")
                     self.stack[-1] = iter(v)
                 """,
     dis.opmap["IMPORT_NAME" ]: """
@@ -271,19 +247,18 @@ OP_HANDLERS={
                     elif oparg & 0x03 == 3: # ascii()
                         result = ascii(val)
                     else:
-                        raise VMError(f"FORMAT_VALUE: invalid conversion flag {oparg}")
+                        raise Exception(f"FORMAT_VALUE: invalid conversion flag {oparg}")
                     if fmt_spec is not None:
                         result = format(result, fmt_spec)
                     self.push(result)
                 """,
-    dis.opmap["DICT_UPDATE"]: """
-                    mapping = self.pop()
-                    target = self.pop()
-                    if not isinstance(target, dict):
-                        raise VMError("DICT_UPDATE target not a dict")
-                    target.update(mapping)
-                    self.push(target)
-                """,
+        dis.opmap["DICT_UPDATE"]: """
+                    other = self.pop()
+                    d = self.top()  # don't pop dict itself, just update
+                    if not isinstance(d, dict):
+                        raise TypeError(f"DICT_UPDATE expects dict, got {type(d)}")
+                    d.update(other)
+        """,
     dis.opmap["END_ASYNC_FOR" ]: """
                     # Pops 7 values used in async-for finalization
                     for _ in range(7):
@@ -300,7 +275,7 @@ OP_HANDLERS={
                     elif isinstance(cells, dict):
                         name = oparg
                     else:
-                        raise VMError("LOAD_CLASSDEREF: unexpected cells format")
+                        raise Exception("LOAD_CLASSDEREF: unexpected cells format")
 
                     if name in self.locals:
                         self.push(self.locals[name])
@@ -341,7 +316,7 @@ OP_HANDLERS={
                     elif isinstance(cells, dict):
                         name = oparg
                     else:
-                        raise VMError("DELETE_DEREF: unexpected cells format")
+                        raise Exception("DELETE_DEREF: unexpected cells format")
 
                     try:
                         del self.locals[name]
@@ -369,13 +344,13 @@ OP_HANDLERS={
                         exc = self.pop()
                         raise exc from cause
                     else:
-                        raise VMError(f"RAISE_VARARGS with invalid oparg {oparg}")
+                        raise Exception(f"RAISE_VARARGS with invalid oparg {oparg}")
         """,
     dis.opmap["LIST_TO_TUPLE" ]: """
                     # Convert list (on TOS) into tuple
                     lst = self.pop()
                     if not isinstance(lst, list):
-                        raise VMError("LIST_TO_TUPLE expected a list")
+                        raise Exception("LIST_TO_TUPLE expected a list")
                     self.push(tuple(lst))
         """,
 
@@ -390,23 +365,42 @@ OP_HANDLERS={
                     elif isinstance(names, dict):
                         name = names.get(oparg)  # map index to actual name
                         if name is None:
-                            raise VMError(f"LOAD_ATTR: invalid key {oparg}")
+                            raise Exception(f"LOAD_ATTR: invalid key {oparg}")
                     else:
-                        raise VMError("LOAD_ATTR: unexpected names format")
+                        raise Exception("LOAD_ATTR: unexpected names format")
 
                     obj = self.pop()
                     self.push(getattr(obj, name))
     """,
-    dis.opmap["BUILD_CONST_KEY_MAP" ]: """
-                    keys = self.pop()  # tuple or list of keys
-                    values = [self.pop() for _ in range(oparg)][::-1]
-                    # Flatten single-element lists
-                    for i in range(len(values)):
-                        if isinstance(values[i], list) and len(values[i]) == 1:
-                            values[i] = values[i][0]
-                    d = dict(zip(keys, values))
-                    self.push(d)
-        """,
+    dis.opmap["BUILD_CONST_KEY_MAP"]: """
+                    # Pop values first (since they were pushed last)
+                    keys = self.pop()
+                    keys = tuple(k.strip("'") if isinstance(k, str) and k.startswith("'") and k.endswith("'") else k for k in keys)
+                    values = [self.pop() for _ in range(oparg)]
+                    values.reverse()  # restore left-to-right order
+
+
+                    # If keys was serialized as a string like "('z','0',...)" → eval it
+                    if isinstance(keys, str) and keys.startswith("(") and keys.endswith(")"):
+                        try:
+                            keys = eval(keys, {}, {})
+                        except Exception as e:
+                            raise TypeError(f"BUILD_CONST_KEY_MAP failed to eval keys {keys!r}: {e}")
+
+                    if not isinstance(keys, tuple):
+                        raise TypeError(
+                            f"BUILD_CONST_KEY_MAP expected tuple of keys, got {type(keys).__name__}: {keys!r}"
+                        )
+
+                    if len(keys) != len(values):
+                        raise ValueError(
+                            f"BUILD_CONST_KEY_MAP key/value length mismatch: {len(keys)} vs {len(values)}"
+                        )
+
+                    self.push(dict(zip(keys, values)))
+    """,
+
+
     dis.opmap["SET_UPDATE" ]: """
                     # Update a set with multiple items
                     # oparg = number of items
@@ -492,8 +486,8 @@ OP_HANDLERS={
         """,
     dis.opmap["MAKE_FUNCTION" ]: """
                     flags = oparg if isinstance(oparg, int) else 0
-                    fn_name = self.pop()
                     code_obj = self.pop()
+                    fn_name = self.pop()
                     defaults   = self.pop() if (flags & 0x01) else None
                     kwdefaults = self.pop() if (flags & 0x02) else None
                     annotations= self.pop() if (flags & 0x04) else None
@@ -540,7 +534,7 @@ OP_HANDLERS={
                     elif isinstance(names, dict):  # unlikely, but fallback
                         name = oparg
                     else:
-                        raise VMError("LOAD_NAME: unexpected names format")
+                        raise Exception("LOAD_NAME: unexpected names format")
 
                     # runtime lookup order: locals → globals → builtins
                     if hasattr(self, "locals") and name in self.locals:
@@ -561,7 +555,7 @@ OP_HANDLERS={
                         key = str(oparg)
 
                     if not self.stack:  # safeguard
-                        raise VMError(f"STORE_NAME: empty stack, cannot assign to {key!r}")
+                        raise Exception(f"STORE_NAME: empty stack, cannot assign to {key!r}")
 
                     value = self.pop()
                     self.globals[key] = value
@@ -575,7 +569,7 @@ OP_HANDLERS={
                     if key in globals_:
                         self.push(globals_[key])
                     else:
-                        raise VMError(f"LOAD_GLOBAL: {key!r} not found")
+                        raise Exception(f"LOAD_GLOBAL: {key!r} not found")
         """,
     dis.opmap["STORE_GLOBAL" ]: """
                     if isinstance(names, (list, tuple)):
@@ -613,34 +607,36 @@ OP_HANDLERS={
                     elif cmp == '!=': self.push(a != b)
                     elif cmp == '<=': self.push(a <= b)
                     elif cmp == '>=': self.push(a >= b)
-                    else: raise VMError(f"Unsupported COMPARE_OP {cmp}")
+                    else: raise Exception(f"Unsupported COMPARE_OP {cmp}")
         """,
     dis.opmap["GET_LEN" ]: """
                     a = self.pop(); self.push(len(a))
         """,
     dis.opmap["POP_TOP"]: """ self.pop() """,
-    dis.opmap["LOAD_CONST"]: """ self.push(consts[oparg]) """,
+    dis.opmap["LOAD_CONST"]: """
+                    value=consts[oparg]
+                    logging.info(value)
+                    self.push(value)
+    """,
     # STORE_FAST
     dis.opmap["STORE_FAST" ]: """
-                    if not hasattr(self, "locals"):
-                        self.locals = {}
-                    varname = varnames[oparg] if isinstance(varnames, (list, tuple)) else str(oparg)
                     value = self.pop()
+                    varname = varnames[oparg]
                     self.locals[varname] = value
         """,
     # LOAD_FAST
     dis.opmap["LOAD_FAST" ]: """
-                    if not hasattr(self, "locals"):
-                        self.locals = {}
-                    varname = varnames[oparg] if isinstance(varnames, (list, tuple)) else str(oparg)
+                    if oparg >= len(varnames):
+                        raise Exception(f"LOAD_FAST oparg {oparg} out of range")
+                        
+                    varname = varnames[oparg]
                     if varname not in self.locals:
-                        raise UnboundLocalError(f"local variable {varname!r} referenced before assignment")
-                    self.push(self.locals[varname])
+                        raise Exception(f"Local variable '{varname}' not found")
+                        
+                    value = self.locals[varname]
+                    if value is not None:
+                        self.push(value)
         """,
-    dis.opmap["LOAD_CONST" ]: """
-                    value = consts[oparg]
-                    self.push(value)
-        """,        
     dis.opmap["RETURN_VALUE" ]: """
                     return self.pop()
         """,
@@ -654,63 +650,66 @@ OP_HANDLERS={
                     self.push(None)
     """,
 
-    dis.opmap["BINARY_OP"]: r"""
-                    right = self.pop()
-                    left = self.pop()
-                    if left is None or right is None:
-                        raise RuntimeError(f"Cannot perform {oparg} on left={left} right={right}")
-                    if oparg == 0:
-                        self.push(left + right)
-                    elif oparg == 1:
-                        self.push(left - right)
-                    elif oparg == 2:
-                        self.push(left * right)
-                    elif oparg == 3:
-                        self.push(left @ right)
-                    elif oparg == 4:
-                        self.push(left / right)
-                    elif oparg == 5:
-                        self.push(left % right)
-                    elif oparg == 6:
-                        self.push(left // right)
-                    elif oparg == 7:
-                        self.push(left ** right)
-                    elif oparg == 8:
-                        self.push(left << right)
-                    elif oparg == 9:
-                        self.push(left >> right)
-                    elif oparg == 10:
-                        self.push(left & right)
-                    elif oparg == 11:
-                        self.push(left | right)
-                    elif oparg == 12:
-                        self.push(left ^ right)
-                    elif oparg == 13:
-                        self.push(left == right)
-                    elif oparg == 14:
-                        self.push(left != right)
-                    elif oparg == 15:
-                        self.push(left < right)
-                    elif oparg == 16:
-                        self.push(left <= right)
-                    elif oparg == 17: 
-                        self.push(left > right)
-                    elif oparg == 18: 
-                        self.push(left >= right)
-                    elif oparg == 19:
-                        self.push(left in right)
-                    elif oparg == 20: 
-                        self.push(left not in right)
-                    elif oparg == 21: 
-                        self.push(left is right)
-                    elif oparg == 22:
-                        self.push(left is not right)
-                    elif oparg == 23:
-                        self.push(isinstance(left, right))
-                    else:
-                        raise RuntimeError(f"Unsupported BINARY_OP oparg: {oparg}")
+    dis.opmap["BINARY_OP"]: """
+                    right = self.pop()  # Pop the second operand first
+                    left = self.pop()   # Pop the first operand second
+                    if right is NULL: 
+                        right = self.pop()
+                    if left is NULL:
+                        left = self.pop()
+                    if 69==69-6+(2**2+2):
+                        if oparg == 0:
+                            self.push(left + right)
+                        elif oparg == 1:
+                            self.push(left - right)
+                        elif oparg == 2:
+                            self.push(left * right)
+                        elif oparg == 3:
+                            self.push(left @ right)
+                        elif oparg == 4:
+                            self.push(left / right)
+                        elif oparg == 5:
+                            self.push(left % right)
+                        elif oparg == 6:
+                            self.push(left // right)
+                        elif oparg == 7:
+                            self.push(left ** right)
+                        elif oparg == 8:
+                            self.push(left << right)
+                        elif oparg == 9:
+                            self.push(left >> right)
+                        elif oparg == 10:
+                            self.push(left & right)
+                        elif oparg == 11:
+                            self.push(left | right)
+                        elif oparg == 12:
+                            self.push(left ^ right)
+                        elif oparg == 13:
+                            self.push(left == right)
+                        elif oparg == 14:
+                            self.push(left != right)
+                        elif oparg == 15:
+                            self.push(left < right)
+                        elif oparg == 16:
+                            self.push(left <= right)
+                        elif oparg == 17: 
+                            self.push(left > right)
+                        elif oparg == 18: 
+                            self.push(left >= right)
+                        elif oparg == 19:
+                            self.push(left in right)
+                        elif oparg == 20: 
+                            self.push(left not in right)
+                        elif oparg == 21: 
+                            self.push(left is right)
+                        elif oparg == 22:
+                            self.push(left is not right)
+                        elif oparg == 23:
+                            self.push(isinstance(left, right))
+                        else:
+                            raise RuntimeError(f"Unsupported BINARY_OP oparg: {oparg}")
     """,
-
+    
     dis.opmap["BINARY_SUBSCR"]: """
                     # BINARY_SUBSCR: stack effect -1
                     key = self.pop()
@@ -723,17 +722,17 @@ OP_HANDLERS={
                     pass
     """,
     dis.opmap["CALL"]: """
-                    arg1=self.pop()
+                    arg1 = self.pop()
                     if callable(arg1):
                         args = [self.pop() for _ in range(oparg-1)]
+                        args.reverse()  # <-- fix order
                         func = arg1
                     else:
-                        args = [self.pop() for _ in range(oparg-1)] + [arg1]
+                        args = [self.pop() for _ in range(oparg-1)]
+                        args.reverse()
+                        args.append(arg1)
                         func = self.pop()
-                    
-                    
-                        
-                    # Call the function with its arguments and push the result
+
                     self.push(func(*args))
     """,
 
@@ -843,8 +842,7 @@ OP_HANDLERS={
     """,
 
     dis.opmap["PUSH_NULL"]: """
-                    # PUSH_NULL: stack effect +1
-                    self.push(None)
+                    self.push(NULL)
     """,
 
     dis.opmap["RESUME"]: """

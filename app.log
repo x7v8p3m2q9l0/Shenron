@@ -1,228 +1,1257 @@
-2025-09-12 08:34:50,093 [DEBUG] [pc=self.pc] opcode=151 arg=0 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=0 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,094 [DEBUG]   push 'Shenron'
-2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=1 block_stack=[] stack_top=['Shenron']
-2025-09-12 08:34:50,094 [DEBUG]   push 'Nguyễn Xuân Trịnh'
-2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=103 arg=1 block_stack=[] stack_top=['Shenron', 'Nguyễn Xuân Trịnh']
-2025-09-12 08:34:50,094 [DEBUG]   pop -> 'Nguyễn Xuân Trịnh'
-2025-09-12 08:34:50,094 [DEBUG]   push ['Nguyễn Xuân Trịnh']
-2025-09-12 08:34:50,094 [DEBUG] [pc=self.pc] opcode=100 arg=2 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh']]
-2025-09-12 08:34:50,095 [DEBUG]   push 'S_VM'
-2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=3 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM']
-2025-09-12 08:34:50,095 [DEBUG]   push 'Dragon Ball'
-2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=4 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball']
-2025-09-12 08:34:50,095 [DEBUG]   push 'https://t.me/CalceIsMe'
-2025-09-12 08:34:50,095 [DEBUG] [pc=self.pc] opcode=100 arg=5 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe']
-2025-09-12 08:34:50,095 [DEBUG]   push 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
-2025-09-12 08:34:50,096 [DEBUG] [pc=self.pc] opcode=100 arg=6 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4']
-2025-09-12 08:34:50,096 [DEBUG]   push ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
-2025-09-12 08:34:50,096 [DEBUG] [pc=self.pc] opcode=156 arg=6 block_stack=[] stack_top=[['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4', ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")]
-2025-09-12 08:34:50,096 [DEBUG]   pop -> ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
-2025-09-12 08:34:50,096 [DEBUG]   pop -> 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
-2025-09-12 08:34:50,096 [DEBUG]   pop -> 'https://t.me/CalceIsMe'
-2025-09-12 08:34:50,096 [DEBUG]   pop -> 'Dragon Ball'
-2025-09-12 08:34:50,096 [DEBUG]   pop -> 'S_VM'
-2025-09-12 08:34:50,096 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
-2025-09-12 08:34:50,096 [DEBUG]   pop -> 'Shenron'
-2025-09-12 08:34:50,097 [DEBUG]   push {"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
-2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=90 arg=0 block_stack=[] stack_top=[{"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}]
-2025-09-12 08:34:50,097 [DEBUG]   pop -> {"'Obfuscator'": 'Shenron', "'Obfuscator Owner'": 'Nguyễn Xuân Trịnh', "'VM'": 'S_VM', "'Theme'": 'Dragon Ball', "'Contact'": 'https://t.me/CalceIsMe', "'Obfuscator Code Writing Process'": 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
-2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=100 arg=7 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,097 [DEBUG]   push '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
-2025-09-12 08:34:50,097 [DEBUG] [pc=self.pc] opcode=90 arg=1 block_stack=[] stack_top=['⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉']
-2025-09-12 08:34:50,097 [DEBUG]   pop -> '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
-2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,098 [DEBUG]   push 0
-2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,098 [DEBUG]   push None
-2025-09-12 08:34:50,098 [DEBUG] [pc=self.pc] opcode=108 arg=2 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,098 [DEBUG]   pop -> None
-2025-09-12 08:34:50,098 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,103 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
-2025-09-12 08:34:50,103 [DEBUG] [pc=self.pc] opcode=90 arg=2 block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
-2025-09-12 08:34:50,103 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
-2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,104 [DEBUG]   push 0
-2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,104 [DEBUG]   push None
-2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=108 arg=3 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,104 [DEBUG]   pop -> None
-2025-09-12 08:34:50,104 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,104 [DEBUG]   push <module 'marshal' (built-in)>
-2025-09-12 08:34:50,104 [DEBUG] [pc=self.pc] opcode=90 arg=3 block_stack=[] stack_top=[<module 'marshal' (built-in)>]
-2025-09-12 08:34:50,104 [DEBUG]   pop -> <module 'marshal' (built-in)>
-2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,105 [DEBUG]   push 0
-2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,105 [DEBUG]   push None
-2025-09-12 08:34:50,105 [DEBUG] [pc=self.pc] opcode=108 arg=4 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,105 [DEBUG]   pop -> None
-2025-09-12 08:34:50,105 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,109 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
-2025-09-12 08:34:50,109 [DEBUG] [pc=self.pc] opcode=90 arg=4 block_stack=[] stack_top=[<module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>]
-2025-09-12 08:34:50,110 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
-2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,110 [DEBUG]   push 0
-2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,110 [DEBUG]   push None
-2025-09-12 08:34:50,110 [DEBUG] [pc=self.pc] opcode=108 arg=5 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,110 [DEBUG]   pop -> None
-2025-09-12 08:34:50,110 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,115 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
-2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=90 arg=5 block_stack=[] stack_top=[<module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>]
-2025-09-12 08:34:50,115 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
-2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,115 [DEBUG]   push 0
-2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,115 [DEBUG]   push None
-2025-09-12 08:34:50,115 [DEBUG] [pc=self.pc] opcode=108 arg=6 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,116 [DEBUG]   pop -> None
-2025-09-12 08:34:50,116 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,116 [DEBUG]   push <module 'zlib' (built-in)>
-2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=90 arg=6 block_stack=[] stack_top=[<module 'zlib' (built-in)>]
-2025-09-12 08:34:50,116 [DEBUG]   pop -> <module 'zlib' (built-in)>
-2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,116 [DEBUG]   push 0
-2025-09-12 08:34:50,116 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,116 [DEBUG]   push None
-2025-09-12 08:34:50,117 [DEBUG] [pc=self.pc] opcode=108 arg=7 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,117 [DEBUG]   pop -> None
-2025-09-12 08:34:50,117 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,120 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
-2025-09-12 08:34:50,120 [DEBUG] [pc=self.pc] opcode=90 arg=7 block_stack=[] stack_top=[<module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>]
-2025-09-12 08:34:50,120 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
-2025-09-12 08:34:50,120 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,121 [DEBUG]   push 0
-2025-09-12 08:34:50,121 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,121 [DEBUG]   push None
-2025-09-12 08:34:50,121 [DEBUG] [pc=self.pc] opcode=108 arg=8 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,121 [DEBUG]   pop -> None
-2025-09-12 08:34:50,121 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,122 [DEBUG]   push <module 'time' (built-in)>
-2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=90 arg=8 block_stack=[] stack_top=[<module 'time' (built-in)>]
-2025-09-12 08:34:50,122 [DEBUG]   pop -> <module 'time' (built-in)>
-2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,122 [DEBUG]   push 0
-2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=100 arg=9 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,122 [DEBUG]   push None
-2025-09-12 08:34:50,122 [DEBUG] [pc=self.pc] opcode=108 arg=9 block_stack=[] stack_top=[0, None]
-2025-09-12 08:34:50,122 [DEBUG]   pop -> None
-2025-09-12 08:34:50,122 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,122 [DEBUG]   push <module 'sys' (built-in)>
-2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=90 arg=9 block_stack=[] stack_top=[<module 'sys' (built-in)>]
-2025-09-12 08:34:50,123 [DEBUG]   pop -> <module 'sys' (built-in)>
-2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,123 [DEBUG]   push 0
-2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=100 arg=10 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,123 [DEBUG]   push ("'*'",)
-2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=108 arg=2 block_stack=[] stack_top=[0, ("'*'",)]
-2025-09-12 08:34:50,123 [DEBUG]   pop -> ("'*'",)
-2025-09-12 08:34:50,123 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,123 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
-2025-09-12 08:34:50,123 [DEBUG] [pc=self.pc] opcode=84 arg=None block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
-2025-09-12 08:34:50,124 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
-2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,124 [DEBUG]   push 0
-2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=100 arg=11 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,124 [DEBUG]   push ("'minify_source'",)
-2025-09-12 08:34:50,124 [DEBUG] [pc=self.pc] opcode=108 arg=10 block_stack=[] stack_top=[0, ("'minify_source'",)]
-2025-09-12 08:34:50,124 [DEBUG]   pop -> ("'minify_source'",)
-2025-09-12 08:34:50,124 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,418 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
-2025-09-12 08:34:50,418 [DEBUG] [pc=self.pc] opcode=109 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
-2025-09-12 08:34:50,418 [DEBUG]   push <function minify_source at 0x000001D7DABF98A0>
-2025-09-12 08:34:50,418 [DEBUG] [pc=self.pc] opcode=90 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>, <function minify_source at 0x000001D7DABF98A0>]
-2025-09-12 08:34:50,419 [DEBUG]   pop -> <function minify_source at 0x000001D7DABF98A0>
-2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
-2025-09-12 08:34:50,419 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
-2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,419 [DEBUG]   push 0
-2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=100 arg=12 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,419 [DEBUG]   push ("'var_con_cak'",)
-2025-09-12 08:34:50,419 [DEBUG] [pc=self.pc] opcode=108 arg=12 block_stack=[] stack_top=[0, ("'var_con_cak'",)]
-2025-09-12 08:34:50,419 [DEBUG]   pop -> ("'var_con_cak'",)
-2025-09-12 08:34:50,419 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,420 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=109 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
-2025-09-12 08:34:50,422 [DEBUG]   push <function var_con_cak at 0x000001D7DD50C540>
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=90 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>, <function var_con_cak at 0x000001D7DD50C540>]
-2025-09-12 08:34:50,422 [DEBUG]   pop -> <function var_con_cak at 0x000001D7DD50C540>
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
-2025-09-12 08:34:50,422 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=100 arg=8 block_stack=[] stack_top=[]
-2025-09-12 08:34:50,422 [DEBUG]   push 0
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=100 arg=13 block_stack=[] stack_top=[0]
-2025-09-12 08:34:50,422 [DEBUG]   push ("'main'", "'remove_comments'")
-2025-09-12 08:34:50,422 [DEBUG] [pc=self.pc] opcode=108 arg=14 block_stack=[] stack_top=[0, ("'main'", "'remove_comments'")]
-2025-09-12 08:34:50,422 [DEBUG]   pop -> ("'main'", "'remove_comments'")
-2025-09-12 08:34:50,422 [DEBUG]   pop -> 0
-2025-09-12 08:34:50,428 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=109 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
-2025-09-12 08:34:50,428 [DEBUG]   push <function main at 0x000001D7DD50D620>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=90 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function main at 0x000001D7DD50D620>]
-2025-09-12 08:34:50,428 [DEBUG]   pop -> <function main at 0x000001D7DD50D620>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=109 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
-2025-09-12 08:34:50,428 [DEBUG]   push <function remove_comments at 0x000001D7DD44D3A0>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=90 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function remove_comments at 0x000001D7DD44D3A0>]
-2025-09-12 08:34:50,428 [DEBUG]   pop -> <function remove_comments at 0x000001D7DD44D3A0>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
-2025-09-12 08:34:50,428 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
-2025-09-12 08:34:50,428 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[]
-2025-09-12 08:34:50,429 [DEBUG]   push None
-2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None]
-2025-09-12 08:34:50,429 [DEBUG]   push <module 'sys' (built-in)>
-2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=106 arg=17 block_stack=[] stack_top=[None, <module 'sys' (built-in)>]
-2025-09-12 08:34:50,429 [DEBUG]   pop -> <module 'sys' (built-in)>
-2025-09-12 08:34:50,429 [DEBUG]   push <built-in function setrecursionlimit>
-2025-09-12 08:34:50,429 [DEBUG] [pc=self.pc] opcode=100 arg=14 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>]
-2025-09-12 08:34:50,430 [DEBUG]   push 99999999
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>, 99999999]
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, <built-in function setrecursionlimit>, 99999999]
-2025-09-12 08:34:50,430 [DEBUG]   pop -> 99999999
-2025-09-12 08:34:50,430 [DEBUG]   pop -> <built-in function setrecursionlimit>
-2025-09-12 08:34:50,430 [DEBUG]   push None
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=1 arg=None block_stack=[] stack_top=[None, None]
-2025-09-12 08:34:50,430 [DEBUG]   pop -> None
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[None]
-2025-09-12 08:34:50,430 [DEBUG]   push None
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=101 arg=18 block_stack=[] stack_top=[None, None]
-2025-09-12 08:34:50,430 [DEBUG]   push <class 'str'>
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None, None, <class 'str'>]
-2025-09-12 08:34:50,430 [DEBUG]   push <module 'sys' (built-in)>
-2025-09-12 08:34:50,430 [DEBUG] [pc=self.pc] opcode=106 arg=19 block_stack=[] stack_top=[None, None, <class 'str'>, <module 'sys' (built-in)>]
-2025-09-12 08:34:50,432 [DEBUG]   pop -> <module 'sys' (built-in)>
-2025-09-12 08:34:50,432 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
-2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=106 arg=20 block_stack=[] stack_top=[None, None, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
-2025-09-12 08:34:50,432 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
-2025-09-12 08:34:50,432 [DEBUG]   push 3
-2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, None, <class 'str'>, 3]
-2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, None, <class 'str'>, 3]
-2025-09-12 08:34:50,432 [DEBUG]   pop -> 3
-2025-09-12 08:34:50,432 [DEBUG]   pop -> <class 'str'>
-2025-09-12 08:34:50,432 [DEBUG]   push '3'
-2025-09-12 08:34:50,432 [DEBUG] [pc=self.pc] opcode=100 arg=15 block_stack=[] stack_top=[None, None, '3']
-2025-09-12 08:34:50,433 [DEBUG]   push '.'
-2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=122 arg=0 block_stack=[] stack_top=[None, None, '3', '.']
-2025-09-12 08:34:50,433 [DEBUG]   pop -> '.'
-2025-09-12 08:34:50,433 [DEBUG]   pop -> '3'
-2025-09-12 08:34:50,433 [DEBUG]   push '3.'
-2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=2 arg=None block_stack=[] stack_top=[None, None, '3.']
-2025-09-12 08:34:50,433 [DEBUG]   push None
-2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=101 arg=18 block_stack=[] stack_top=[None, None, '3.', None]
-2025-09-12 08:34:50,433 [DEBUG]   push <class 'str'>
-2025-09-12 08:34:50,433 [DEBUG] [pc=self.pc] opcode=101 arg=9 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>]
-2025-09-12 08:34:50,433 [DEBUG]   push <module 'sys' (built-in)>
-2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=106 arg=19 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, <module 'sys' (built-in)>]
-2025-09-12 08:34:50,434 [DEBUG]   pop -> <module 'sys' (built-in)>
-2025-09-12 08:34:50,434 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
-2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=106 arg=21 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
-2025-09-12 08:34:50,434 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
-2025-09-12 08:34:50,434 [DEBUG]   push 11
-2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=166 arg=1 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, 11]
-2025-09-12 08:34:50,434 [DEBUG] [pc=self.pc] opcode=171 arg=1 block_stack=[] stack_top=[None, None, '3.', None, <class 'str'>, 11]
-2025-09-12 08:34:50,434 [DEBUG]   pop -> 11
-2025-09-12 08:34:50,435 [DEBUG]   pop -> <class 'str'>
-2025-09-12 08:34:50,435 [DEBUG]   push '11'
-2025-09-12 08:34:50,435 [DEBUG] [pc=self.pc] opcode=122 arg=0 block_stack=[] stack_top=[None, None, '3.', None, '11']
-2025-09-12 08:34:50,435 [DEBUG]   pop -> '11'
-2025-09-12 08:34:50,435 [DEBUG]   pop -> None
+2025-09-12 20:22:22,099 [DEBUG] [pc=0] opcode=151 arg=0 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,100 [DEBUG] [pc=1] opcode=100 arg=0 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,100 [INFO] Shenron
+2025-09-12 20:22:22,100 [DEBUG]   push 'Shenron'
+2025-09-12 20:22:22,100 [DEBUG] [pc=2] opcode=100 arg=1 block_stack=[] stack_top=['Shenron']
+2025-09-12 20:22:22,100 [INFO] Nguyễn Xuân Trịnh
+2025-09-12 20:22:22,101 [DEBUG]   push 'Nguyễn Xuân Trịnh'
+2025-09-12 20:22:22,101 [DEBUG] [pc=3] opcode=103 arg=1 block_stack=[] stack_top=['Shenron', 'Nguyễn Xuân Trịnh']
+2025-09-12 20:22:22,102 [DEBUG]   pop -> 'Nguyễn Xuân Trịnh'
+2025-09-12 20:22:22,102 [DEBUG]   push ['Nguyễn Xuân Trịnh']
+2025-09-12 20:22:22,102 [DEBUG] [pc=4] opcode=100 arg=2 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh']]
+2025-09-12 20:22:22,102 [INFO] S_VM
+2025-09-12 20:22:22,102 [DEBUG]   push 'S_VM'
+2025-09-12 20:22:22,103 [DEBUG] [pc=5] opcode=100 arg=3 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM']
+2025-09-12 20:22:22,103 [INFO] Dragon Ball
+2025-09-12 20:22:22,103 [DEBUG]   push 'Dragon Ball'
+2025-09-12 20:22:22,103 [DEBUG] [pc=6] opcode=100 arg=4 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball']
+2025-09-12 20:22:22,103 [INFO] https://t.me/CalceIsMe
+2025-09-12 20:22:22,103 [DEBUG]   push 'https://t.me/CalceIsMe'
+2025-09-12 20:22:22,104 [DEBUG] [pc=7] opcode=100 arg=5 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe']
+2025-09-12 20:22:22,104 [INFO] https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-12 20:22:22,104 [DEBUG]   push 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-12 20:22:22,104 [DEBUG] [pc=8] opcode=100 arg=6 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4']
+2025-09-12 20:22:22,104 [INFO] ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-12 20:22:22,104 [DEBUG]   push ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-12 20:22:22,104 [DEBUG] [pc=9] opcode=156 arg=6 block_stack=[] stack_top=[['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4', ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")]
+2025-09-12 20:22:22,105 [DEBUG]   pop -> ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-12 20:22:22,105 [DEBUG]   pop -> 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-12 20:22:22,105 [DEBUG]   pop -> 'https://t.me/CalceIsMe'
+2025-09-12 20:22:22,105 [DEBUG]   pop -> 'Dragon Ball'
+2025-09-12 20:22:22,105 [DEBUG]   pop -> 'S_VM'
+2025-09-12 20:22:22,105 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
+2025-09-12 20:22:22,105 [DEBUG]   pop -> 'Shenron'
+2025-09-12 20:22:22,105 [DEBUG]   push {'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-12 20:22:22,106 [DEBUG] [pc=10] opcode=90 arg=0 block_stack=[] stack_top=[{'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}]
+2025-09-12 20:22:22,106 [DEBUG]   pop -> {'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-12 20:22:22,106 [DEBUG] [pc=11] opcode=100 arg=7 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,106 [INFO] ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-12 20:22:22,106 [DEBUG]   push '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-12 20:22:22,107 [DEBUG] [pc=12] opcode=90 arg=1 block_stack=[] stack_top=['⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉']
+2025-09-12 20:22:22,107 [DEBUG]   pop -> '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-12 20:22:22,107 [DEBUG] [pc=13] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,107 [INFO] 0
+2025-09-12 20:22:22,107 [DEBUG]   push 0
+2025-09-12 20:22:22,107 [DEBUG] [pc=14] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,107 [INFO] None
+2025-09-12 20:22:22,107 [DEBUG]   push None
+2025-09-12 20:22:22,107 [DEBUG] [pc=15] opcode=108 arg=2 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,107 [DEBUG]   pop -> None
+2025-09-12 20:22:22,107 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,112 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 20:22:22,112 [DEBUG] [pc=16] opcode=90 arg=2 block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-12 20:22:22,113 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 20:22:22,113 [DEBUG] [pc=17] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,113 [INFO] 0
+2025-09-12 20:22:22,113 [DEBUG]   push 0
+2025-09-12 20:22:22,113 [DEBUG] [pc=18] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,113 [INFO] None
+2025-09-12 20:22:22,113 [DEBUG]   push None
+2025-09-12 20:22:22,114 [DEBUG] [pc=19] opcode=108 arg=3 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,114 [DEBUG]   pop -> None
+2025-09-12 20:22:22,114 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,114 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-12 20:22:22,114 [DEBUG] [pc=20] opcode=90 arg=3 block_stack=[] stack_top=[<module 'marshal' (built-in)>]
+2025-09-12 20:22:22,114 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-12 20:22:22,114 [DEBUG] [pc=21] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,115 [INFO] 0
+2025-09-12 20:22:22,115 [DEBUG]   push 0
+2025-09-12 20:22:22,115 [DEBUG] [pc=22] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,115 [INFO] None
+2025-09-12 20:22:22,115 [DEBUG]   push None
+2025-09-12 20:22:22,115 [DEBUG] [pc=23] opcode=108 arg=4 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,115 [DEBUG]   pop -> None
+2025-09-12 20:22:22,116 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,116 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-12 20:22:22,116 [DEBUG] [pc=24] opcode=90 arg=4 block_stack=[] stack_top=[<module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>]
+2025-09-12 20:22:22,116 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-12 20:22:22,116 [DEBUG] [pc=25] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,116 [INFO] 0
+2025-09-12 20:22:22,116 [DEBUG]   push 0
+2025-09-12 20:22:22,116 [DEBUG] [pc=26] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,116 [INFO] None
+2025-09-12 20:22:22,116 [DEBUG]   push None
+2025-09-12 20:22:22,116 [DEBUG] [pc=27] opcode=108 arg=5 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,118 [DEBUG]   pop -> None
+2025-09-12 20:22:22,118 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,118 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-12 20:22:22,118 [DEBUG] [pc=28] opcode=90 arg=5 block_stack=[] stack_top=[<module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>]
+2025-09-12 20:22:22,118 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-12 20:22:22,118 [DEBUG] [pc=29] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,118 [INFO] 0
+2025-09-12 20:22:22,118 [DEBUG]   push 0
+2025-09-12 20:22:22,119 [DEBUG] [pc=30] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,119 [INFO] None
+2025-09-12 20:22:22,119 [DEBUG]   push None
+2025-09-12 20:22:22,119 [DEBUG] [pc=31] opcode=108 arg=6 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,120 [DEBUG]   pop -> None
+2025-09-12 20:22:22,120 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,120 [DEBUG]   push <module 'zlib' (built-in)>
+2025-09-12 20:22:22,120 [DEBUG] [pc=32] opcode=90 arg=6 block_stack=[] stack_top=[<module 'zlib' (built-in)>]
+2025-09-12 20:22:22,120 [DEBUG]   pop -> <module 'zlib' (built-in)>
+2025-09-12 20:22:22,120 [DEBUG] [pc=33] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,120 [INFO] 0
+2025-09-12 20:22:22,121 [DEBUG]   push 0
+2025-09-12 20:22:22,121 [DEBUG] [pc=34] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,121 [INFO] None
+2025-09-12 20:22:22,121 [DEBUG]   push None
+2025-09-12 20:22:22,121 [DEBUG] [pc=35] opcode=108 arg=7 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,121 [DEBUG]   pop -> None
+2025-09-12 20:22:22,121 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,121 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-12 20:22:22,122 [DEBUG] [pc=36] opcode=90 arg=7 block_stack=[] stack_top=[<module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>]
+2025-09-12 20:22:22,122 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-12 20:22:22,122 [DEBUG] [pc=37] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,122 [INFO] 0
+2025-09-12 20:22:22,122 [DEBUG]   push 0
+2025-09-12 20:22:22,122 [DEBUG] [pc=38] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,122 [INFO] None
+2025-09-12 20:22:22,122 [DEBUG]   push None
+2025-09-12 20:22:22,122 [DEBUG] [pc=39] opcode=108 arg=8 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,122 [DEBUG]   pop -> None
+2025-09-12 20:22:22,122 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,123 [DEBUG]   push <module 'time' (built-in)>
+2025-09-12 20:22:22,123 [DEBUG] [pc=40] opcode=90 arg=8 block_stack=[] stack_top=[<module 'time' (built-in)>]
+2025-09-12 20:22:22,123 [DEBUG]   pop -> <module 'time' (built-in)>
+2025-09-12 20:22:22,123 [DEBUG] [pc=41] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,123 [INFO] 0
+2025-09-12 20:22:22,123 [DEBUG]   push 0
+2025-09-12 20:22:22,123 [DEBUG] [pc=42] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,124 [INFO] None
+2025-09-12 20:22:22,124 [DEBUG]   push None
+2025-09-12 20:22:22,124 [DEBUG] [pc=43] opcode=108 arg=9 block_stack=[] stack_top=[0, None]
+2025-09-12 20:22:22,124 [DEBUG]   pop -> None
+2025-09-12 20:22:22,124 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,124 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 20:22:22,124 [DEBUG] [pc=44] opcode=90 arg=9 block_stack=[] stack_top=[<module 'sys' (built-in)>]
+2025-09-12 20:22:22,124 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 20:22:22,125 [DEBUG] [pc=45] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,125 [INFO] 0
+2025-09-12 20:22:22,125 [DEBUG]   push 0
+2025-09-12 20:22:22,125 [DEBUG] [pc=46] opcode=100 arg=10 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,125 [INFO] ("'*'",)
+2025-09-12 20:22:22,125 [DEBUG]   push ("'*'",)
+2025-09-12 20:22:22,125 [DEBUG] [pc=47] opcode=108 arg=2 block_stack=[] stack_top=[0, ("'*'",)]
+2025-09-12 20:22:22,126 [DEBUG]   pop -> ("'*'",)
+2025-09-12 20:22:22,126 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,126 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 20:22:22,126 [DEBUG] [pc=48] opcode=84 arg=None block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-12 20:22:22,126 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-12 20:22:22,126 [DEBUG] [pc=49] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,127 [INFO] 0
+2025-09-12 20:22:22,127 [DEBUG]   push 0
+2025-09-12 20:22:22,127 [DEBUG] [pc=50] opcode=100 arg=11 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,127 [INFO] ("'minify_source'",)
+2025-09-12 20:22:22,127 [DEBUG]   push ("'minify_source'",)
+2025-09-12 20:22:22,127 [DEBUG] [pc=51] opcode=108 arg=10 block_stack=[] stack_top=[0, ("'minify_source'",)]
+2025-09-12 20:22:22,128 [DEBUG]   pop -> ("'minify_source'",)
+2025-09-12 20:22:22,128 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,432 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-12 20:22:22,432 [DEBUG] [pc=52] opcode=109 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-12 20:22:22,432 [DEBUG]   push <function minify_source at 0x0000029EFD784CC0>
+2025-09-12 20:22:22,432 [DEBUG] [pc=53] opcode=90 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>, <function minify_source at 0x0000029EFD784CC0>]
+2025-09-12 20:22:22,432 [DEBUG]   pop -> <function minify_source at 0x0000029EFD784CC0>
+2025-09-12 20:22:22,433 [DEBUG] [pc=54] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-12 20:22:22,433 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-12 20:22:22,433 [DEBUG] [pc=55] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,433 [INFO] 0
+2025-09-12 20:22:22,433 [DEBUG]   push 0
+2025-09-12 20:22:22,433 [DEBUG] [pc=56] opcode=100 arg=12 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,434 [INFO] ("'var_con_cak'",)
+2025-09-12 20:22:22,434 [DEBUG]   push ("'var_con_cak'",)
+2025-09-12 20:22:22,434 [DEBUG] [pc=57] opcode=108 arg=12 block_stack=[] stack_top=[0, ("'var_con_cak'",)]
+2025-09-12 20:22:22,434 [DEBUG]   pop -> ("'var_con_cak'",)
+2025-09-12 20:22:22,434 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,436 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-12 20:22:22,436 [DEBUG] [pc=58] opcode=109 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-12 20:22:22,437 [DEBUG]   push <function var_con_cak at 0x0000029EFF7C8C20>
+2025-09-12 20:22:22,437 [DEBUG] [pc=59] opcode=90 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>, <function var_con_cak at 0x0000029EFF7C8C20>]
+2025-09-12 20:22:22,437 [DEBUG]   pop -> <function var_con_cak at 0x0000029EFF7C8C20>
+2025-09-12 20:22:22,437 [DEBUG] [pc=60] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-12 20:22:22,437 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-12 20:22:22,437 [DEBUG] [pc=61] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-12 20:22:22,437 [INFO] 0
+2025-09-12 20:22:22,437 [DEBUG]   push 0
+2025-09-12 20:22:22,437 [DEBUG] [pc=62] opcode=100 arg=13 block_stack=[] stack_top=[0]
+2025-09-12 20:22:22,437 [INFO] ("'main'", "'remove_comments'")
+2025-09-12 20:22:22,437 [DEBUG]   push ("'main'", "'remove_comments'")
+2025-09-12 20:22:22,438 [DEBUG] [pc=63] opcode=108 arg=14 block_stack=[] stack_top=[0, ("'main'", "'remove_comments'")]
+2025-09-12 20:22:22,438 [DEBUG]   pop -> ("'main'", "'remove_comments'")
+2025-09-12 20:22:22,438 [DEBUG]   pop -> 0
+2025-09-12 20:22:22,443 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-12 20:22:22,443 [DEBUG] [pc=64] opcode=109 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 20:22:22,443 [DEBUG]   push <function main at 0x0000029EFF7C9B20>
+2025-09-12 20:22:22,443 [DEBUG] [pc=65] opcode=90 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function main at 0x0000029EFF7C9B20>]
+2025-09-12 20:22:22,443 [DEBUG]   pop -> <function main at 0x0000029EFF7C9B20>
+2025-09-12 20:22:22,444 [DEBUG] [pc=66] opcode=109 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 20:22:22,444 [DEBUG]   push <function remove_comments at 0x0000029EFF715A80>
+2025-09-12 20:22:22,444 [DEBUG] [pc=67] opcode=90 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function remove_comments at 0x0000029EFF715A80>]
+2025-09-12 20:22:22,444 [DEBUG]   pop -> <function remove_comments at 0x0000029EFF715A80>
+2025-09-12 20:22:22,444 [DEBUG] [pc=68] opcode=1 arg=None block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-12 20:22:22,445 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-12 20:22:22,445 [DEBUG] [pc=69] opcode=2 arg=None block_stack=[] stack_top=[]
+2025-09-12 20:22:22,445 [DEBUG]   push <object object at 0x0000029EFBFE4400>
+2025-09-12 20:22:22,445 [DEBUG] [pc=70] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>]
+2025-09-12 20:22:22,445 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 20:22:22,445 [DEBUG] [pc=71] opcode=106 arg=17 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <module 'sys' (built-in)>]
+2025-09-12 20:22:22,445 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 20:22:22,446 [DEBUG]   push <built-in function setrecursionlimit>
+2025-09-12 20:22:22,446 [DEBUG] [pc=72] opcode=100 arg=14 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <built-in function setrecursionlimit>]
+2025-09-12 20:22:22,446 [INFO] 99999999
+2025-09-12 20:22:22,446 [DEBUG]   push 99999999
+2025-09-12 20:22:22,446 [DEBUG] [pc=73] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <built-in function setrecursionlimit>, 99999999]
+2025-09-12 20:22:22,446 [DEBUG] [pc=74] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <built-in function setrecursionlimit>, 99999999]
+2025-09-12 20:22:22,446 [DEBUG]   pop -> 99999999
+2025-09-12 20:22:22,446 [DEBUG]   pop -> <built-in function setrecursionlimit>
+2025-09-12 20:22:22,447 [DEBUG]   push None
+2025-09-12 20:22:22,447 [DEBUG] [pc=75] opcode=1 arg=None block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, None]
+2025-09-12 20:22:22,447 [DEBUG]   pop -> None
+2025-09-12 20:22:22,447 [DEBUG] [pc=76] opcode=2 arg=None block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>]
+2025-09-12 20:22:22,447 [DEBUG]   push <object object at 0x0000029EFBFE4400>
+2025-09-12 20:22:22,447 [DEBUG] [pc=77] opcode=101 arg=18 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>]
+2025-09-12 20:22:22,447 [DEBUG]   push <class 'str'>
+2025-09-12 20:22:22,448 [DEBUG] [pc=78] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, <class 'str'>]
+2025-09-12 20:22:22,448 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 20:22:22,448 [DEBUG] [pc=79] opcode=106 arg=19 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-12 20:22:22,448 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 20:22:22,448 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 20:22:22,448 [DEBUG] [pc=80] opcode=106 arg=20 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-12 20:22:22,448 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 20:22:22,448 [DEBUG]   push 3
+2025-09-12 20:22:22,449 [DEBUG] [pc=81] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, <class 'str'>, 3]
+2025-09-12 20:22:22,449 [DEBUG] [pc=82] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, <class 'str'>, 3]
+2025-09-12 20:22:22,449 [DEBUG]   pop -> 3
+2025-09-12 20:22:22,449 [DEBUG]   pop -> <class 'str'>
+2025-09-12 20:22:22,449 [DEBUG]   push '3'
+2025-09-12 20:22:22,449 [DEBUG] [pc=83] opcode=100 arg=15 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3']
+2025-09-12 20:22:22,449 [INFO] .
+2025-09-12 20:22:22,450 [DEBUG]   push '.'
+2025-09-12 20:22:22,450 [DEBUG] [pc=84] opcode=122 arg=0 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3', '.']
+2025-09-12 20:22:22,450 [DEBUG]   pop -> '.'
+2025-09-12 20:22:22,450 [DEBUG]   pop -> '3'
+2025-09-12 20:22:22,450 [DEBUG]   push '3.'
+2025-09-12 20:22:22,450 [DEBUG] [pc=85] opcode=2 arg=None block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.']
+2025-09-12 20:22:22,450 [DEBUG]   push <object object at 0x0000029EFBFE4400>
+2025-09-12 20:22:22,450 [DEBUG] [pc=86] opcode=101 arg=18 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>]
+2025-09-12 20:22:22,450 [DEBUG]   push <class 'str'>
+2025-09-12 20:22:22,450 [DEBUG] [pc=87] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, <class 'str'>]
+2025-09-12 20:22:22,450 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-12 20:22:22,450 [DEBUG] [pc=88] opcode=106 arg=19 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-12 20:22:22,452 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-12 20:22:22,452 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 20:22:22,452 [DEBUG] [pc=89] opcode=106 arg=21 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-12 20:22:22,452 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-12 20:22:22,452 [DEBUG]   push 11
+2025-09-12 20:22:22,452 [DEBUG] [pc=90] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, <class 'str'>, 11]
+2025-09-12 20:22:22,452 [DEBUG] [pc=91] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, <class 'str'>, 11]
+2025-09-12 20:22:22,453 [DEBUG]   pop -> 11
+2025-09-12 20:22:22,453 [DEBUG]   pop -> <class 'str'>
+2025-09-12 20:22:22,453 [DEBUG]   push '11'
+2025-09-12 20:22:22,453 [DEBUG] [pc=92] opcode=122 arg=0 block_stack=[] stack_top=[<object object at 0x0000029EFBFE4400>, <object object at 0x0000029EFBFE4400>, '3.', <object object at 0x0000029EFBFE4400>, '11']
+2025-09-12 20:22:22,453 [DEBUG]   pop -> '11'
+2025-09-12 20:22:22,453 [DEBUG]   pop -> <object object at 0x0000029EFBFE4400>
+2025-09-13 12:01:31,694 [DEBUG] [pc=0] opcode=151 arg=0 block_stack=[] stack_top=[]
+2025-09-13 12:01:31,695 [DEBUG] [pc=1] opcode=105 arg=0 block_stack=[] stack_top=[]
+2025-09-13 12:01:31,695 [DEBUG]   push {}
+2025-09-13 12:01:31,695 [DEBUG] [pc=2] opcode=100 arg=0 block_stack=[] stack_top=[{}]
+2025-09-13 12:01:31,695 [INFO] A
+2025-09-13 12:01:31,695 [DEBUG]   push 'A'
+2025-09-13 12:01:31,695 [DEBUG] [pc=3] opcode=100 arg=1 block_stack=[] stack_top=[{}, 'A']
+2025-09-13 12:01:31,695 [INFO] 🐉
+2025-09-13 12:01:31,696 [DEBUG]   push '🐉'
+2025-09-13 12:01:31,696 [DEBUG] [pc=4] opcode=147 arg=1 block_stack=[] stack_top=[{}, 'A', '🐉']
+2025-09-13 12:01:31,696 [DEBUG]   pop -> '🐉'
+2025-09-13 12:01:31,696 [DEBUG]   pop -> 'A'
+2025-09-13 12:01:31,696 [DEBUG]   pop -> {}
+2025-09-13 12:01:31,696 [DEBUG]   push {'A': '🐉'}
+2025-09-13 12:01:31,696 [DEBUG] [pc=5] opcode=100 arg=2 block_stack=[] stack_top=[{'A': '🐉'}]
+2025-09-13 12:01:31,696 [INFO] B
+2025-09-13 12:01:31,696 [DEBUG]   push 'B'
+2025-09-13 12:01:31,696 [DEBUG] [pc=6] opcode=100 arg=3 block_stack=[] stack_top=[{'A': '🐉'}, 'B']
+2025-09-13 12:01:31,696 [INFO] 🐲
+2025-09-13 12:01:31,696 [DEBUG]   push '🐲'
+2025-09-13 12:01:31,697 [DEBUG] [pc=7] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉'}, 'B', '🐲']
+2025-09-13 12:01:31,697 [DEBUG]   pop -> '🐲'
+2025-09-13 12:01:31,697 [DEBUG]   pop -> 'B'
+2025-09-13 12:01:31,697 [DEBUG]   pop -> {'A': '🐉'}
+2025-09-13 12:01:31,697 [DEBUG]   push {'A': '🐉', 'B': '🐲'}
+2025-09-13 12:01:31,697 [DEBUG] [pc=8] opcode=100 arg=4 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲'}]
+2025-09-13 12:01:31,697 [INFO] C
+2025-09-13 12:01:31,697 [DEBUG]   push 'C'
+2025-09-13 12:01:31,698 [DEBUG] [pc=9] opcode=100 arg=5 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲'}, 'C']
+2025-09-13 12:01:31,698 [INFO] ⭐
+2025-09-13 12:01:31,698 [DEBUG]   push '⭐'
+2025-09-13 12:01:31,698 [DEBUG] [pc=10] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲'}, 'C', '⭐']
+2025-09-13 12:01:31,698 [DEBUG]   pop -> '⭐'
+2025-09-13 12:01:31,698 [DEBUG]   pop -> 'C'
+2025-09-13 12:01:31,698 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲'}
+2025-09-13 12:01:31,698 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐'}
+2025-09-13 12:01:31,698 [DEBUG] [pc=11] opcode=100 arg=6 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐'}]
+2025-09-13 12:01:31,699 [INFO] D
+2025-09-13 12:01:31,699 [DEBUG]   push 'D'
+2025-09-13 12:01:31,699 [DEBUG] [pc=12] opcode=100 arg=7 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐'}, 'D']
+2025-09-13 12:01:31,699 [INFO] ✦
+2025-09-13 12:01:31,699 [DEBUG]   push '✦'
+2025-09-13 12:01:31,699 [DEBUG] [pc=13] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐'}, 'D', '✦']
+2025-09-13 12:01:31,699 [DEBUG]   pop -> '✦'
+2025-09-13 12:01:31,699 [DEBUG]   pop -> 'D'
+2025-09-13 12:01:31,699 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐'}
+2025-09-13 12:01:31,700 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦'}
+2025-09-13 12:01:31,700 [DEBUG] [pc=14] opcode=100 arg=8 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦'}]
+2025-09-13 12:01:31,700 [INFO] E
+2025-09-13 12:01:31,700 [DEBUG]   push 'E'
+2025-09-13 12:01:31,700 [DEBUG] [pc=15] opcode=100 arg=9 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦'}, 'E']
+2025-09-13 12:01:31,700 [INFO] ✧
+2025-09-13 12:01:31,700 [DEBUG]   push '✧'
+2025-09-13 12:01:31,700 [DEBUG] [pc=16] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦'}, 'E', '✧']
+2025-09-13 12:01:31,701 [DEBUG]   pop -> '✧'
+2025-09-13 12:01:31,701 [DEBUG]   pop -> 'E'
+2025-09-13 12:01:31,701 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦'}
+2025-09-13 12:01:31,701 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧'}
+2025-09-13 12:01:31,701 [DEBUG] [pc=17] opcode=100 arg=10 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧'}]
+2025-09-13 12:01:31,701 [INFO] F
+2025-09-13 12:01:31,701 [DEBUG]   push 'F'
+2025-09-13 12:01:31,701 [DEBUG] [pc=18] opcode=100 arg=11 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧'}, 'F']
+2025-09-13 12:01:31,701 [INFO] ✨
+2025-09-13 12:01:31,702 [DEBUG]   push '✨'
+2025-09-13 12:01:31,702 [DEBUG] [pc=19] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧'}, 'F', '✨']
+2025-09-13 12:01:31,702 [DEBUG]   pop -> '✨'
+2025-09-13 12:01:31,702 [DEBUG]   pop -> 'F'
+2025-09-13 12:01:31,702 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧'}
+2025-09-13 12:01:31,702 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨'}
+2025-09-13 12:01:31,702 [DEBUG] [pc=20] opcode=100 arg=12 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨'}]
+2025-09-13 12:01:31,702 [INFO] G
+2025-09-13 12:01:31,702 [DEBUG]   push 'G'
+2025-09-13 12:01:31,703 [DEBUG] [pc=21] opcode=100 arg=13 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨'}, 'G']
+2025-09-13 12:01:31,703 [INFO] 💫
+2025-09-13 12:01:31,703 [DEBUG]   push '💫'
+2025-09-13 12:01:31,703 [DEBUG] [pc=22] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨'}, 'G', '💫']
+2025-09-13 12:01:31,703 [DEBUG]   pop -> '💫'
+2025-09-13 12:01:31,703 [DEBUG]   pop -> 'G'
+2025-09-13 12:01:31,703 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨'}
+2025-09-13 12:01:31,703 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫'}
+2025-09-13 12:01:31,703 [DEBUG] [pc=23] opcode=100 arg=14 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫'}]
+2025-09-13 12:01:31,704 [INFO] H
+2025-09-13 12:01:31,704 [DEBUG]   push 'H'
+2025-09-13 12:01:31,704 [DEBUG] [pc=24] opcode=100 arg=15 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫'}, 'H']
+2025-09-13 12:01:31,704 [INFO] 🌠
+2025-09-13 12:01:31,704 [DEBUG]   push '🌠'
+2025-09-13 12:01:31,704 [DEBUG] [pc=25] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫'}, 'H', '🌠']
+2025-09-13 12:01:31,704 [DEBUG]   pop -> '🌠'
+2025-09-13 12:01:31,704 [DEBUG]   pop -> 'H'
+2025-09-13 12:01:31,704 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫'}
+2025-09-13 12:01:31,705 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠'}
+2025-09-13 12:01:31,705 [DEBUG] [pc=26] opcode=100 arg=16 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠'}]
+2025-09-13 12:01:31,705 [INFO] I
+2025-09-13 12:01:31,705 [DEBUG]   push 'I'
+2025-09-13 12:01:31,705 [DEBUG] [pc=27] opcode=100 arg=17 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠'}, 'I']
+2025-09-13 12:01:31,705 [INFO] ⚡
+2025-09-13 12:01:31,705 [DEBUG]   push '⚡'
+2025-09-13 12:01:31,705 [DEBUG] [pc=28] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠'}, 'I', '⚡']
+2025-09-13 12:01:31,705 [DEBUG]   pop -> '⚡'
+2025-09-13 12:01:31,706 [DEBUG]   pop -> 'I'
+2025-09-13 12:01:31,706 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠'}
+2025-09-13 12:01:31,706 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡'}
+2025-09-13 12:01:31,706 [DEBUG] [pc=29] opcode=100 arg=18 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡'}]
+2025-09-13 12:01:31,706 [INFO] J
+2025-09-13 12:01:31,706 [DEBUG]   push 'J'
+2025-09-13 12:01:31,706 [DEBUG] [pc=30] opcode=100 arg=19 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡'}, 'J']
+2025-09-13 12:01:31,706 [INFO] 🔥
+2025-09-13 12:01:31,706 [DEBUG]   push '🔥'
+2025-09-13 12:01:31,707 [DEBUG] [pc=31] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡'}, 'J', '🔥']
+2025-09-13 12:01:31,707 [DEBUG]   pop -> '🔥'
+2025-09-13 12:01:31,707 [DEBUG]   pop -> 'J'
+2025-09-13 12:01:31,707 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡'}
+2025-09-13 12:01:31,707 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥'}
+2025-09-13 12:01:31,708 [DEBUG] [pc=32] opcode=100 arg=20 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥'}]
+2025-09-13 12:01:31,708 [INFO] K
+2025-09-13 12:01:31,708 [DEBUG]   push 'K'
+2025-09-13 12:01:31,708 [DEBUG] [pc=33] opcode=100 arg=21 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥'}, 'K']
+2025-09-13 12:01:31,708 [INFO] 💥
+2025-09-13 12:01:31,708 [DEBUG]   push '💥'
+2025-09-13 12:01:31,708 [DEBUG] [pc=34] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥'}, 'K', '💥']
+2025-09-13 12:01:31,708 [DEBUG]   pop -> '💥'
+2025-09-13 12:01:31,708 [DEBUG]   pop -> 'K'
+2025-09-13 12:01:31,709 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥'}
+2025-09-13 12:01:31,709 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥'}
+2025-09-13 12:01:31,709 [DEBUG] [pc=35] opcode=100 arg=22 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥'}]
+2025-09-13 12:01:31,709 [INFO] L
+2025-09-13 12:01:31,709 [DEBUG]   push 'L'
+2025-09-13 12:01:31,709 [DEBUG] [pc=36] opcode=100 arg=23 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥'}, 'L']
+2025-09-13 12:01:31,709 [INFO] ☄
+2025-09-13 12:01:31,709 [DEBUG]   push '☄'
+2025-09-13 12:01:31,709 [DEBUG] [pc=37] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥'}, 'L', '☄']
+2025-09-13 12:01:31,710 [DEBUG]   pop -> '☄'
+2025-09-13 12:01:31,710 [DEBUG]   pop -> 'L'
+2025-09-13 12:01:31,710 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥'}
+2025-09-13 12:01:31,710 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄'}
+2025-09-13 12:01:31,710 [DEBUG] [pc=38] opcode=100 arg=24 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄'}]
+2025-09-13 12:01:31,710 [INFO] M
+2025-09-13 12:01:31,710 [DEBUG]   push 'M'
+2025-09-13 12:01:31,710 [DEBUG] [pc=39] opcode=100 arg=25 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄'}, 'M']
+2025-09-13 12:01:31,710 [INFO] ️
+2025-09-13 12:01:31,711 [DEBUG]   push '️'
+2025-09-13 12:01:31,711 [DEBUG] [pc=40] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄'}, 'M', '️']
+2025-09-13 12:01:31,711 [DEBUG]   pop -> '️'
+2025-09-13 12:01:31,711 [DEBUG]   pop -> 'M'
+2025-09-13 12:01:31,711 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄'}
+2025-09-13 12:01:31,711 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️'}
+2025-09-13 12:01:31,711 [DEBUG] [pc=41] opcode=100 arg=26 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️'}]
+2025-09-13 12:01:31,711 [INFO] N
+2025-09-13 12:01:31,711 [DEBUG]   push 'N'
+2025-09-13 12:01:31,712 [DEBUG] [pc=42] opcode=100 arg=27 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️'}, 'N']
+2025-09-13 12:01:31,712 [INFO] 🌪
+2025-09-13 12:01:31,712 [DEBUG]   push '🌪'
+2025-09-13 12:01:31,712 [DEBUG] [pc=43] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️'}, 'N', '🌪']
+2025-09-13 12:01:31,712 [DEBUG]   pop -> '🌪'
+2025-09-13 12:01:31,712 [DEBUG]   pop -> 'N'
+2025-09-13 12:01:31,712 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️'}
+2025-09-13 12:01:31,712 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪'}
+2025-09-13 12:01:31,712 [DEBUG] [pc=44] opcode=100 arg=28 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪'}]
+2025-09-13 12:01:31,713 [INFO] O
+2025-09-13 12:01:31,713 [DEBUG]   push 'O'
+2025-09-13 12:01:31,713 [DEBUG] [pc=45] opcode=100 arg=29 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪'}, 'O']
+2025-09-13 12:01:31,713 [INFO] ❄
+2025-09-13 12:01:31,713 [DEBUG]   push '❄'
+2025-09-13 12:01:31,713 [DEBUG] [pc=46] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪'}, 'O', '❄']
+2025-09-13 12:01:31,713 [DEBUG]   pop -> '❄'
+2025-09-13 12:01:31,713 [DEBUG]   pop -> 'O'
+2025-09-13 12:01:31,713 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪'}
+2025-09-13 12:01:31,714 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄'}
+2025-09-13 12:01:31,714 [DEBUG] [pc=47] opcode=100 arg=30 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄'}]
+2025-09-13 12:01:31,714 [INFO] P
+2025-09-13 12:01:31,714 [DEBUG]   push 'P'
+2025-09-13 12:01:31,714 [DEBUG] [pc=48] opcode=100 arg=25 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄'}, 'P']
+2025-09-13 12:01:31,714 [INFO] ️
+2025-09-13 12:01:31,714 [DEBUG]   push '️'
+2025-09-13 12:01:31,714 [DEBUG] [pc=49] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄'}, 'P', '️']
+2025-09-13 12:01:31,714 [DEBUG]   pop -> '️'
+2025-09-13 12:01:31,715 [DEBUG]   pop -> 'P'
+2025-09-13 12:01:31,715 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄'}
+2025-09-13 12:01:31,715 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️'}
+2025-09-13 12:01:31,715 [DEBUG] [pc=50] opcode=100 arg=31 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️'}]
+2025-09-13 12:01:31,715 [INFO] Q
+2025-09-13 12:01:31,715 [DEBUG]   push 'Q'
+2025-09-13 12:01:31,715 [DEBUG] [pc=51] opcode=100 arg=32 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️'}, 'Q']
+2025-09-13 12:01:31,715 [INFO] 🌀
+2025-09-13 12:01:31,716 [DEBUG]   push '🌀'
+2025-09-13 12:01:31,716 [DEBUG] [pc=52] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️'}, 'Q', '🌀']
+2025-09-13 12:01:31,716 [DEBUG]   pop -> '🌀'
+2025-09-13 12:01:31,716 [DEBUG]   pop -> 'Q'
+2025-09-13 12:01:31,716 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️'}
+2025-09-13 12:01:31,716 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}
+2025-09-13 12:01:31,716 [DEBUG] [pc=53] opcode=105 arg=0 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}]
+2025-09-13 12:01:31,716 [DEBUG]   push {}
+2025-09-13 12:01:31,717 [DEBUG] [pc=54] opcode=100 arg=33 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {}]
+2025-09-13 12:01:31,717 [INFO] R
+2025-09-13 12:01:31,717 [DEBUG]   push 'R'
+2025-09-13 12:01:31,717 [DEBUG] [pc=55] opcode=100 arg=34 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {}, 'R']
+2025-09-13 12:01:31,717 [INFO] 🥋
+2025-09-13 12:01:31,718 [DEBUG]   push '🥋'
+2025-09-13 12:01:31,718 [DEBUG] [pc=56] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {}, 'R', '🥋']
+2025-09-13 12:01:31,718 [DEBUG]   pop -> '🥋'
+2025-09-13 12:01:31,718 [DEBUG]   pop -> 'R'
+2025-09-13 12:01:31,718 [DEBUG]   pop -> {}
+2025-09-13 12:01:31,718 [DEBUG]   push {'R': '🥋'}
+2025-09-13 12:01:31,718 [DEBUG] [pc=57] opcode=100 arg=35 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋'}]
+2025-09-13 12:01:31,718 [INFO] S
+2025-09-13 12:01:31,718 [DEBUG]   push 'S'
+2025-09-13 12:01:31,719 [DEBUG] [pc=58] opcode=100 arg=36 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋'}, 'S']
+2025-09-13 12:01:31,719 [INFO] 🥊
+2025-09-13 12:01:31,719 [DEBUG]   push '🥊'
+2025-09-13 12:01:31,719 [DEBUG] [pc=59] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋'}, 'S', '🥊']
+2025-09-13 12:01:31,719 [DEBUG]   pop -> '🥊'
+2025-09-13 12:01:31,719 [DEBUG]   pop -> 'S'
+2025-09-13 12:01:31,719 [DEBUG]   pop -> {'R': '🥋'}
+2025-09-13 12:01:31,719 [DEBUG]   push {'R': '🥋', 'S': '🥊'}
+2025-09-13 12:01:31,719 [DEBUG] [pc=60] opcode=100 arg=37 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊'}]
+2025-09-13 12:01:31,719 [INFO] T
+2025-09-13 12:01:31,719 [DEBUG]   push 'T'
+2025-09-13 12:01:31,719 [DEBUG] [pc=61] opcode=100 arg=38 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊'}, 'T']
+2025-09-13 12:01:31,719 [INFO] ⚔
+2025-09-13 12:01:31,719 [DEBUG]   push '⚔'
+2025-09-13 12:01:31,719 [DEBUG] [pc=62] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊'}, 'T', '⚔']
+2025-09-13 12:01:31,719 [DEBUG]   pop -> '⚔'
+2025-09-13 12:01:31,721 [DEBUG]   pop -> 'T'
+2025-09-13 12:01:31,721 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊'}
+2025-09-13 12:01:31,721 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔'}
+2025-09-13 12:01:31,721 [DEBUG] [pc=63] opcode=100 arg=39 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔'}]
+2025-09-13 12:01:31,721 [INFO] U
+2025-09-13 12:01:31,721 [DEBUG]   push 'U'
+2025-09-13 12:01:31,721 [DEBUG] [pc=64] opcode=100 arg=25 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔'}, 'U']
+2025-09-13 12:01:31,721 [INFO] ️
+2025-09-13 12:01:31,721 [DEBUG]   push '️'
+2025-09-13 12:01:31,722 [DEBUG] [pc=65] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔'}, 'U', '️']
+2025-09-13 12:01:31,722 [DEBUG]   pop -> '️'
+2025-09-13 12:01:31,722 [DEBUG]   pop -> 'U'
+2025-09-13 12:01:31,722 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔'}
+2025-09-13 12:01:31,722 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️'}
+2025-09-13 12:01:31,722 [DEBUG] [pc=66] opcode=100 arg=40 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️'}]
+2025-09-13 12:01:31,722 [INFO] V
+2025-09-13 12:01:31,722 [DEBUG]   push 'V'
+2025-09-13 12:01:31,722 [DEBUG] [pc=67] opcode=100 arg=41 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️'}, 'V']
+2025-09-13 12:01:31,723 [INFO] 👊
+2025-09-13 12:01:31,723 [DEBUG]   push '👊'
+2025-09-13 12:01:31,723 [DEBUG] [pc=68] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️'}, 'V', '👊']
+2025-09-13 12:01:31,723 [DEBUG]   pop -> '👊'
+2025-09-13 12:01:31,723 [DEBUG]   pop -> 'V'
+2025-09-13 12:01:31,723 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️'}
+2025-09-13 12:01:31,723 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊'}
+2025-09-13 12:01:31,723 [DEBUG] [pc=69] opcode=100 arg=42 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊'}]
+2025-09-13 12:01:31,724 [INFO] W
+2025-09-13 12:01:31,724 [DEBUG]   push 'W'
+2025-09-13 12:01:31,724 [DEBUG] [pc=70] opcode=100 arg=43 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊'}, 'W']
+2025-09-13 12:01:31,724 [INFO] 🙌
+2025-09-13 12:01:31,724 [DEBUG]   push '🙌'
+2025-09-13 12:01:31,724 [DEBUG] [pc=71] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊'}, 'W', '🙌']
+2025-09-13 12:01:31,724 [DEBUG]   pop -> '🙌'
+2025-09-13 12:01:31,724 [DEBUG]   pop -> 'W'
+2025-09-13 12:01:31,724 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊'}
+2025-09-13 12:01:31,724 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌'}
+2025-09-13 12:01:31,725 [DEBUG] [pc=72] opcode=100 arg=44 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌'}]
+2025-09-13 12:01:31,725 [INFO] X
+2025-09-13 12:01:31,725 [DEBUG]   push 'X'
+2025-09-13 12:01:31,725 [DEBUG] [pc=73] opcode=100 arg=45 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌'}, 'X']
+2025-09-13 12:01:31,725 [INFO] 👐
+2025-09-13 12:01:31,725 [DEBUG]   push '👐'
+2025-09-13 12:01:31,725 [DEBUG] [pc=74] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌'}, 'X', '👐']
+2025-09-13 12:01:31,725 [DEBUG]   pop -> '👐'
+2025-09-13 12:01:31,726 [DEBUG]   pop -> 'X'
+2025-09-13 12:01:31,726 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌'}
+2025-09-13 12:01:31,726 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐'}
+2025-09-13 12:01:31,726 [DEBUG] [pc=75] opcode=100 arg=46 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐'}]
+2025-09-13 12:01:31,726 [INFO] Y
+2025-09-13 12:01:31,726 [DEBUG]   push 'Y'
+2025-09-13 12:01:31,726 [DEBUG] [pc=76] opcode=100 arg=47 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐'}, 'Y']
+2025-09-13 12:01:31,726 [INFO] 🟠
+2025-09-13 12:01:31,726 [DEBUG]   push '🟠'
+2025-09-13 12:01:31,726 [DEBUG] [pc=77] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐'}, 'Y', '🟠']
+2025-09-13 12:01:31,726 [DEBUG]   pop -> '🟠'
+2025-09-13 12:01:31,726 [DEBUG]   pop -> 'Y'
+2025-09-13 12:01:31,726 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐'}
+2025-09-13 12:01:31,726 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠'}
+2025-09-13 12:01:31,727 [DEBUG] [pc=78] opcode=100 arg=48 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠'}]
+2025-09-13 12:01:31,727 [INFO] Z
+2025-09-13 12:01:31,727 [DEBUG]   push 'Z'
+2025-09-13 12:01:31,727 [DEBUG] [pc=79] opcode=100 arg=49 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠'}, 'Z']
+2025-09-13 12:01:31,727 [INFO] 🔴
+2025-09-13 12:01:31,727 [DEBUG]   push '🔴'
+2025-09-13 12:01:31,727 [DEBUG] [pc=80] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠'}, 'Z', '🔴']
+2025-09-13 12:01:31,727 [DEBUG]   pop -> '🔴'
+2025-09-13 12:01:31,728 [DEBUG]   pop -> 'Z'
+2025-09-13 12:01:31,728 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠'}
+2025-09-13 12:01:31,728 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴'}
+2025-09-13 12:01:31,728 [DEBUG] [pc=81] opcode=100 arg=50 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴'}]
+2025-09-13 12:01:31,728 [INFO] a
+2025-09-13 12:01:31,728 [DEBUG]   push 'a'
+2025-09-13 12:01:31,728 [DEBUG] [pc=82] opcode=100 arg=51 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴'}, 'a']
+2025-09-13 12:01:31,728 [INFO] 🟡
+2025-09-13 12:01:31,728 [DEBUG]   push '🟡'
+2025-09-13 12:01:31,729 [DEBUG] [pc=83] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴'}, 'a', '🟡']
+2025-09-13 12:01:31,729 [DEBUG]   pop -> '🟡'
+2025-09-13 12:01:31,729 [DEBUG]   pop -> 'a'
+2025-09-13 12:01:31,729 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴'}
+2025-09-13 12:01:31,729 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡'}
+2025-09-13 12:01:31,729 [DEBUG] [pc=84] opcode=100 arg=52 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡'}]
+2025-09-13 12:01:31,729 [INFO] b
+2025-09-13 12:01:31,729 [DEBUG]   push 'b'
+2025-09-13 12:01:31,729 [DEBUG] [pc=85] opcode=100 arg=53 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡'}, 'b']
+2025-09-13 12:01:31,730 [INFO] 🟢
+2025-09-13 12:01:31,730 [DEBUG]   push '🟢'
+2025-09-13 12:01:31,730 [DEBUG] [pc=86] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡'}, 'b', '🟢']
+2025-09-13 12:01:31,730 [DEBUG]   pop -> '🟢'
+2025-09-13 12:01:31,730 [DEBUG]   pop -> 'b'
+2025-09-13 12:01:31,730 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡'}
+2025-09-13 12:01:31,730 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢'}
+2025-09-13 12:01:31,730 [DEBUG] [pc=87] opcode=100 arg=54 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢'}]
+2025-09-13 12:01:31,730 [INFO] c
+2025-09-13 12:01:31,731 [DEBUG]   push 'c'
+2025-09-13 12:01:31,731 [DEBUG] [pc=88] opcode=100 arg=55 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢'}, 'c']
+2025-09-13 12:01:31,731 [INFO] 🔵
+2025-09-13 12:01:31,731 [DEBUG]   push '🔵'
+2025-09-13 12:01:31,731 [DEBUG] [pc=89] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢'}, 'c', '🔵']
+2025-09-13 12:01:31,731 [DEBUG]   pop -> '🔵'
+2025-09-13 12:01:31,731 [DEBUG]   pop -> 'c'
+2025-09-13 12:01:31,732 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢'}
+2025-09-13 12:01:31,732 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵'}
+2025-09-13 12:01:31,732 [DEBUG] [pc=90] opcode=100 arg=56 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵'}]
+2025-09-13 12:01:31,732 [INFO] d
+2025-09-13 12:01:31,732 [DEBUG]   push 'd'
+2025-09-13 12:01:31,732 [DEBUG] [pc=91] opcode=100 arg=57 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵'}, 'd']
+2025-09-13 12:01:31,732 [INFO] 🟣
+2025-09-13 12:01:31,732 [DEBUG]   push '🟣'
+2025-09-13 12:01:31,733 [DEBUG] [pc=92] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵'}, 'd', '🟣']
+2025-09-13 12:01:31,733 [DEBUG]   pop -> '🟣'
+2025-09-13 12:01:31,733 [DEBUG]   pop -> 'd'
+2025-09-13 12:01:31,733 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵'}
+2025-09-13 12:01:31,733 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣'}
+2025-09-13 12:01:31,733 [DEBUG] [pc=93] opcode=100 arg=58 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣'}]
+2025-09-13 12:01:31,733 [INFO] e
+2025-09-13 12:01:31,733 [DEBUG]   push 'e'
+2025-09-13 12:01:31,734 [DEBUG] [pc=94] opcode=100 arg=59 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣'}, 'e']
+2025-09-13 12:01:31,734 [INFO] ⚫
+2025-09-13 12:01:31,734 [DEBUG]   push '⚫'
+2025-09-13 12:01:31,734 [DEBUG] [pc=95] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣'}, 'e', '⚫']
+2025-09-13 12:01:31,734 [DEBUG]   pop -> '⚫'
+2025-09-13 12:01:31,734 [DEBUG]   pop -> 'e'
+2025-09-13 12:01:31,734 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣'}
+2025-09-13 12:01:31,734 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫'}
+2025-09-13 12:01:31,735 [DEBUG] [pc=96] opcode=100 arg=60 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫'}]
+2025-09-13 12:01:31,735 [INFO] f
+2025-09-13 12:01:31,735 [DEBUG]   push 'f'
+2025-09-13 12:01:31,735 [DEBUG] [pc=97] opcode=100 arg=61 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫'}, 'f']
+2025-09-13 12:01:31,735 [INFO] ⚪
+2025-09-13 12:01:31,735 [DEBUG]   push '⚪'
+2025-09-13 12:01:31,735 [DEBUG] [pc=98] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫'}, 'f', '⚪']
+2025-09-13 12:01:31,735 [DEBUG]   pop -> '⚪'
+2025-09-13 12:01:31,736 [DEBUG]   pop -> 'f'
+2025-09-13 12:01:31,736 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫'}
+2025-09-13 12:01:31,736 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪'}
+2025-09-13 12:01:31,736 [DEBUG] [pc=99] opcode=100 arg=62 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪'}]
+2025-09-13 12:01:31,736 [INFO] g
+2025-09-13 12:01:31,736 [DEBUG]   push 'g'
+2025-09-13 12:01:31,736 [DEBUG] [pc=100] opcode=100 arg=63 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪'}, 'g']
+2025-09-13 12:01:31,736 [INFO] 👽
+2025-09-13 12:01:31,736 [DEBUG]   push '👽'
+2025-09-13 12:01:31,737 [DEBUG] [pc=101] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪'}, 'g', '👽']
+2025-09-13 12:01:31,737 [DEBUG]   pop -> '👽'
+2025-09-13 12:01:31,737 [DEBUG]   pop -> 'g'
+2025-09-13 12:01:31,737 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪'}
+2025-09-13 12:01:31,738 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽'}
+2025-09-13 12:01:31,738 [DEBUG] [pc=102] opcode=100 arg=64 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽'}]
+2025-09-13 12:01:31,738 [INFO] h
+2025-09-13 12:01:31,738 [DEBUG]   push 'h'
+2025-09-13 12:01:31,738 [DEBUG] [pc=103] opcode=100 arg=65 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽'}, 'h']
+2025-09-13 12:01:31,738 [INFO] 🤖
+2025-09-13 12:01:31,738 [DEBUG]   push '🤖'
+2025-09-13 12:01:31,738 [DEBUG] [pc=104] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽'}, 'h', '🤖']
+2025-09-13 12:01:31,739 [DEBUG]   pop -> '🤖'
+2025-09-13 12:01:31,739 [DEBUG]   pop -> 'h'
+2025-09-13 12:01:31,739 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽'}
+2025-09-13 12:01:31,739 [DEBUG]   push {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}
+2025-09-13 12:01:31,739 [DEBUG] [pc=105] opcode=165 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀'}, {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}]
+2025-09-13 12:01:31,739 [DEBUG]   pop -> {'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}
+2025-09-13 12:01:31,739 [DEBUG] [pc=106] opcode=105 arg=0 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}]
+2025-09-13 12:01:31,739 [DEBUG]   push {}
+2025-09-13 12:01:31,740 [DEBUG] [pc=107] opcode=100 arg=66 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {}]
+2025-09-13 12:01:31,740 [INFO] i
+2025-09-13 12:01:31,740 [DEBUG]   push 'i'
+2025-09-13 12:01:31,740 [DEBUG] [pc=108] opcode=100 arg=67 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {}, 'i']
+2025-09-13 12:01:31,740 [INFO] 👺
+2025-09-13 12:01:31,740 [DEBUG]   push '👺'
+2025-09-13 12:01:31,740 [DEBUG] [pc=109] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {}, 'i', '👺']
+2025-09-13 12:01:31,740 [DEBUG]   pop -> '👺'
+2025-09-13 12:01:31,740 [DEBUG]   pop -> 'i'
+2025-09-13 12:01:31,741 [DEBUG]   pop -> {}
+2025-09-13 12:01:31,741 [DEBUG]   push {'i': '👺'}
+2025-09-13 12:01:31,741 [DEBUG] [pc=110] opcode=100 arg=68 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺'}]
+2025-09-13 12:01:31,741 [INFO] j
+2025-09-13 12:01:31,741 [DEBUG]   push 'j'
+2025-09-13 12:01:31,741 [DEBUG] [pc=111] opcode=100 arg=69 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺'}, 'j']
+2025-09-13 12:01:31,741 [INFO] 🐢
+2025-09-13 12:01:31,741 [DEBUG]   push '🐢'
+2025-09-13 12:01:31,741 [DEBUG] [pc=112] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺'}, 'j', '🐢']
+2025-09-13 12:01:31,742 [DEBUG]   pop -> '🐢'
+2025-09-13 12:01:31,742 [DEBUG]   pop -> 'j'
+2025-09-13 12:01:31,742 [DEBUG]   pop -> {'i': '👺'}
+2025-09-13 12:01:31,742 [DEBUG]   push {'i': '👺', 'j': '🐢'}
+2025-09-13 12:01:31,742 [DEBUG] [pc=113] opcode=100 arg=70 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢'}]
+2025-09-13 12:01:31,742 [INFO] k
+2025-09-13 12:01:31,742 [DEBUG]   push 'k'
+2025-09-13 12:01:31,742 [DEBUG] [pc=114] opcode=100 arg=71 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢'}, 'k']
+2025-09-13 12:01:31,742 [INFO] 🐒
+2025-09-13 12:01:31,743 [DEBUG]   push '🐒'
+2025-09-13 12:01:31,743 [DEBUG] [pc=115] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢'}, 'k', '🐒']
+2025-09-13 12:01:31,743 [DEBUG]   pop -> '🐒'
+2025-09-13 12:01:31,743 [DEBUG]   pop -> 'k'
+2025-09-13 12:01:31,743 [DEBUG]   pop -> {'i': '👺', 'j': '🐢'}
+2025-09-13 12:01:31,743 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒'}
+2025-09-13 12:01:31,743 [DEBUG] [pc=116] opcode=100 arg=72 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒'}]
+2025-09-13 12:01:31,743 [INFO] l
+2025-09-13 12:01:31,743 [DEBUG]   push 'l'
+2025-09-13 12:01:31,744 [DEBUG] [pc=117] opcode=100 arg=73 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒'}, 'l']
+2025-09-13 12:01:31,744 [INFO] 🦍
+2025-09-13 12:01:31,744 [DEBUG]   push '🦍'
+2025-09-13 12:01:31,744 [DEBUG] [pc=118] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒'}, 'l', '🦍']
+2025-09-13 12:01:31,744 [DEBUG]   pop -> '🦍'
+2025-09-13 12:01:31,744 [DEBUG]   pop -> 'l'
+2025-09-13 12:01:31,744 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒'}
+2025-09-13 12:01:31,744 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍'}
+2025-09-13 12:01:31,744 [DEBUG] [pc=119] opcode=100 arg=74 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍'}]
+2025-09-13 12:01:31,745 [INFO] m
+2025-09-13 12:01:31,745 [DEBUG]   push 'm'
+2025-09-13 12:01:31,745 [DEBUG] [pc=120] opcode=100 arg=75 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍'}, 'm']
+2025-09-13 12:01:31,745 [INFO] 👑
+2025-09-13 12:01:31,745 [DEBUG]   push '👑'
+2025-09-13 12:01:31,745 [DEBUG] [pc=121] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍'}, 'm', '👑']
+2025-09-13 12:01:31,745 [DEBUG]   pop -> '👑'
+2025-09-13 12:01:31,745 [DEBUG]   pop -> 'm'
+2025-09-13 12:01:31,745 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍'}
+2025-09-13 12:01:31,746 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑'}
+2025-09-13 12:01:31,746 [DEBUG] [pc=122] opcode=100 arg=76 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑'}]
+2025-09-13 12:01:31,746 [INFO] n
+2025-09-13 12:01:31,746 [DEBUG]   push 'n'
+2025-09-13 12:01:31,746 [DEBUG] [pc=123] opcode=100 arg=77 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑'}, 'n']
+2025-09-13 12:01:31,746 [INFO] 💎
+2025-09-13 12:01:31,746 [DEBUG]   push '💎'
+2025-09-13 12:01:31,746 [DEBUG] [pc=124] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑'}, 'n', '💎']
+2025-09-13 12:01:31,746 [DEBUG]   pop -> '💎'
+2025-09-13 12:01:31,747 [DEBUG]   pop -> 'n'
+2025-09-13 12:01:31,747 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑'}
+2025-09-13 12:01:31,747 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎'}
+2025-09-13 12:01:31,747 [DEBUG] [pc=125] opcode=100 arg=78 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎'}]
+2025-09-13 12:01:31,747 [INFO] o
+2025-09-13 12:01:31,747 [DEBUG]   push 'o'
+2025-09-13 12:01:31,747 [DEBUG] [pc=126] opcode=100 arg=79 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎'}, 'o']
+2025-09-13 12:01:31,747 [INFO] 🔮
+2025-09-13 12:01:31,747 [DEBUG]   push '🔮'
+2025-09-13 12:01:31,747 [DEBUG] [pc=127] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎'}, 'o', '🔮']
+2025-09-13 12:01:31,747 [DEBUG]   pop -> '🔮'
+2025-09-13 12:01:31,747 [DEBUG]   pop -> 'o'
+2025-09-13 12:01:31,748 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎'}
+2025-09-13 12:01:31,748 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮'}
+2025-09-13 12:01:31,748 [DEBUG] [pc=128] opcode=100 arg=80 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮'}]
+2025-09-13 12:01:31,748 [INFO] p
+2025-09-13 12:01:31,748 [DEBUG]   push 'p'
+2025-09-13 12:01:31,748 [DEBUG] [pc=129] opcode=100 arg=81 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮'}, 'p']
+2025-09-13 12:01:31,748 [INFO] 🍑
+2025-09-13 12:01:31,748 [DEBUG]   push '🍑'
+2025-09-13 12:01:31,748 [DEBUG] [pc=130] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮'}, 'p', '🍑']
+2025-09-13 12:01:31,749 [DEBUG]   pop -> '🍑'
+2025-09-13 12:01:31,749 [DEBUG]   pop -> 'p'
+2025-09-13 12:01:31,749 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮'}
+2025-09-13 12:01:31,749 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑'}
+2025-09-13 12:01:31,749 [DEBUG] [pc=131] opcode=100 arg=82 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑'}]
+2025-09-13 12:01:31,749 [INFO] q
+2025-09-13 12:01:31,749 [DEBUG]   push 'q'
+2025-09-13 12:01:31,749 [DEBUG] [pc=132] opcode=100 arg=83 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑'}, 'q']
+2025-09-13 12:01:31,749 [INFO] 🍗
+2025-09-13 12:01:31,750 [DEBUG]   push '🍗'
+2025-09-13 12:01:31,750 [DEBUG] [pc=133] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑'}, 'q', '🍗']
+2025-09-13 12:01:31,750 [DEBUG]   pop -> '🍗'
+2025-09-13 12:01:31,750 [DEBUG]   pop -> 'q'
+2025-09-13 12:01:31,750 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑'}
+2025-09-13 12:01:31,750 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗'}
+2025-09-13 12:01:31,750 [DEBUG] [pc=134] opcode=100 arg=84 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗'}]
+2025-09-13 12:01:31,750 [INFO] r
+2025-09-13 12:01:31,750 [DEBUG]   push 'r'
+2025-09-13 12:01:31,751 [DEBUG] [pc=135] opcode=100 arg=85 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗'}, 'r']
+2025-09-13 12:01:31,751 [INFO] 🍚
+2025-09-13 12:01:31,751 [DEBUG]   push '🍚'
+2025-09-13 12:01:31,751 [DEBUG] [pc=136] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗'}, 'r', '🍚']
+2025-09-13 12:01:31,751 [DEBUG]   pop -> '🍚'
+2025-09-13 12:01:31,751 [DEBUG]   pop -> 'r'
+2025-09-13 12:01:31,751 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗'}
+2025-09-13 12:01:31,751 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚'}
+2025-09-13 12:01:31,751 [DEBUG] [pc=137] opcode=100 arg=86 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚'}]
+2025-09-13 12:01:31,752 [INFO] s
+2025-09-13 12:01:31,752 [DEBUG]   push 's'
+2025-09-13 12:01:31,752 [DEBUG] [pc=138] opcode=100 arg=87 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚'}, 's']
+2025-09-13 12:01:31,752 [INFO] 🍶
+2025-09-13 12:01:31,752 [DEBUG]   push '🍶'
+2025-09-13 12:01:31,752 [DEBUG] [pc=139] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚'}, 's', '🍶']
+2025-09-13 12:01:31,752 [DEBUG]   pop -> '🍶'
+2025-09-13 12:01:31,752 [DEBUG]   pop -> 's'
+2025-09-13 12:01:31,752 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚'}
+2025-09-13 12:01:31,753 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶'}
+2025-09-13 12:01:31,753 [DEBUG] [pc=140] opcode=100 arg=88 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶'}]
+2025-09-13 12:01:31,753 [INFO] t
+2025-09-13 12:01:31,753 [DEBUG]   push 't'
+2025-09-13 12:01:31,753 [DEBUG] [pc=141] opcode=100 arg=89 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶'}, 't']
+2025-09-13 12:01:31,753 [INFO] 🏯
+2025-09-13 12:01:31,753 [DEBUG]   push '🏯'
+2025-09-13 12:01:31,753 [DEBUG] [pc=142] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶'}, 't', '🏯']
+2025-09-13 12:01:31,754 [DEBUG]   pop -> '🏯'
+2025-09-13 12:01:31,754 [DEBUG]   pop -> 't'
+2025-09-13 12:01:31,754 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶'}
+2025-09-13 12:01:31,754 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯'}
+2025-09-13 12:01:31,754 [DEBUG] [pc=143] opcode=100 arg=90 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯'}]
+2025-09-13 12:01:31,754 [INFO] u
+2025-09-13 12:01:31,754 [DEBUG]   push 'u'
+2025-09-13 12:01:31,754 [DEBUG] [pc=144] opcode=100 arg=91 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯'}, 'u']
+2025-09-13 12:01:31,754 [INFO] ⛩
+2025-09-13 12:01:31,755 [DEBUG]   push '⛩'
+2025-09-13 12:01:31,755 [DEBUG] [pc=145] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯'}, 'u', '⛩']
+2025-09-13 12:01:31,755 [DEBUG]   pop -> '⛩'
+2025-09-13 12:01:31,755 [DEBUG]   pop -> 'u'
+2025-09-13 12:01:31,755 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯'}
+2025-09-13 12:01:31,755 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩'}
+2025-09-13 12:01:31,755 [DEBUG] [pc=146] opcode=100 arg=92 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩'}]
+2025-09-13 12:01:31,755 [INFO] v
+2025-09-13 12:01:31,756 [DEBUG]   push 'v'
+2025-09-13 12:01:31,756 [DEBUG] [pc=147] opcode=100 arg=93 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩'}, 'v']
+2025-09-13 12:01:31,756 [INFO] ⛰
+2025-09-13 12:01:31,756 [DEBUG]   push '⛰'
+2025-09-13 12:01:31,756 [DEBUG] [pc=148] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩'}, 'v', '⛰']
+2025-09-13 12:01:31,756 [DEBUG]   pop -> '⛰'
+2025-09-13 12:01:31,756 [DEBUG]   pop -> 'v'
+2025-09-13 12:01:31,756 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩'}
+2025-09-13 12:01:31,756 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰'}
+2025-09-13 12:01:31,757 [DEBUG] [pc=149] opcode=100 arg=94 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰'}]
+2025-09-13 12:01:31,757 [INFO] w
+2025-09-13 12:01:31,757 [DEBUG]   push 'w'
+2025-09-13 12:01:31,757 [DEBUG] [pc=150] opcode=100 arg=95 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰'}, 'w']
+2025-09-13 12:01:31,758 [INFO] 🛡
+2025-09-13 12:01:31,758 [DEBUG]   push '🛡'
+2025-09-13 12:01:31,758 [DEBUG] [pc=151] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰'}, 'w', '🛡']
+2025-09-13 12:01:31,758 [DEBUG]   pop -> '🛡'
+2025-09-13 12:01:31,758 [DEBUG]   pop -> 'w'
+2025-09-13 12:01:31,758 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰'}
+2025-09-13 12:01:31,758 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡'}
+2025-09-13 12:01:31,758 [DEBUG] [pc=152] opcode=100 arg=96 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡'}]
+2025-09-13 12:01:31,759 [INFO] x
+2025-09-13 12:01:31,759 [DEBUG]   push 'x'
+2025-09-13 12:01:31,759 [DEBUG] [pc=153] opcode=100 arg=75 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡'}, 'x']
+2025-09-13 12:01:31,759 [INFO] 👑
+2025-09-13 12:01:31,759 [DEBUG]   push '👑'
+2025-09-13 12:01:31,759 [DEBUG] [pc=154] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡'}, 'x', '👑']
+2025-09-13 12:01:31,759 [DEBUG]   pop -> '👑'
+2025-09-13 12:01:31,759 [DEBUG]   pop -> 'x'
+2025-09-13 12:01:31,759 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡'}
+2025-09-13 12:01:31,760 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑'}
+2025-09-13 12:01:31,760 [DEBUG] [pc=155] opcode=100 arg=97 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑'}]
+2025-09-13 12:01:31,760 [INFO] y
+2025-09-13 12:01:31,760 [DEBUG]   push 'y'
+2025-09-13 12:01:31,760 [DEBUG] [pc=156] opcode=100 arg=98 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑'}, 'y']
+2025-09-13 12:01:31,760 [INFO] 🧙
+2025-09-13 12:01:31,760 [DEBUG]   push '🧙'
+2025-09-13 12:01:31,760 [DEBUG] [pc=157] opcode=147 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑'}, 'y', '🧙']
+2025-09-13 12:01:31,761 [DEBUG]   pop -> '🧙'
+2025-09-13 12:01:31,761 [DEBUG]   pop -> 'y'
+2025-09-13 12:01:31,761 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑'}
+2025-09-13 12:01:31,761 [DEBUG]   push {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}
+2025-09-13 12:01:31,761 [DEBUG] [pc=158] opcode=165 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖'}, {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}]
+2025-09-13 12:01:31,761 [DEBUG]   pop -> {'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}
+2025-09-13 12:01:31,761 [DEBUG] [pc=159] opcode=100 arg=99 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}]
+2025-09-13 12:01:31,761 [INFO] ‍
+2025-09-13 12:01:31,762 [DEBUG]   push '\u200d'
+2025-09-13 12:01:31,762 [DEBUG] [pc=160] opcode=100 arg=100 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, '\u200d']
+2025-09-13 12:01:31,762 [INFO] ♂
+2025-09-13 12:01:31,762 [DEBUG]   push '♂'
+2025-09-13 12:01:31,762 [DEBUG] [pc=161] opcode=100 arg=25 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, '\u200d', '♂']
+2025-09-13 12:01:31,762 [INFO] ️
+2025-09-13 12:01:31,762 [DEBUG]   push '️'
+2025-09-13 12:01:31,762 [DEBUG] [pc=162] opcode=100 arg=101 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, '\u200d', '♂', '️']
+2025-09-13 12:01:31,763 [INFO] 🤜
+2025-09-13 12:01:31,763 [DEBUG]   push '🤜'
+2025-09-13 12:01:31,763 [DEBUG] [pc=163] opcode=100 arg=102 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, '\u200d', '♂', '️', '🤜']
+2025-09-13 12:01:31,763 [INFO] 🤛
+2025-09-13 12:01:31,763 [DEBUG]   push '🤛'
+2025-09-13 12:01:31,763 [DEBUG] [pc=164] opcode=100 arg=103 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, '\u200d', '♂', '️', '🤜', '🤛']
+2025-09-13 12:01:31,763 [INFO] 😡
+2025-09-13 12:01:31,763 [DEBUG]   push '😡'
+2025-09-13 12:01:31,763 [DEBUG] [pc=165] opcode=100 arg=104 block_stack=[] stack_top=['\u200d', '♂', '️', '🤜', '🤛', '😡']
+2025-09-13 12:01:31,764 [INFO] 😤
+2025-09-13 12:01:31,764 [DEBUG]   push '😤'
+2025-09-13 12:01:31,764 [DEBUG] [pc=166] opcode=100 arg=105 block_stack=[] stack_top=['♂', '️', '🤜', '🤛', '😡', '😤']
+2025-09-13 12:01:31,764 [INFO] 🥵
+2025-09-13 12:01:31,764 [DEBUG]   push '🥵'
+2025-09-13 12:01:31,764 [DEBUG] [pc=167] opcode=100 arg=106 block_stack=[] stack_top=['️', '🤜', '🤛', '😡', '😤', '🥵']
+2025-09-13 12:01:31,764 [INFO] 🤯
+2025-09-13 12:01:31,764 [DEBUG]   push '🤯'
+2025-09-13 12:01:31,764 [DEBUG] [pc=168] opcode=100 arg=107 block_stack=[] stack_top=['🤜', '🤛', '😡', '😤', '🥵', '🤯']
+2025-09-13 12:01:31,765 [INFO] 🌌
+2025-09-13 12:01:31,765 [DEBUG]   push '🌌'
+2025-09-13 12:01:31,765 [DEBUG] [pc=169] opcode=100 arg=108 block_stack=[] stack_top=['🤛', '😡', '😤', '🥵', '🤯', '🌌']
+2025-09-13 12:01:31,765 [INFO] 🌍
+2025-09-13 12:01:31,765 [DEBUG]   push '🌍'
+2025-09-13 12:01:31,765 [DEBUG] [pc=170] opcode=100 arg=109 block_stack=[] stack_top=['😡', '😤', '🥵', '🤯', '🌌', '🌍']
+2025-09-13 12:01:31,765 [INFO] 🌑
+2025-09-13 12:01:31,765 [DEBUG]   push '🌑'
+2025-09-13 12:01:31,765 [DEBUG] [pc=171] opcode=100 arg=110 block_stack=[] stack_top=['😤', '🥵', '🤯', '🌌', '🌍', '🌑']
+2025-09-13 12:01:31,766 [INFO] ☀
+2025-09-13 12:01:31,766 [DEBUG]   push '☀'
+2025-09-13 12:01:31,766 [DEBUG] [pc=172] opcode=100 arg=111 block_stack=[] stack_top=['🥵', '🤯', '🌌', '🌍', '🌑', '☀']
+2025-09-13 12:01:31,766 [INFO] ("'z'", "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'+'", "'/'")
+2025-09-13 12:01:31,766 [DEBUG]   push ("'z'", "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'+'", "'/'")
+2025-09-13 12:01:31,766 [DEBUG] [pc=173] opcode=156 arg=13 block_stack=[] stack_top=['🤯', '🌌', '🌍', '🌑', '☀', ("'z'", "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'+'", "'/'")]
+2025-09-13 12:01:31,766 [DEBUG]   pop -> ("'z'", "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'+'", "'/'")
+2025-09-13 12:01:31,766 [DEBUG]   pop -> '☀'
+2025-09-13 12:01:31,766 [DEBUG]   pop -> '🌑'
+2025-09-13 12:01:31,766 [DEBUG]   pop -> '🌍'
+2025-09-13 12:01:31,767 [DEBUG]   pop -> '🌌'
+2025-09-13 12:01:31,767 [DEBUG]   pop -> '🤯'
+2025-09-13 12:01:31,767 [DEBUG]   pop -> '🥵'
+2025-09-13 12:01:31,767 [DEBUG]   pop -> '😤'
+2025-09-13 12:01:31,767 [DEBUG]   pop -> '😡'
+2025-09-13 12:01:31,768 [DEBUG]   pop -> '🤛'
+2025-09-13 12:01:31,768 [DEBUG]   pop -> '🤜'
+2025-09-13 12:01:31,768 [DEBUG]   pop -> '️'
+2025-09-13 12:01:31,768 [DEBUG]   pop -> '♂'
+2025-09-13 12:01:31,768 [DEBUG]   pop -> '\u200d'
+2025-09-13 12:01:31,768 [DEBUG]   push {"'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}
+2025-09-13 12:01:31,768 [DEBUG] [pc=174] opcode=165 arg=1 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙'}, {"'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}]
+2025-09-13 12:01:31,768 [DEBUG]   pop -> {"'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}
+2025-09-13 12:01:31,769 [DEBUG] [pc=175] opcode=90 arg=0 block_stack=[] stack_top=[{'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}]
+2025-09-13 12:01:31,769 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}
+2025-09-13 12:01:31,769 [DEBUG] [pc=176] opcode=2 arg=None block_stack=[] stack_top=[]
+2025-09-13 12:01:31,769 [DEBUG]   push <object object at 0x000001D9C3F24400>
+2025-09-13 12:01:31,769 [DEBUG] [pc=177] opcode=101 arg=1 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>]
+2025-09-13 12:01:31,769 [DEBUG]   push <built-in function print>
+2025-09-13 12:01:31,769 [DEBUG] [pc=178] opcode=100 arg=112 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, <built-in function print>]
+2025-09-13 12:01:31,769 [INFO] hi
+2025-09-13 12:01:31,770 [DEBUG]   push 'hi'
+2025-09-13 12:01:31,770 [DEBUG] [pc=179] opcode=100 arg=113 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, <built-in function print>, 'hi']
+2025-09-13 12:01:31,770 [INFO] 4
+2025-09-13 12:01:31,770 [DEBUG]   push 4
+2025-09-13 12:01:31,770 [DEBUG] [pc=180] opcode=101 arg=0 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, <built-in function print>, 'hi', 4]
+2025-09-13 12:01:31,770 [DEBUG]   push {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}
+2025-09-13 12:01:31,770 [DEBUG] [pc=181] opcode=166 arg=3 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, <built-in function print>, 'hi', 4, {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}]
+2025-09-13 12:01:31,771 [DEBUG] [pc=182] opcode=171 arg=3 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, <built-in function print>, 'hi', 4, {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}]
+2025-09-13 12:01:31,771 [DEBUG]   pop -> {'A': '🐉', 'B': '🐲', 'C': '⭐', 'D': '✦', 'E': '✧', 'F': '✨', 'G': '💫', 'H': '🌠', 'I': '⚡', 'J': '🔥', 'K': '💥', 'L': '☄', 'M': '️', 'N': '🌪', 'O': '❄', 'P': '️', 'Q': '🌀', 'R': '🥋', 'S': '🥊', 'T': '⚔', 'U': '️', 'V': '👊', 'W': '🙌', 'X': '👐', 'Y': '🟠', 'Z': '🔴', 'a': '🟡', 'b': '🟢', 'c': '🔵', 'd': '🟣', 'e': '⚫', 'f': '⚪', 'g': '👽', 'h': '🤖', 'i': '👺', 'j': '🐢', 'k': '🐒', 'l': '🦍', 'm': '👑', 'n': '💎', 'o': '🔮', 'p': '🍑', 'q': '🍗', 'r': '🍚', 's': '🍶', 't': '🏯', 'u': '⛩', 'v': '⛰', 'w': '🛡', 'x': '👑', 'y': '🧙', "'z'": '\u200d', "'0'": '♂', "'1'": '️', "'2'": '🤜', "'3'": '🤛', "'4'": '😡', "'5'": '😤', "'6'": '🥵', "'7'": '🤯', "'8'": '🌌', "'9'": '🌍', "'+'": '🌑', "'/'": '☀'}
+2025-09-13 12:01:31,771 [DEBUG]   pop -> 4
+2025-09-13 12:01:31,771 [DEBUG]   pop -> 'hi'
+2025-09-13 12:01:31,771 [DEBUG]   pop -> <built-in function print>
+2025-09-13 12:01:31,771 [DEBUG]   push None
+2025-09-13 12:01:31,772 [DEBUG] [pc=183] opcode=1 arg=None block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, None]
+2025-09-13 12:01:31,772 [DEBUG]   pop -> None
+2025-09-13 12:01:31,772 [DEBUG] [pc=184] opcode=100 arg=114 block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>]
+2025-09-13 12:01:31,772 [INFO] None
+2025-09-13 12:01:31,772 [DEBUG]   push None
+2025-09-13 12:01:31,772 [DEBUG] [pc=185] opcode=83 arg=None block_stack=[] stack_top=[<object object at 0x000001D9C3F24400>, None]
+2025-09-13 12:01:31,772 [DEBUG]   pop -> None
+2025-09-13 12:01:37,445 [DEBUG] [pc=0] opcode=151 arg=0 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,445 [DEBUG] [pc=1] opcode=100 arg=0 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,446 [INFO] Shenron
+2025-09-13 12:01:37,446 [DEBUG]   push 'Shenron'
+2025-09-13 12:01:37,446 [DEBUG] [pc=2] opcode=100 arg=1 block_stack=[] stack_top=['Shenron']
+2025-09-13 12:01:37,446 [INFO] Nguyễn Xuân Trịnh
+2025-09-13 12:01:37,446 [DEBUG]   push 'Nguyễn Xuân Trịnh'
+2025-09-13 12:01:37,446 [DEBUG] [pc=3] opcode=103 arg=1 block_stack=[] stack_top=['Shenron', 'Nguyễn Xuân Trịnh']
+2025-09-13 12:01:37,446 [DEBUG]   pop -> 'Nguyễn Xuân Trịnh'
+2025-09-13 12:01:37,447 [DEBUG]   push ['Nguyễn Xuân Trịnh']
+2025-09-13 12:01:37,447 [DEBUG] [pc=4] opcode=100 arg=2 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh']]
+2025-09-13 12:01:37,447 [INFO] S_VM
+2025-09-13 12:01:37,447 [DEBUG]   push 'S_VM'
+2025-09-13 12:01:37,448 [DEBUG] [pc=5] opcode=100 arg=3 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM']
+2025-09-13 12:01:37,448 [INFO] Dragon Ball
+2025-09-13 12:01:37,448 [DEBUG]   push 'Dragon Ball'
+2025-09-13 12:01:37,448 [DEBUG] [pc=6] opcode=100 arg=4 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball']
+2025-09-13 12:01:37,448 [INFO] https://t.me/CalceIsMe
+2025-09-13 12:01:37,448 [DEBUG]   push 'https://t.me/CalceIsMe'
+2025-09-13 12:01:37,448 [DEBUG] [pc=7] opcode=100 arg=5 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe']
+2025-09-13 12:01:37,448 [INFO] https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4
+2025-09-13 12:01:37,448 [DEBUG]   push 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-13 12:01:37,449 [DEBUG] [pc=8] opcode=100 arg=6 block_stack=[] stack_top=['Shenron', ['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4']
+2025-09-13 12:01:37,449 [INFO] ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-13 12:01:37,449 [DEBUG]   push ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-13 12:01:37,449 [DEBUG] [pc=9] opcode=156 arg=6 block_stack=[] stack_top=[['Nguyễn Xuân Trịnh'], 'S_VM', 'Dragon Ball', 'https://t.me/CalceIsMe', 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4', ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")]
+2025-09-13 12:01:37,449 [DEBUG]   pop -> ("'Obfuscator'", "'Obfuscator Owner'", "'VM'", "'Theme'", "'Contact'", "'Obfuscator Code Writing Process'")
+2025-09-13 12:01:37,449 [DEBUG]   pop -> 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'
+2025-09-13 12:01:37,449 [DEBUG]   pop -> 'https://t.me/CalceIsMe'
+2025-09-13 12:01:37,450 [DEBUG]   pop -> 'Dragon Ball'
+2025-09-13 12:01:37,450 [DEBUG]   pop -> 'S_VM'
+2025-09-13 12:01:37,450 [DEBUG]   pop -> ['Nguyễn Xuân Trịnh']
+2025-09-13 12:01:37,450 [DEBUG]   pop -> 'Shenron'
+2025-09-13 12:01:37,450 [DEBUG]   push {'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-13 12:01:37,450 [DEBUG] [pc=10] opcode=90 arg=0 block_stack=[] stack_top=[{'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}]
+2025-09-13 12:01:37,450 [DEBUG]   pop -> {'Obfuscator': 'Shenron', 'Obfuscator Owner': ['Nguyễn Xuân Trịnh'], 'VM': 'S_VM', 'Theme': 'Dragon Ball', 'Contact': 'https://t.me/CalceIsMe', 'Obfuscator Code Writing Process': 'https://www.youtube.com/watch?v=8yXEvIRFCwc&list=PLS0WF70AJy04pZ-OQwlsjuXiJL_3B9Oc4&index=4'}
+2025-09-13 12:01:37,450 [DEBUG] [pc=11] opcode=100 arg=7 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,451 [INFO] ⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀
+⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀
+⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀
+⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀
+⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠
+⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴
+⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿
+⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇
+⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈
+⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳
+⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈
+⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃
+⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁
+⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔
+⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀
+⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊
+⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂
+⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡
+⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈
+⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌
+⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀
+⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳
+⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉
+2025-09-13 12:01:37,451 [DEBUG]   push '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-13 12:01:37,451 [DEBUG] [pc=12] opcode=90 arg=1 block_stack=[] stack_top=['⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉']
+2025-09-13 12:01:37,451 [DEBUG]   pop -> '⠀⠀⠀⠀⢨⠊⠀⢀⢀⠀⠀⠀⠈⠺⡵⡱⠀⠀⠀⢠⠃⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢰⡁⠉⠊⠙⢎⣆⠀⠀⠀⠀⢩⢀⠜⠀⠀⠀\n⠀⠀⠀⢠⠃⠀⠀⢸⢸⡀⠀⠀⠀⠀⠘⢷⡡⠀⠀⠎⠀⢰⣧⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀⠈⣐⢤⣀⣀⢙⠦⠀⠀⠀⠀⡇⠀⠀⠀⠀\n⠀⠀⢀⠃⠀⠀⠀⡌⢸⠃⠀⠀⠀⢀⠀⠀⠑⢧⡸⠀⢀⣿⢻⡀⠀⠀⣻⠀⠀⠀⠀⠀⣠⡴⠛⠉⠀⠀⠀⠑⢝⣦⠀⠀⠀⢰⠠⠁⠀⠀\n⠀⠀⠌⠀⠀⠀⡘⣖⣄⢃⠀⠀⠀⠈⢦⡀⠀⡜⡇⠀⣼⠃⠈⢷⣶⢿⠟⠀⠀⠀⢠⠞⠁⠀⣀⠄⠂⣶⣶⣦⠆⠋⠓⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀\n⠡⡀⡇⠀⢰⣧⢱⠊⠘⡈⠄⠀⠀⡀⠘⣿⢦⣡⢡⢰⡇⢀⠤⠊⡡⠃⠀⠀⢀⡴⠁⢀⠔⠊⠀⠀⢠⣿⠟⠁⠀⢀⠀⢀⠾⣤⣀⠀⠀⡠\n⡀⠱⡇⠀⡆⢃⠀⠀⠀⠃⠀⠀⠀⣧⣀⣹⡄⠙⡾⡏⠀⡌⣠⡾⠁⠀⠀⣠⠊⢠⠔⠁⠀⠀⠀⠀⣸⡏⠀⠀⠀⢨⣪⡄⢻⣥⠫⡳⢊⣴\n⠀⠀⢡⢠⠀⢸⡆⠀⣀⠀⠀⠀⠀⠈⣛⢛⣁⣀⠘⣧⣀⢱⡿⠀⠀⢀⡔⢁⢔⠕⠉⠐⣄⣠⠤⠶⠛⠁⢀⣀⠀⠀⠉⠁⠈⠷⣞⠔⡕⣿\n⢄⡀⠘⢸⠀⣘⠇⠀⠀⠀⠀⠀⠀⠀⠀⠉⠐⠤⡑⢎⡉⢨⠁⠀⣠⢏⠔⠁⠘⣤⠴⢊⣡⣤⠴⠖⠒⠻⠧⣐⠓⠀⠀⠀⠀⠈⠀⡜⠀⠇\n⠤⡈⠑⠇⠡⣻⢠⠊⠉⠉⠉⠑⠒⠤⣀⠀⠀⠀⠈⣾⣄⢘⣫⣜⠮⢿⣆⡴⢊⢥⡪⠛⠉⠀⠀⠀⠀⢀⠄⠂⠁⠀⠀⠀⠀⠀⠀⢧⡀⠈\n⠁⠈⠑⠼⣀⣁⣇⠀⣴⡉⠉⠉⠀⠒⡢⠌⣐⡂⠶⣘⢾⡾⠿⢅⠀⣠⣶⡿⠓⠁⢠⠖⣦⡄⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢳\n⠀⠀⠀⠀⠉⣇⣿⢜⠙⢷⡄⠀⠀⠀⣄⣠⠼⢶⡛⣡⢴⠀⢀⠛⠱⡀⠀⠀⠀⠀⢀⠎⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡋⠮⡈\n⠀⠀⢀⣖⠂⢽⡈⠀⠈⠑⠻⡦⠖⢋⣁⡴⠴⠊⣉⡠⢻⡖⠪⢄⡀⢈⠆⠀⠀⢠⠊⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⡵⢤⣃\n⠀⠀⠸⢠⡯⣖⢵⡀⠀⠀⣠⣤⠮⠋⠁⠀⠀⠀⠀⠀⠸⣌⢆⢱⡾⠃⢀⠠⠔⠁⣀⢸⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⡸⠚⡸⠈⠁\n⠤⢀⣀⢇⢡⠸⡗⢔⡄⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⡩⠔⢉⡠⠔⠂⠉⢀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢁⠎⢀⡠⠔\n⠀⠀⠀⠘⡌⢦⡃⣎⠘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠠⡟⠠⡐⣋⠤⠀⣀⠤⠐⠂⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢉⠉⠁⠀⠀\n⠤⠀⠀⠀⠰⡀⠈⠻⡤⠚⢄⠀⠀⢠⠀⠀⠀⠀⠀⠀⠀⠈⠂⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⢸⠀⢀⠤⠊\n⣀⠀⠀⠀⠀⠘⠢⡑⢽⡬⢽⢆⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡶⠟⣉⣉⢢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠈⡖⠓⠒⠂\n⠀⢈⣑⣒⡤⠄⠀⠈⠑⠥⣈⠙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣁⠔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⣠⡻⠀⠀⠀⠇⠐⡔⣡\n⠉⠉⠁⠀⠒⠒⠒⠒⠀⠤⠤⠍⣒⡗⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⢠⡞⢡⠃⠀⠀⠀⢸⠀⠸⣡\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠈⣶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⣠⡔⠉⠀⡎⠀⠀⠀⠀⢸⠀⠀⠃\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⣀⢼⠀⠀⠀⢉⡄⠈⠐⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⡜⡡⣾⠃⠀⠀⠸⠀⠀⠀⠀⠀⠀⡧⢄⡈\n⠀⠀⠀⠀⠀⠀⠀⣀⠤⠚⠉⠀⡆⠀⠀⠀⠈⡵⢄⡀⠀⠀⠙⠂⠄⣀⡀⠤⠊⠉⢀⣀⣠⡴⢿⣟⠞⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⡗⠢⢌\n⠀⠀⠀⠀⡠⠔⠉⠀⠀⢀⡠⡤⠇⠀⠀⢀⠀⠰⣣⠈⠐⠤⡀⠀⡀⠈⠙⢍⠉⣉⠤⠒⠉⣠⣟⢮⠂⡄⠀⣼⠁⠀⡆⠀⠀⠀⠀⢡⣀⠀\n⣿⡷⠖⠉⠀⠀⡠⠔⣪⣿⠟⣫⠀⠀⠀⢸⠀⠀⢩⢆⠀⠀⠈⠑⢳⠤⠄⠠⠭⠤⠐⠂⢉⣾⢮⠃⢠⠃⢰⡹⠀⢰⠀⠀⠀⠀⠀⢸⡉⣳\n⠉⠀⢀⡠⠒⠉⣠⠾⠋⢁⠔⠹⠀⠀⠀⡈⡇⠀⠀⢫⣆⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⣘⢾⠃⢀⠏⣠⡳⠁⠀⣾⠀⠀⠀⠀⠀⠀⠈⠉'
+2025-09-13 12:01:37,451 [DEBUG] [pc=13] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,451 [INFO] 0
+2025-09-13 12:01:37,452 [DEBUG]   push 0
+2025-09-13 12:01:37,452 [DEBUG] [pc=14] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,452 [INFO] None
+2025-09-13 12:01:37,452 [DEBUG]   push None
+2025-09-13 12:01:37,452 [DEBUG] [pc=15] opcode=108 arg=2 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,452 [DEBUG]   pop -> None
+2025-09-13 12:01:37,452 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,456 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-13 12:01:37,456 [DEBUG] [pc=16] opcode=90 arg=2 block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-13 12:01:37,456 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-13 12:01:37,457 [DEBUG] [pc=17] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,457 [INFO] 0
+2025-09-13 12:01:37,457 [DEBUG]   push 0
+2025-09-13 12:01:37,457 [DEBUG] [pc=18] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,457 [INFO] None
+2025-09-13 12:01:37,458 [DEBUG]   push None
+2025-09-13 12:01:37,458 [DEBUG] [pc=19] opcode=108 arg=3 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,458 [DEBUG]   pop -> None
+2025-09-13 12:01:37,458 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,458 [DEBUG]   push <module 'marshal' (built-in)>
+2025-09-13 12:01:37,458 [DEBUG] [pc=20] opcode=90 arg=3 block_stack=[] stack_top=[<module 'marshal' (built-in)>]
+2025-09-13 12:01:37,458 [DEBUG]   pop -> <module 'marshal' (built-in)>
+2025-09-13 12:01:37,458 [DEBUG] [pc=21] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,458 [INFO] 0
+2025-09-13 12:01:37,459 [DEBUG]   push 0
+2025-09-13 12:01:37,459 [DEBUG] [pc=22] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,459 [INFO] None
+2025-09-13 12:01:37,459 [DEBUG]   push None
+2025-09-13 12:01:37,459 [DEBUG] [pc=23] opcode=108 arg=4 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,459 [DEBUG]   pop -> None
+2025-09-13 12:01:37,459 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,459 [DEBUG]   push <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-13 12:01:37,460 [DEBUG] [pc=24] opcode=90 arg=4 block_stack=[] stack_top=[<module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>]
+2025-09-13 12:01:37,460 [DEBUG]   pop -> <module 'base64' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py'>
+2025-09-13 12:01:37,460 [DEBUG] [pc=25] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,460 [INFO] 0
+2025-09-13 12:01:37,460 [DEBUG]   push 0
+2025-09-13 12:01:37,460 [DEBUG] [pc=26] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,460 [INFO] None
+2025-09-13 12:01:37,460 [DEBUG]   push None
+2025-09-13 12:01:37,460 [DEBUG] [pc=27] opcode=108 arg=5 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,461 [DEBUG]   pop -> None
+2025-09-13 12:01:37,461 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,461 [DEBUG]   push <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-13 12:01:37,461 [DEBUG] [pc=28] opcode=90 arg=5 block_stack=[] stack_top=[<module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>]
+2025-09-13 12:01:37,461 [DEBUG]   pop -> <module 'bz2' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py'>
+2025-09-13 12:01:37,461 [DEBUG] [pc=29] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,461 [INFO] 0
+2025-09-13 12:01:37,461 [DEBUG]   push 0
+2025-09-13 12:01:37,461 [DEBUG] [pc=30] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,462 [INFO] None
+2025-09-13 12:01:37,462 [DEBUG]   push None
+2025-09-13 12:01:37,462 [DEBUG] [pc=31] opcode=108 arg=6 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,462 [DEBUG]   pop -> None
+2025-09-13 12:01:37,462 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,462 [DEBUG]   push <module 'zlib' (built-in)>
+2025-09-13 12:01:37,462 [DEBUG] [pc=32] opcode=90 arg=6 block_stack=[] stack_top=[<module 'zlib' (built-in)>]
+2025-09-13 12:01:37,462 [DEBUG]   pop -> <module 'zlib' (built-in)>
+2025-09-13 12:01:37,463 [DEBUG] [pc=33] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,463 [INFO] 0
+2025-09-13 12:01:37,463 [DEBUG]   push 0
+2025-09-13 12:01:37,463 [DEBUG] [pc=34] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,463 [INFO] None
+2025-09-13 12:01:37,463 [DEBUG]   push None
+2025-09-13 12:01:37,463 [DEBUG] [pc=35] opcode=108 arg=7 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,463 [DEBUG]   pop -> None
+2025-09-13 12:01:37,463 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,463 [DEBUG]   push <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-13 12:01:37,464 [DEBUG] [pc=36] opcode=90 arg=7 block_stack=[] stack_top=[<module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>]
+2025-09-13 12:01:37,464 [DEBUG]   pop -> <module 'lzma' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py'>
+2025-09-13 12:01:37,464 [DEBUG] [pc=37] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,464 [INFO] 0
+2025-09-13 12:01:37,464 [DEBUG]   push 0
+2025-09-13 12:01:37,464 [DEBUG] [pc=38] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,464 [INFO] None
+2025-09-13 12:01:37,464 [DEBUG]   push None
+2025-09-13 12:01:37,465 [DEBUG] [pc=39] opcode=108 arg=8 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,465 [DEBUG]   pop -> None
+2025-09-13 12:01:37,465 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,465 [DEBUG]   push <module 'time' (built-in)>
+2025-09-13 12:01:37,465 [DEBUG] [pc=40] opcode=90 arg=8 block_stack=[] stack_top=[<module 'time' (built-in)>]
+2025-09-13 12:01:37,465 [DEBUG]   pop -> <module 'time' (built-in)>
+2025-09-13 12:01:37,465 [DEBUG] [pc=41] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,465 [INFO] 0
+2025-09-13 12:01:37,465 [DEBUG]   push 0
+2025-09-13 12:01:37,466 [DEBUG] [pc=42] opcode=100 arg=9 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,466 [INFO] None
+2025-09-13 12:01:37,466 [DEBUG]   push None
+2025-09-13 12:01:37,466 [DEBUG] [pc=43] opcode=108 arg=9 block_stack=[] stack_top=[0, None]
+2025-09-13 12:01:37,466 [DEBUG]   pop -> None
+2025-09-13 12:01:37,466 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,466 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-13 12:01:37,466 [DEBUG] [pc=44] opcode=90 arg=9 block_stack=[] stack_top=[<module 'sys' (built-in)>]
+2025-09-13 12:01:37,466 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-13 12:01:37,466 [DEBUG] [pc=45] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,466 [INFO] 0
+2025-09-13 12:01:37,466 [DEBUG]   push 0
+2025-09-13 12:01:37,466 [DEBUG] [pc=46] opcode=100 arg=10 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,466 [INFO] ("'*'",)
+2025-09-13 12:01:37,467 [DEBUG]   push ("'*'",)
+2025-09-13 12:01:37,467 [DEBUG] [pc=47] opcode=108 arg=2 block_stack=[] stack_top=[0, ("'*'",)]
+2025-09-13 12:01:37,467 [DEBUG]   pop -> ("'*'",)
+2025-09-13 12:01:37,467 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,467 [DEBUG]   push <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-13 12:01:37,467 [DEBUG] [pc=48] opcode=84 arg=None block_stack=[] stack_top=[<module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>]
+2025-09-13 12:01:37,467 [DEBUG]   pop -> <module 'ast' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py'>
+2025-09-13 12:01:37,468 [DEBUG] [pc=49] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,468 [INFO] 0
+2025-09-13 12:01:37,468 [DEBUG]   push 0
+2025-09-13 12:01:37,468 [DEBUG] [pc=50] opcode=100 arg=11 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,468 [INFO] ("'minify_source'",)
+2025-09-13 12:01:37,468 [DEBUG]   push ("'minify_source'",)
+2025-09-13 12:01:37,468 [DEBUG] [pc=51] opcode=108 arg=10 block_stack=[] stack_top=[0, ("'minify_source'",)]
+2025-09-13 12:01:37,468 [DEBUG]   pop -> ("'minify_source'",)
+2025-09-13 12:01:37,469 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,734 [DEBUG]   push <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-13 12:01:37,734 [DEBUG] [pc=52] opcode=109 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-13 12:01:37,734 [DEBUG]   push <function minify_source at 0x0000019515194CC0>
+2025-09-13 12:01:37,734 [DEBUG] [pc=53] opcode=90 arg=11 block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>, <function minify_source at 0x0000019515194CC0>]
+2025-09-13 12:01:37,734 [DEBUG]   pop -> <function minify_source at 0x0000019515194CC0>
+2025-09-13 12:01:37,735 [DEBUG] [pc=54] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>]
+2025-09-13 12:01:37,735 [DEBUG]   pop -> <module 'utils.minifier' from 'G:\\projects\\shenron\\Shenron\\utils\\minifier.py'>
+2025-09-13 12:01:37,735 [DEBUG] [pc=55] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,735 [INFO] 0
+2025-09-13 12:01:37,735 [DEBUG]   push 0
+2025-09-13 12:01:37,735 [DEBUG] [pc=56] opcode=100 arg=12 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,735 [INFO] ("'var_con_cak'",)
+2025-09-13 12:01:37,736 [DEBUG]   push ("'var_con_cak'",)
+2025-09-13 12:01:37,736 [DEBUG] [pc=57] opcode=108 arg=12 block_stack=[] stack_top=[0, ("'var_con_cak'",)]
+2025-09-13 12:01:37,736 [DEBUG]   pop -> ("'var_con_cak'",)
+2025-09-13 12:01:37,736 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,737 [DEBUG]   push <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-13 12:01:37,737 [DEBUG] [pc=58] opcode=109 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-13 12:01:37,737 [DEBUG]   push <function var_con_cak at 0x00000195171D8C20>
+2025-09-13 12:01:37,737 [DEBUG] [pc=59] opcode=90 arg=13 block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>, <function var_con_cak at 0x00000195171D8C20>]
+2025-09-13 12:01:37,737 [DEBUG]   pop -> <function var_con_cak at 0x00000195171D8C20>
+2025-09-13 12:01:37,737 [DEBUG] [pc=60] opcode=1 arg=None block_stack=[] stack_top=[<module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>]
+2025-09-13 12:01:37,738 [DEBUG]   pop -> <module 'utils.constant_renamer' from 'G:\\projects\\shenron\\Shenron\\utils\\constant_renamer.py'>
+2025-09-13 12:01:37,738 [DEBUG] [pc=61] opcode=100 arg=8 block_stack=[] stack_top=[]
+2025-09-13 12:01:37,738 [INFO] 0
+2025-09-13 12:01:37,738 [DEBUG]   push 0
+2025-09-13 12:01:37,738 [DEBUG] [pc=62] opcode=100 arg=13 block_stack=[] stack_top=[0]
+2025-09-13 12:01:37,738 [INFO] ("'main'", "'remove_comments'")
+2025-09-13 12:01:37,738 [DEBUG]   push ("'main'", "'remove_comments'")
+2025-09-13 12:01:37,738 [DEBUG] [pc=63] opcode=108 arg=14 block_stack=[] stack_top=[0, ("'main'", "'remove_comments'")]
+2025-09-13 12:01:37,738 [DEBUG]   pop -> ("'main'", "'remove_comments'")
+2025-09-13 12:01:37,739 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,743 [DEBUG]   push <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-13 12:01:37,743 [DEBUG] [pc=64] opcode=109 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-13 12:01:37,743 [DEBUG]   push <function main at 0x00000195171D9B20>
+2025-09-13 12:01:37,744 [DEBUG] [pc=65] opcode=90 arg=15 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function main at 0x00000195171D9B20>]
+2025-09-13 12:01:37,744 [DEBUG]   pop -> <function main at 0x00000195171D9B20>
+2025-09-13 12:01:37,744 [DEBUG] [pc=66] opcode=109 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-13 12:01:37,744 [DEBUG]   push <function remove_comments at 0x0000019517191A80>
+2025-09-13 12:01:37,744 [DEBUG] [pc=67] opcode=90 arg=16 block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>, <function remove_comments at 0x0000019517191A80>]
+2025-09-13 12:01:37,744 [DEBUG]   pop -> <function remove_comments at 0x0000019517191A80>
+2025-09-13 12:01:37,744 [DEBUG] [pc=68] opcode=1 arg=None block_stack=[] stack_top=[<module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>]
+2025-09-13 12:01:37,744 [DEBUG]   pop -> <module 'vm.vm' from 'G:\\projects\\shenron\\Shenron\\vm\\vm.py'>
+2025-09-13 12:01:37,745 [DEBUG] [pc=69] opcode=2 arg=None block_stack=[] stack_top=[]
+2025-09-13 12:01:37,745 [DEBUG]   push <object object at 0x00000195137F4400>
+2025-09-13 12:01:37,745 [DEBUG] [pc=70] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,745 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-13 12:01:37,745 [DEBUG] [pc=71] opcode=106 arg=17 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <module 'sys' (built-in)>]
+2025-09-13 12:01:37,745 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-13 12:01:37,745 [DEBUG]   push <built-in function setrecursionlimit>
+2025-09-13 12:01:37,745 [DEBUG] [pc=72] opcode=100 arg=14 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <built-in function setrecursionlimit>]
+2025-09-13 12:01:37,745 [INFO] 99999999
+2025-09-13 12:01:37,745 [DEBUG]   push 99999999
+2025-09-13 12:01:37,745 [DEBUG] [pc=73] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <built-in function setrecursionlimit>, 99999999]
+2025-09-13 12:01:37,745 [DEBUG] [pc=74] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <built-in function setrecursionlimit>, 99999999]
+2025-09-13 12:01:37,745 [DEBUG]   pop -> 99999999
+2025-09-13 12:01:37,747 [DEBUG]   pop -> <built-in function setrecursionlimit>
+2025-09-13 12:01:37,747 [DEBUG]   push None
+2025-09-13 12:01:37,747 [DEBUG] [pc=75] opcode=1 arg=None block_stack=[] stack_top=[<object object at 0x00000195137F4400>, None]
+2025-09-13 12:01:37,747 [DEBUG]   pop -> None
+2025-09-13 12:01:37,747 [DEBUG] [pc=76] opcode=2 arg=None block_stack=[] stack_top=[<object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,748 [DEBUG]   push <object object at 0x00000195137F4400>
+2025-09-13 12:01:37,748 [DEBUG] [pc=77] opcode=101 arg=18 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,748 [DEBUG]   push <class 'str'>
+2025-09-13 12:01:37,748 [DEBUG] [pc=78] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <class 'str'>]
+2025-09-13 12:01:37,748 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-13 12:01:37,748 [DEBUG] [pc=79] opcode=106 arg=19 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-13 12:01:37,748 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-13 12:01:37,748 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-13 12:01:37,749 [DEBUG] [pc=80] opcode=106 arg=20 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-13 12:01:37,749 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-13 12:01:37,749 [DEBUG]   push 3
+2025-09-13 12:01:37,749 [DEBUG] [pc=81] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <class 'str'>, 3]
+2025-09-13 12:01:37,749 [DEBUG] [pc=82] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <class 'str'>, 3]
+2025-09-13 12:01:37,749 [DEBUG]   pop -> 3
+2025-09-13 12:01:37,749 [DEBUG]   pop -> <class 'str'>
+2025-09-13 12:01:37,749 [DEBUG]   push '3'
+2025-09-13 12:01:37,749 [DEBUG] [pc=83] opcode=100 arg=15 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3']
+2025-09-13 12:01:37,750 [INFO] .
+2025-09-13 12:01:37,750 [DEBUG]   push '.'
+2025-09-13 12:01:37,750 [DEBUG] [pc=84] opcode=122 arg=0 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3', '.']
+2025-09-13 12:01:37,750 [DEBUG]   pop -> '.'
+2025-09-13 12:01:37,750 [DEBUG]   pop -> '3'
+2025-09-13 12:01:37,750 [DEBUG]   push '3.'
+2025-09-13 12:01:37,750 [DEBUG] [pc=85] opcode=2 arg=None block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.']
+2025-09-13 12:01:37,750 [DEBUG]   push <object object at 0x00000195137F4400>
+2025-09-13 12:01:37,750 [DEBUG] [pc=86] opcode=101 arg=18 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,751 [DEBUG]   push <class 'str'>
+2025-09-13 12:01:37,751 [DEBUG] [pc=87] opcode=101 arg=9 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, <class 'str'>]
+2025-09-13 12:01:37,751 [DEBUG]   push <module 'sys' (built-in)>
+2025-09-13 12:01:37,751 [DEBUG] [pc=88] opcode=106 arg=19 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, <class 'str'>, <module 'sys' (built-in)>]
+2025-09-13 12:01:37,751 [DEBUG]   pop -> <module 'sys' (built-in)>
+2025-09-13 12:01:37,751 [DEBUG]   push sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-13 12:01:37,752 [DEBUG] [pc=89] opcode=106 arg=21 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, <class 'str'>, sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)]
+2025-09-13 12:01:37,752 [DEBUG]   pop -> sys.version_info(major=3, minor=11, micro=9, releaselevel='final', serial=0)
+2025-09-13 12:01:37,752 [DEBUG]   push 11
+2025-09-13 12:01:37,752 [DEBUG] [pc=90] opcode=166 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, <class 'str'>, 11]
+2025-09-13 12:01:37,752 [DEBUG] [pc=91] opcode=171 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, <class 'str'>, 11]
+2025-09-13 12:01:37,752 [DEBUG]   pop -> 11
+2025-09-13 12:01:37,752 [DEBUG]   pop -> <class 'str'>
+2025-09-13 12:01:37,752 [DEBUG]   push '11'
+2025-09-13 12:01:37,753 [DEBUG] [pc=92] opcode=122 arg=0 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.', <object object at 0x00000195137F4400>, '11']
+2025-09-13 12:01:37,753 [DEBUG]   pop -> '11'
+2025-09-13 12:01:37,753 [DEBUG]   pop -> <object object at 0x00000195137F4400>
+2025-09-13 12:01:37,753 [DEBUG]   pop -> '3.'
+2025-09-13 12:01:37,753 [DEBUG]   push '3.11'
+2025-09-13 12:01:37,753 [DEBUG] [pc=93] opcode=90 arg=22 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '3.11']
+2025-09-13 12:01:37,753 [DEBUG]   pop -> '3.11'
+2025-09-13 12:01:37,753 [DEBUG] [pc=94] opcode=9 arg=None block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,753 [DEBUG] [pc=95] opcode=100 arg=8 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,754 [INFO] 0
+2025-09-13 12:01:37,754 [DEBUG]   push 0
+2025-09-13 12:01:37,754 [DEBUG] [pc=96] opcode=100 arg=10 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, 0]
+2025-09-13 12:01:37,754 [INFO] ("'*'",)
+2025-09-13 12:01:37,754 [DEBUG]   push ("'*'",)
+2025-09-13 12:01:37,754 [DEBUG] [pc=97] opcode=108 arg=23 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, 0, ("'*'",)]
+2025-09-13 12:01:37,754 [DEBUG]   pop -> ("'*'",)
+2025-09-13 12:01:37,754 [DEBUG]   pop -> 0
+2025-09-13 12:01:37,783 [DEBUG]   push <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-13 12:01:37,783 [DEBUG] [pc=98] opcode=84 arg=None block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pystyle\\__init__.py'>]
+2025-09-13 12:01:37,783 [DEBUG]   pop -> <module 'pystyle' from 'C:\\Users\\negativez\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\pystyle\\__init__.py'>
+2025-09-13 12:01:37,783 [DEBUG] [pc=99] opcode=110 arg=60 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,784 [DEBUG] [pc=160] opcode=100 arg=33 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>]
+2025-09-13 12:01:37,784 [INFO] 💫
+2025-09-13 12:01:37,784 [DEBUG]   push '💫'
+2025-09-13 12:01:37,784 [DEBUG] [pc=161] opcode=147 arg=1 block_stack=[] stack_top=[<object object at 0x00000195137F4400>, <object object at 0x00000195137F4400>, '💫']
+2025-09-13 12:01:37,784 [DEBUG]   pop -> '💫'
+2025-09-13 12:01:37,784 [DEBUG]   pop -> <object object at 0x00000195137F4400>
+2025-09-13 12:01:37,784 [DEBUG]   pop -> <object object at 0x00000195137F4400>
